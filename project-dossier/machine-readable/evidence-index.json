@@ -33,6 +33,21 @@
       "finding_refs": ["FIND-0002", "FIND-0003", "FIND-0004"],
       "source_refs": ["SRC-0001", "SRC-0002", "SRC-0003"],
       "limitations": ["Git/GitHub publication is excluded and remains TASK-0002.", "Does not assess product behavior, security efficacy, operations, or release readiness."]
+    },
+    {
+      "id": "EVD-0103",
+      "title": "Plectarium exact private creation and initial publication",
+      "type": "git_and_remote_observation",
+      "subject_version": "foundation commit 8842fe6543d0c63d56a0a34e336192e66f76cae1",
+      "produced_at": "2026-08-31",
+      "method": "Exact remote absence/authentication checks, private empty creation, normal push, and local/tracking/remote ref comparison",
+      "scope": "Initial foundation publication plus closure-candidate boundary",
+      "result": "PASS with direct post-closure-commit verification required",
+      "artifact_path": ".agent/evidence/EVD-0003-initial-publication.md",
+      "requirement_refs": ["REQ-0008"],
+      "finding_refs": ["FIND-0004"],
+      "source_refs": ["SRC-0001", "SRC-0002", "SRC-0003"],
+      "limitations": ["The closure commit cannot attest its own later push.", "Does not assess product or operational readiness."]
     }
   ]
 }

@@ -3,8 +3,8 @@
 > Routing only; this page grants no permission. Generated from Project
 > Blueprint 1.0.0 using the `high-assurance` profile on
 > 2026-08-31. Project-specific local adoption completed under `TASK-0001`.
-> Remote publication remains separate under ready `TASK-0002`. This file
-> grants no permission.
+> Bounded publication completed under `TASK-0002`; final closure equality is
+> direct post-commit evidence. This file grants no permission.
 
 ## Reading order
 
@@ -25,7 +25,7 @@
 - Implementation state: product implementation absent; setup specification present
 - External or production authority: none created by this harness
 - Local foundation lifecycle: `TASK-0001`, completed
-- Publication lifecycle: `TASK-0002`, ready
+- Publication lifecycle: `TASK-0002`, completed
 
 Current task status lives only in `.agent/tasks/`. Durable intent lives only in
 accepted `.agent/decisions/`. Generated files are point-in-time derived

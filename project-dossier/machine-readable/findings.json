@@ -38,7 +38,7 @@
     },
     {
       "id": "FIND-0003",
-      "title": "Local root integrity and validation conform; publication pending",
+      "title": "Local root integrity and validation conform",
       "requirement_refs": ["REQ-0008"],
       "status": "conformant",
       "assessed_on": "2026-08-31",
@@ -49,13 +49,13 @@
     },
     {
       "id": "FIND-0004",
-      "title": "Git and GitHub publication not yet performed",
+      "title": "Bounded Git and GitHub publication completed",
       "requirement_refs": ["REQ-0008"],
-      "status": "absent",
+      "status": "conformant",
       "assessed_on": "2026-08-31",
-      "subject_version": "locally adopted pre-Git foundation",
-      "inspected_evidence": ["EVD-0002"],
-      "rationale": "No local Git repository or external effect was created in the local-foundation task; TASK-0002 owns publication.",
+      "subject_version": "foundation commit 8842fe6543d0c63d56a0a34e336192e66f76cae1 and closure candidate",
+      "inspected_evidence": ["EVD-0002", "EVD-0003"],
+      "rationale": "The exact private remote was created empty, the foundation push achieved exact equality, and the closure commit is followed by direct final equality and clean-worktree verification.",
       "owner_role": "Primary Portfolio Agent"
     }
   ]

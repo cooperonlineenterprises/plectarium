@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0012","occurred_at":"2026-08-31T12:11:00Z","kind":"foundation_pushed","subject":"TASK-0002","actor_or_source":"primary portfolio agent","summary":"Normally pushed foundation commit 8842fe6543d0c63d56a0a34e336192e66f76cae1 to origin/main.","evidence":["EVD-0003"],"redaction_applied":false}

@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0013","occurred_at":"2026-08-31T12:12:00Z","kind":"remote_equality_verified","subject":"8842fe6543d0c63d56a0a34e336192e66f76cae1","actor_or_source":"primary portfolio agent","summary":"Verified local HEAD, origin/main, and remote main equality after the foundation push.","evidence":["EVD-0003"],"redaction_applied":false}

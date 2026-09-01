@@ -9,6 +9,10 @@ constitution, executable specification, and AI build packet. Product code,
 dependencies, services, deployment assets, and production resources are
 intentionally absent.
 
+The repository foundation was published through the bounded `TASK-0002`
+sequence. That publication creates no product-readiness or later-push
+authority.
+
 Start with:
 
 - `AGENTS.md` for repository instructions;

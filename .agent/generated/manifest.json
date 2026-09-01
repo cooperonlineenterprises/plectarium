@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-01T02:32:47.323839+00:00",
-  "generation_id": "3c94828af2882dd0fd56b5488e8e6b46",
+  "generated_at": "2026-09-01T02:37:17.603207+00:00",
+  "generation_id": "c61e8530618ac61d520d0b9c81035d93",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -12,6 +12,7 @@
     ".agent/artifacts/registry.json",
     ".agent/checklists/task-closure.md",
     ".agent/checkpoints/CHK-0001-local-foundation-review.md",
+    ".agent/checkpoints/CHK-0002-initial-publication.md",
     ".agent/checkpoints/README.md",
     ".agent/context.json",
     ".agent/decisions/DEC-0001-foundation-authority-posture.md",
@@ -27,9 +28,19 @@
     ".agent/events/EVT-0008-publication-task-ready.json",
     ".agent/events/EVT-0009-independent-review-completed.json",
     ".agent/events/EVT-0010-publication-task-in-progress.json",
+    ".agent/events/EVT-0011-remote-created.json",
+    ".agent/events/EVT-0012-foundation-pushed.json",
+    ".agent/events/EVT-0013-initial-equality-verified.json",
+    ".agent/events/EVT-0014-publication-evidence-recorded.json",
+    ".agent/events/EVT-0015-publication-validating.json",
+    ".agent/events/EVT-0016-publication-reviewed.json",
+    ".agent/events/EVT-0017-publication-checkpoint.json",
+    ".agent/events/EVT-0018-publication-task-review.json",
+    ".agent/events/EVT-0019-publication-task-completed.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
+    ".agent/evidence/EVD-0003-initial-publication.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -42,6 +53,7 @@
     ".agent/reviews/README.md",
     ".agent/reviews/REV-0001-foundation-candidate.md",
     ".agent/reviews/REV-0002-independent-prepublication-review.md",
+    ".agent/reviews/REV-0003-publication-closure-review.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -236,5 +248,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "60c1e8284a95fe1a74f75c0cce95ea25458aaaf7b502417713c06a2dfa706fa7"
+  "source_fingerprint": "30ffe858352b5bf511b1f81ec46023681bb129ee8debd2c555d460460de68ee6"
 }

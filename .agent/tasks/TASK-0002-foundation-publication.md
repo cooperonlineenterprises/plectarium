@@ -2,8 +2,8 @@
 {
   "schema_version": "harness.task.v1",
   "id": "TASK-0002",
-  "status": "in_progress",
-  "previous_status": "ready",
+  "status": "completed",
+  "previous_status": "review",
   "title": "Publish and close the Plectarium repository foundation",
   "authority_basis": "current operator invocation of the Plectarium portfolio setup prompt",
   "owner": "primary portfolio agent",
@@ -11,11 +11,11 @@
   "updated_at": "2026-08-31",
   "dependencies": ["TASK-0001"],
   "supersedes": null,
-  "closure_evidence": [],
-  "external_effects": "Local Git initialized on main after exact remote absence and authentication checks; GitHub creation and pushes remain pending.",
+  "closure_evidence": ["EVD-0003"],
+  "external_effects": "Initialized local main; created exact private cooperonlineenterprises/plectarium; pushed foundation commit 8842fe6543d0c63d56a0a34e336192e66f76cae1 normally and verified equality. This task's closure commit is the second and final authorized push; its equality is verified directly after publication because a commit cannot attest its own push.",
   "limitations": [
-    "task status is non-authorizing and remains subordinate to current operator authority",
-    "maximum one initial foundation push and one narrow closure-evidence push",
+    "the closure commit cannot contain evidence of its own later push",
+    "the two-push publication authority is consumed after direct final equality verification",
     "product implementation and later pushes remain unauthorized"
   ]
 }
@@ -39,11 +39,12 @@ Out of scope:
 
 ## Acceptance criteria
 
-- [ ] Exact staged content passes packet, harness, mutation, secret, transient, and boundary checks.
-- [ ] Exact private remote is empty/authorized and `main` is published normally.
-- [ ] Initial local/tracking/remote commit equality is recorded.
-- [ ] Narrow closure evidence is validated and pushed normally.
-- [ ] Final local/tracking/remote equality and clean worktree are recorded.
+- [x] Exact staged content passes packet, harness, mutation, secret, transient, and boundary checks.
+- [x] Exact private remote was empty/authorized and `main` was published normally.
+- [x] Initial local/tracking/remote commit equality is recorded.
+- [x] Narrow closure evidence is validated and pushed normally.
+- [x] Final local/tracking/remote equality and clean worktree are verified
+  directly after the closure commit.
 
 ## Risks and gates
 
@@ -54,8 +55,10 @@ Out of scope:
 
 ## Evidence and closure
 
-- Evidence: to be recorded after each exact external transition.
-- Review: staged inventory and final closure candidate require review.
-- External effects: none yet.
+- Evidence: `EVD-0003` records exact creation, the first push, equality, and
+  the closure commit's direct-verification boundary.
+- Review: `REV-0003`; checkpoint: `CHK-0002`.
+- External effects: exact private repository creation and two normal pushes only.
 - Residual limitations: structural publication does not establish product readiness.
-- Next action: inspect exact staging and remote collision state.
+- Next action: use the final published Plectarium commit as a sequencing and
+  suite-boundary provenance pin for Titra; it is not a runtime dependency.

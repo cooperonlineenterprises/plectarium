@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0016","occurred_at":"2026-08-31T12:15:00Z","kind":"review_recorded","subject":"REV-0003","actor_or_source":"primary portfolio agent","summary":"Reviewed publication evidence and closure candidate with no actionable finding.","evidence":["EVD-0002","EVD-0003","REV-0003"],"redaction_applied":false}

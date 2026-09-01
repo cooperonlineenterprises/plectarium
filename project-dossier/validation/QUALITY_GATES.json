@@ -36,11 +36,11 @@
     {
       "id": "GATE-0004",
       "title": "Repository publication and equality",
-      "status": "ready_not_run",
+      "status": "satisfied_with_direct_post_commit_verification",
       "owner_role": "Primary Portfolio Agent",
-      "required_evidence": [],
+      "required_evidence": ["EVD-0003"],
       "approval_source": null,
-      "limitations": ["No local Git or remote effect exists yet; TASK-0002 owns this gate."]
+      "limitations": ["The closure commit cannot contain evidence of its own later push; final equality is direct handoff evidence."]
     }
   ]
 }

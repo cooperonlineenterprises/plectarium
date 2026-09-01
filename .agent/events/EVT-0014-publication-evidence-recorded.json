@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0014","occurred_at":"2026-08-31T12:13:00Z","kind":"evidence_recorded","subject":"EVD-0003","actor_or_source":"primary portfolio agent","summary":"Recorded exact Plectarium creation, first push, equality, and closure-verification boundary.","evidence":["EVD-0003"],"redaction_applied":false}

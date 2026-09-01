@@ -5,6 +5,7 @@
 - Profile: `high-assurance`
 - Generated on: `2026-08-31`
 - Project-specific adoption status: `adopted-local-foundation`
+- Publication status: `complete-with-direct-closure-verification`
 - Supersedes: none
 
 Future semantic changes must record the new dossier version and affected

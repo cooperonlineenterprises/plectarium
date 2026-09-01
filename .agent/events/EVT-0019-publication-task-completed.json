@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0019","occurred_at":"2026-08-31T12:18:00Z","kind":"task_completed","subject":"TASK-0002","actor_or_source":"primary portfolio agent","summary":"Marked bounded publication complete subject to direct post-commit verification of its own closure push.","evidence":["EVD-0002","EVD-0003","REV-0003","CHK-0002"],"redaction_applied":false}

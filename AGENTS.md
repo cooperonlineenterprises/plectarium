@@ -19,12 +19,12 @@ authority rules.
 
 ## Current phase
 
-The repository contains a locally adopted setup-only Plectarium Product
+The repository contains a published setup-only Plectarium Product
 Constitution, Executable Specification, and AI Build Packet under completed
-`TASK-0001`. Product implementation,
+`TASK-0001` and `TASK-0002`. Product implementation,
 dependency installation, service startup, deployment, and production access
-remain absent and unauthorized. Initial and closure publication are separated
-into ready `TASK-0002` and are not implied by local adoption.
+remain absent and unauthorized. The consumed publication authority does not
+authorize later pushes or implementation.
 
 ## Baseline boundaries
 

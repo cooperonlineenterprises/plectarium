@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0015","occurred_at":"2026-08-31T12:14:00Z","kind":"task_validating","subject":"TASK-0002","actor_or_source":"primary portfolio agent","summary":"Entered closure validation with the narrow publication evidence candidate.","evidence":["EVD-0002","EVD-0003"],"redaction_applied":false}

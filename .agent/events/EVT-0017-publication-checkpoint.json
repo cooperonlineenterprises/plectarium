@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0017","occurred_at":"2026-08-31T12:16:00Z","kind":"checkpoint_recorded","subject":"CHK-0002","actor_or_source":"primary portfolio agent","summary":"Recorded the initial-publication and closure-candidate checkpoint.","evidence":["EVD-0002","EVD-0003","CHK-0002"],"redaction_applied":false}

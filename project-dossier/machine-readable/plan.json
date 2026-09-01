@@ -24,14 +24,15 @@
       "id": "PLAN-0002",
       "title": "Resolve family lock and publish the repository foundation",
       "objective": "Pin the final family commit/digests, refresh root integrity, and perform the exact authorized publication sequence.",
-      "status": "planned",
+      "status": "completed",
       "owner_role": "Primary Portfolio Agent",
       "depends_on": ["PLAN-0001"],
       "requirement_refs": ["REQ-0002", "REQ-0008"],
       "finding_refs": ["FIND-0004"],
       "gate_refs": ["GATE-0004"],
       "acceptance_criteria": ["immutable family equality", "initial and closure pushes", "final local/tracking/remote equality", "clean worktree"],
-      "evidence_expected": ["family lock validation", "Git and GitHub publication evidence"]
+      "evidence_expected": ["family lock validation", "Git and GitHub publication evidence"],
+      "evidence_refs": ["EVD-0002", "EVD-0003"]
     },
     {
       "id": "PLAN-0003",

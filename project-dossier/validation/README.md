@@ -10,6 +10,8 @@ Project-specific setup validation consists of:
 2. harness mutation/acceptance tests;
 3. packet schema, fixture, graph, decision, claim, manifest, and checksum validation;
 4. an explicit packet-derived refresh followed by a read-only packet check;
-5. a later designated root-integrity refresh and final read-only harness check.
+5. a later designated root-integrity refresh and final read-only harness check;
+6. exact private publication, first-push equality, and direct closure equality
+   evidence under `EVD-0003`.
 
 Product code, runtime, security, SLO, and release gates remain unassessed.

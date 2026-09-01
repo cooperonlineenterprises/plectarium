@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0018","occurred_at":"2026-08-31T12:17:00Z","kind":"task_review","subject":"TASK-0002","actor_or_source":"primary portfolio agent","summary":"TASK-0002 entered review with the final authorized closure push remaining.","evidence":["EVD-0002","EVD-0003","REV-0003"],"redaction_applied":false}
