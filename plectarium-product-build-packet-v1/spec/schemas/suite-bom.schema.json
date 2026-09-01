@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/suite-bom.schema.json",
+  "title": "Plectarium Suite BOM v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "bom_id", "plectarium_version", "catalog_snapshot_digest", "entries", "produced_at", "compatibility_status", "limitations"],
+  "properties": {
+    "schema_version": {"const": "plectarium.suite-bom.v1"},
+    "bom_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "plectarium_version": {"type": "string", "minLength": 1},
+    "catalog_snapshot_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "entries": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["coordinate", "status", "constraints", "evidence_refs"], "properties": {"coordinate": {"$ref": "capability-coordinate.schema.json"}, "status": {"enum": ["supported", "supported_with_constraints", "incompatible", "unknown", "withdrawn"]}, "constraints": {"type": "array", "items": {"type": "string"}}, "evidence_refs": {"type": "array", "items": {"type": "string"}}}}},
+    "produced_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "compatibility_status": {"enum": ["unassessed", "partial", "verified"]},
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"}
+  }
+}

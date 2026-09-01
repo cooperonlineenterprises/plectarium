@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/result-record.schema.json",
+  "title": "Plectarium Result Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "result_record_id", "tenant_id", "job_id", "coordinate", "family_contract", "family_result_reference", "artifact_id", "capability_completion", "verification", "lineage", "limitations", "ingested_at"],
+  "properties": {
+    "schema_version": {"const": "plectarium.result-record.v1"},
+    "result_record_id": {"type": "string", "pattern": "^res_[A-Za-z0-9_-]{8,64}$"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "job_id": {"$ref": "common-definitions.schema.json#/$defs/job_id"},
+    "coordinate": {"$ref": "capability-coordinate.schema.json"},
+    "family_contract": {"type": "object", "additionalProperties": false, "required": ["schema_id", "source_path", "source_sha256", "family_git_commit", "packet_manifest_sha256"], "properties": {"schema_id": {"type": "string"}, "source_path": {"type": "string"}, "source_sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}, "family_git_commit": {"$ref": "common-definitions.schema.json#/$defs/git_commit"}, "packet_manifest_sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}}},
+    "family_result_reference": {"type": "object", "description": "Opaque family-owned document validated against the exact pinned external schema."},
+    "artifact_id": {"$ref": "common-definitions.schema.json#/$defs/artifact_id"},
+    "capability_completion": {"enum": ["complete", "complete_with_limitations", "partial", "failed", "cancelled"]},
+    "verification": {"type": "object", "required": ["family_schema", "checksum", "signature", "compatibility", "freshness"], "properties": {"family_schema": {"enum": ["valid", "invalid", "unknown_schema"]}, "checksum": {"enum": ["verified", "mismatch", "missing", "not_checked"]}, "signature": {"enum": ["verified", "invalid", "untrusted_signer", "unsupported", "not_present", "not_checked"]}, "compatibility": {"enum": ["supported", "supported_with_constraints", "incompatible", "unknown", "withdrawn"]}, "freshness": {"enum": ["fresh", "stale", "unknown"]}}},
+    "lineage": {"type": "array", "items": {"type": "object", "required": ["relation", "source_content_digest"], "properties": {"relation": {"enum": ["produced_from", "imports", "derives", "compares", "supersedes", "exports"]}, "source_content_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"}}}},
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"},
+    "ingested_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"}
+  }
+}

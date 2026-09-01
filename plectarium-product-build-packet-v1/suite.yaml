@@ -1,0 +1,27 @@
+schema_version: plectarium.suite.v1
+product_id: plectarium
+name: Plectarium
+product_kind: suite_and_optional_control_plane
+ecosystem_relationship: part_of_octon_ecosystem_without_runtime_or_authority_dependency
+packet_version: 1.0.0
+family_sources:
+  - reference/family-source-lock.json
+owned_semantics:
+  - product experience and catalog
+  - tenant identity and access review
+  - job scheduling and runner coordination
+  - immutable artifact and result catalog
+  - provenance, compatibility, and suite BOM
+prohibited_semantics:
+  - capability domain algorithms or conclusions
+  - Octon governance or downstream action authority
+  - sibling capability source imports
+  - shared capability runtime before family authorization
+deployment_modes:
+  - local
+  - hosted
+  - private_runner
+  - customer_controlled
+  - air_gapped
+implementation_status: absent_setup_specification_only
+readiness_status: not_assessed

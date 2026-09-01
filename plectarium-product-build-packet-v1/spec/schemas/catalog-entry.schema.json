@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/catalog-entry.schema.json",
+  "title": "Plectarium Catalog Entry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "entry_id", "coordinate", "family_source", "display", "operations", "interfaces", "execution_profiles", "ingestion", "limitations"],
+  "properties": {
+    "schema_version": {"const": "plectarium.catalog-entry.v1"},
+    "entry_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "coordinate": {"$ref": "capability-coordinate.schema.json"},
+    "family_source": {"type": "object", "additionalProperties": false, "required": ["git_commit", "packet_manifest_sha256"], "properties": {"git_commit": {"$ref": "common-definitions.schema.json#/$defs/git_commit"}, "packet_manifest_sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}}},
+    "display": {"type": "object", "additionalProperties": false, "required": ["name"], "properties": {"name": {"type": "string", "minLength": 1}, "character_identity": {"type": "string", "minLength": 1}, "description": {"type": "string"}}},
+    "operations": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "interfaces": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["cli", "ci", "mcp", "oci", "agent_skill", "harness_adapter", "http"]}},
+    "execution_profiles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "ingestion": {"type": "object", "additionalProperties": false, "required": ["status", "validated_at"], "properties": {"status": {"enum": ["accepted", "quarantined", "rejected", "withdrawn"]}, "validated_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"}, "reasons": {"type": "array", "items": {"type": "string"}}}},
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"}
+  }
+}

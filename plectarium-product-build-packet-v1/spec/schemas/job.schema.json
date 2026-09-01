@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/job.schema.json",
+  "title": "Plectarium Job v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "job_id", "tenant_id", "request_id", "state", "revision", "attempts", "created_at", "updated_at", "limitations"],
+  "properties": {
+    "schema_version": {"const": "plectarium.job.v1"},
+    "job_id": {"$ref": "common-definitions.schema.json#/$defs/job_id"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "request_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "state": {"enum": ["received", "planning", "awaiting_approval", "queued", "leased", "running", "cancel_requested", "finalizing", "completed", "denied", "expired", "cancelled", "failed"]},
+    "revision": {"type": "integer", "minimum": 0},
+    "attempts": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["attempt_id", "ordinal", "fencing_token", "state"], "properties": {"attempt_id": {"$ref": "common-definitions.schema.json#/$defs/attempt_id"}, "ordinal": {"type": "integer", "minimum": 1}, "fencing_token": {"type": "integer", "minimum": 1}, "state": {"enum": ["created", "leased", "running", "cancel_requested", "completed", "cancelled", "failed", "expired", "quarantined"]}}}},
+    "capability_completion": {"enum": ["complete", "complete_with_limitations", "partial", "failed", "cancelled"]},
+    "result_record_id": {"type": "string"},
+    "terminal_reason": {"type": "string"},
+    "created_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "updated_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"}
+  }
+}

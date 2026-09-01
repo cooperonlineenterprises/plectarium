@@ -1,0 +1,38 @@
+{
+  "schema_version": "project.dossier.evidence-index.v1",
+  "document_role": "authoritative_evidence_index",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "evidence": [
+    {
+      "id": "EVD-0101",
+      "title": "Local setup-only foundation validation",
+      "type": "validation_and_inventory",
+      "subject_version": "local pre-Git packet 1.0.0 foundation candidate",
+      "produced_at": "2026-08-31",
+      "method": "Packet refresh/check, source-only live harness check, isolated root refresh/check, and 15 mutation tests",
+      "scope": "Original local setup-only foundation before final family-pin resolution",
+      "result": "PASS with explicit family-pin and live-root limitations",
+      "artifact_path": ".agent/evidence/EVD-0001-local-foundation-validation.md",
+      "requirement_refs": ["REQ-0001", "REQ-0003", "REQ-0004", "REQ-0005", "REQ-0006", "REQ-0007", "REQ-0008"],
+      "finding_refs": ["FIND-0001"],
+      "source_refs": ["SRC-0001", "SRC-0003"],
+      "limitations": ["Superseded for final family equality and live-root validation by EVD-0002.", "Does not assess product readiness or GitHub publication."]
+    },
+    {
+      "id": "EVD-0102",
+      "title": "Resolved family lock and live local-foundation validation",
+      "type": "validation_and_provenance_verification",
+      "subject_version": "packet manifest sha256 49b2d26e2b8b4141bf961d6b0e6cd66b7f1d5b830076cd887ca8e0b231a21c64; family commit 0b6c476682e416bd4fb770622c56758f5a380f09",
+      "produced_at": "2026-08-31",
+      "method": "Family commit/digest verification, packet refresh/check with family root, root refresh/check, and 15 mutation tests",
+      "scope": "Final local setup-only Plectarium foundation before Git publication",
+      "result": "PASS",
+      "artifact_path": ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
+      "requirement_refs": ["REQ-0002", "REQ-0008"],
+      "finding_refs": ["FIND-0002", "FIND-0003", "FIND-0004"],
+      "source_refs": ["SRC-0001", "SRC-0002", "SRC-0003"],
+      "limitations": ["Git/GitHub publication is excluded and remains TASK-0002.", "Does not assess product behavior, security efficacy, operations, or release readiness."]
+    }
+  ]
+}

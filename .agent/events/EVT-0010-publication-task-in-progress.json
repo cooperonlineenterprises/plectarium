@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0010",
+  "occurred_at": "2026-08-31T12:09:00Z",
+  "kind": "task_in_progress",
+  "subject": "TASK-0002",
+  "actor_or_source": "primary portfolio agent",
+  "summary": "Started bounded publication after local gates passed, GitHub authentication succeeded, the exact remote was absent, and local Git was initialized on main.",
+  "evidence": ["EVD-0002", "REV-0002"],
+  "redaction_applied": false
+}

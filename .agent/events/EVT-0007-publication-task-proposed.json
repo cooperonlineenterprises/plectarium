@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0007",
+  "occurred_at": "2026-08-31T12:06:00Z",
+  "kind": "task_proposed",
+  "subject": "TASK-0002",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Git and remote publication effects were separated from completed local adoption.",
+  "evidence": ["EVD-0002"],
+  "redaction_applied": false
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/problem.schema.json",
+  "title": "Plectarium Problem v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "code", "title", "category", "retryable", "correlation_id", "limitations"],
+  "properties": {
+    "schema_version": {"const": "plectarium.problem.v1"},
+    "code": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,63}$"},
+    "title": {"type": "string", "minLength": 1},
+    "detail": {"type": "string"},
+    "category": {"enum": ["validation", "incompatible", "authorization", "quota", "scheduling", "runner", "lease", "execution", "cancellation", "upload", "verification", "persistence", "internal"]},
+    "retryable": {"type": "boolean"},
+    "correlation_id": {"type": "string"},
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"}
+  }
+}

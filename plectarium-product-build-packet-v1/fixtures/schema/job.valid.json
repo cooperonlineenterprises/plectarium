@@ -1,0 +1,14 @@
+{
+  "schema_version": "plectarium.job.v1",
+  "job_id": "job_abcdefgh",
+  "tenant_id": "ten_abcdefgh",
+  "request_id": "request.audit.1",
+  "state": "completed",
+  "revision": 8,
+  "attempts": [{"attempt_id": "att_abcdefgh", "ordinal": 1, "fencing_token": 1, "state": "completed"}],
+  "capability_completion": "complete_with_limitations",
+  "result_record_id": "res_abcdefgh",
+  "created_at": "2026-08-31T12:00:00Z",
+  "updated_at": "2026-08-31T12:10:00Z",
+  "limitations": ["fixture scope only"]
+}

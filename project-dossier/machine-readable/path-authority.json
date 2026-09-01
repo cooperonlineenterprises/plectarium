@@ -1,0 +1,246 @@
+{
+  "document_role": "generated_from_artifact_catalog",
+  "paths": [
+    {
+      "artifact_id": "DOS-0004",
+      "authority": "artifact_metadata",
+      "generated": true,
+      "information_state": "governance",
+      "path": "project-dossier/ARTIFACT_CATALOG.json"
+    },
+    {
+      "artifact_id": "DOS-0002",
+      "authority": "dossier_interpretation_only",
+      "generated": false,
+      "information_state": "governance",
+      "path": "project-dossier/AUTHORITY.md"
+    },
+    {
+      "artifact_id": "DOS-0003",
+      "authority": "source_ownership",
+      "generated": false,
+      "information_state": "governance",
+      "path": "project-dossier/CANONICAL_SOURCE_MAP.md"
+    },
+    {
+      "artifact_id": "DOS-0009",
+      "authority": "byte_integrity_only",
+      "generated": true,
+      "information_state": "generated",
+      "path": "project-dossier/CHECKSUMS.sha256"
+    },
+    {
+      "artifact_id": "DOS-0005",
+      "authority": "generated_point_in_time_inventory",
+      "generated": true,
+      "information_state": "generated",
+      "path": "project-dossier/MANIFEST.json"
+    },
+    {
+      "artifact_id": "DOS-0001",
+      "authority": "navigation_only",
+      "generated": false,
+      "information_state": "navigation",
+      "path": "project-dossier/README.md"
+    },
+    {
+      "artifact_id": "DOS-0007",
+      "authority": "dossier_supersession",
+      "generated": false,
+      "information_state": "historical",
+      "path": "project-dossier/SUPERSESSION.json"
+    },
+    {
+      "artifact_id": "DOS-0006",
+      "authority": "dossier_version",
+      "generated": false,
+      "information_state": "governance",
+      "path": "project-dossier/VERSION.md"
+    },
+    {
+      "artifact_id": "ARC-0001",
+      "authority": "intended_structure",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/canonical/architecture-or-outcome-model.md"
+    },
+    {
+      "artifact_id": "GOV-0001",
+      "authority": "criteria_not_approval",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/canonical/constraints-gates-and-readiness.md"
+    },
+    {
+      "artifact_id": "DEF-0001",
+      "authority": "project_target_definition",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/canonical/executive-project-definition.md"
+    },
+    {
+      "artifact_id": "REQ-0001",
+      "authority": "requirement_policy_and_minimal_definitions",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/canonical/requirements-and-constraints.md"
+    },
+    {
+      "artifact_id": "CNF-0001",
+      "authority": "assessment_method_and_summary",
+      "generated": false,
+      "information_state": "conformance",
+      "path": "project-dossier/conformance/README.md"
+    },
+    {
+      "artifact_id": "CUR-0001",
+      "authority": "dated_observed_scope_only",
+      "generated": false,
+      "information_state": "current_state",
+      "path": "project-dossier/current-state/README.md"
+    },
+    {
+      "artifact_id": "GOV-0002",
+      "authority": "specialist_criteria_not_conclusion",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/governance/README.md"
+    },
+    {
+      "artifact_id": "HOF-0002",
+      "authority": "checklist_only",
+      "generated": false,
+      "information_state": "handoff",
+      "path": "project-dossier/handoff/ADOPTION_CHECKLIST.md"
+    },
+    {
+      "artifact_id": "HOF-0001",
+      "authority": "navigation_only",
+      "generated": false,
+      "information_state": "handoff",
+      "path": "project-dossier/handoff/START_HERE.md"
+    },
+    {
+      "artifact_id": "HIS-0001",
+      "authority": "noncurrent_history_entry_point",
+      "generated": false,
+      "information_state": "historical",
+      "path": "project-dossier/history/README.md"
+    },
+    {
+      "artifact_id": "VAL-0003",
+      "authority": "authoritative_evidence_metadata",
+      "generated": false,
+      "information_state": "evidence",
+      "path": "project-dossier/machine-readable/evidence-index.json"
+    },
+    {
+      "artifact_id": "CNF-0002",
+      "authority": "authoritative_finding_records",
+      "generated": false,
+      "information_state": "conformance",
+      "path": "project-dossier/machine-readable/findings.json"
+    },
+    {
+      "artifact_id": "DOS-0008",
+      "authority": "generated_from_artifact_catalog",
+      "generated": true,
+      "information_state": "generated",
+      "path": "project-dossier/machine-readable/path-authority.json"
+    },
+    {
+      "artifact_id": "PLN-0002",
+      "authority": "authoritative_plan_item_records",
+      "generated": false,
+      "information_state": "planning",
+      "path": "project-dossier/machine-readable/plan.json"
+    },
+    {
+      "artifact_id": "REG-0002",
+      "authority": "authoritative_unresolved_item_records",
+      "generated": false,
+      "information_state": "register",
+      "path": "project-dossier/machine-readable/raidq.json"
+    },
+    {
+      "artifact_id": "REQ-0002",
+      "authority": "authoritative_requirement_records_in_standard_and_high_profiles",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/machine-readable/requirements.json"
+    },
+    {
+      "artifact_id": "PRV-0002",
+      "authority": "authoritative_source_records",
+      "generated": false,
+      "information_state": "provenance",
+      "path": "project-dossier/machine-readable/sources.json"
+    },
+    {
+      "artifact_id": "MOD-0001",
+      "authority": "domain_model_entry_point",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/models/README.md"
+    },
+    {
+      "artifact_id": "OPS-0001",
+      "authority": "operational_procedure_entry_point",
+      "generated": false,
+      "information_state": "canonical_target",
+      "path": "project-dossier/operations/README.md"
+    },
+    {
+      "artifact_id": "PLN-0001",
+      "authority": "planning_method_and_summary",
+      "generated": false,
+      "information_state": "planning",
+      "path": "project-dossier/plans/README.md"
+    },
+    {
+      "artifact_id": "PRV-0001",
+      "authority": "provenance_method_and_summary",
+      "generated": false,
+      "information_state": "provenance",
+      "path": "project-dossier/provenance/README.md"
+    },
+    {
+      "artifact_id": "REG-0001",
+      "authority": "register_method_and_summary",
+      "generated": false,
+      "information_state": "register",
+      "path": "project-dossier/registers/README.md"
+    },
+    {
+      "artifact_id": "RES-0001",
+      "authority": "research_method_entry_point",
+      "generated": false,
+      "information_state": "provenance",
+      "path": "project-dossier/research/README.md"
+    },
+    {
+      "artifact_id": "TRN-0001",
+      "authority": "transition_plan_entry_point",
+      "generated": false,
+      "information_state": "planning",
+      "path": "project-dossier/transition/README.md"
+    },
+    {
+      "artifact_id": "VAL-0002",
+      "authority": "generated_proposed_quality_gate_baseline",
+      "generated": false,
+      "information_state": "evidence",
+      "path": "project-dossier/validation/QUALITY_GATES.json"
+    },
+    {
+      "artifact_id": "VAL-0001",
+      "authority": "validation_method_only",
+      "generated": false,
+      "information_state": "evidence",
+      "path": "project-dossier/validation/README.md"
+    }
+  ],
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "schema_version": "project.dossier.path-authority.v1"
+}

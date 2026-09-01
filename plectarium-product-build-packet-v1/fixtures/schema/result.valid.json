@@ -1,0 +1,28 @@
+{
+  "schema_version": "plectarium.result-record.v1",
+  "result_record_id": "res_abcdefgh",
+  "tenant_id": "ten_abcdefgh",
+  "job_id": "job_abcdefgh",
+  "coordinate": {
+    "family_id": "standalone-capability-family",
+    "capability_id": "universal-code-audit",
+    "capability_version": "1.0.0",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "manifest_schema": "standalone-capability-manifest.v0",
+    "manifest_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "family_contract": {
+    "schema_id": "standalone-capability.result-reference.v0",
+    "source_path": "spec/schemas/result-reference.v0.schema.json",
+    "source_sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+    "family_git_commit": "1111111111111111111111111111111111111111",
+    "packet_manifest_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "family_result_reference": {"family_id": "standalone-capability-family", "capability_id": "universal-code-audit"},
+  "artifact_id": "art_abcdefgh",
+  "capability_completion": "complete_with_limitations",
+  "verification": {"family_schema": "valid", "checksum": "verified", "signature": "not_present", "compatibility": "unknown", "freshness": "unknown"},
+  "lineage": [],
+  "limitations": ["fixture does not assert compatibility"],
+  "ingested_at": "2026-08-31T12:00:00Z"
+}

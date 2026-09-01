@@ -1,0 +1,46 @@
+schema_version: plectarium.fixture-index.v1
+fixtures:
+  - path: schema/family-lock-pending.valid.json
+    schema: family-source-lock.schema.json
+    expected_valid: true
+  - path: schema/family-lock-resolved-null.invalid.json
+    schema: family-source-lock.schema.json
+    expected_valid: false
+  - path: schema/coordinate.valid.json
+    schema: capability-coordinate.schema.json
+    expected_valid: true
+  - path: schema/coordinate-missing-family.invalid.json
+    schema: capability-coordinate.schema.json
+    expected_valid: false
+  - path: schema/catalog-entry.valid.json
+    schema: catalog-entry.schema.json
+    expected_valid: true
+  - path: schema/suite-bom.valid.json
+    schema: suite-bom.schema.json
+    expected_valid: true
+  - path: schema/policy-narrowed.valid.json
+    schema: policy-decision.schema.json
+    expected_valid: true
+    semantic_checks: [accepted_permissions_subset]
+  - path: schema/policy-widened.invalid.json
+    schema: policy-decision.schema.json
+    expected_valid: false
+    semantic_checks: [accepted_permissions_subset]
+  - path: schema/job.valid.json
+    schema: job.schema.json
+    expected_valid: true
+  - path: schema/profile.valid.json
+    schema: execution-profile.schema.json
+    expected_valid: true
+  - path: schema/runner.valid.json
+    schema: runner.schema.json
+    expected_valid: true
+  - path: schema/artifact.valid.json
+    schema: artifact-record.schema.json
+    expected_valid: true
+  - path: schema/result.valid.json
+    schema: result-record.schema.json
+    expected_valid: true
+  - path: schema/air-gap.valid.json
+    schema: air-gap-bundle-manifest.schema.json
+    expected_valid: true

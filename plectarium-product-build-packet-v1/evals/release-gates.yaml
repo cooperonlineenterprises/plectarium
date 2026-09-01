@@ -1,0 +1,66 @@
+schema_version: plectarium.release-gates.v1
+gates:
+  - id: GATE-PACKET
+    status: foundation_only
+    required_for_v1: true
+    tests: [TEST-PACKET-001, TEST-SCHEMA-001, TEST-GRAPH-001]
+  - id: GATE-BOUNDARY
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-BOUNDARY-001, TEST-BOUNDARY-002]
+  - id: GATE-NAMESPACE
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-CATALOG-001, TEST-CATALOG-002]
+  - id: GATE-AUTHORITY
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-AUTH-001, TEST-AUTH-002, TEST-AUTH-003]
+  - id: GATE-TENANCY
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-TENANT-001, TEST-TENANT-002]
+  - id: GATE-LIFECYCLE
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-JOB-001, TEST-JOB-002, TEST-JOB-003]
+  - id: GATE-RUNNER
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-RUNNER-001, TEST-RUNNER-002, TEST-RUNNER-003]
+  - id: GATE-RESULT
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-RESULT-001, TEST-RESULT-002, TEST-RESULT-003]
+  - id: GATE-COMPAT
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-COMPAT-001, TEST-COMPAT-002]
+  - id: GATE-MODES
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-MODE-001, TEST-MODE-002]
+  - id: GATE-PRIVACY
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-PRIV-001, TEST-PRIV-002]
+  - id: GATE-RESILIENCE
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-RES-001, TEST-RES-002]
+  - id: GATE-UX
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-UX-001, TEST-UX-002]
+  - id: GATE-SLO
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-SLO-001]
+  - id: GATE-SUPPLY
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-SUPPLY-001]
+  - id: GATE-RELEASE
+    status: unassessed
+    required_for_v1: true
+    tests: [TEST-RELEASE-001]

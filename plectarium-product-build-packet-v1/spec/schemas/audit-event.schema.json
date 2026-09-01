@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/audit-event.schema.json",
+  "title": "Plectarium Audit Event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "event_id", "tenant_id", "occurred_at", "action", "actor", "resource", "outcome", "correlation_id", "redaction_applied"],
+  "properties": {
+    "schema_version": {"const": "plectarium.audit-event.v1"},
+    "event_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "occurred_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "action": {"type": "string", "minLength": 1},
+    "actor": {"type": "object", "required": ["kind", "id"], "properties": {"kind": {"enum": ["user", "service", "runner", "system", "import"]}, "id": {"type": "string"}}},
+    "resource": {"type": "object", "required": ["kind", "id"], "properties": {"kind": {"type": "string"}, "id": {"type": "string"}}},
+    "outcome": {"enum": ["allowed", "denied", "succeeded", "failed", "partial", "unknown"]},
+    "correlation_id": {"type": "string"},
+    "causation_id": {"type": "string"},
+    "payload_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "redaction_applied": {"type": "boolean"}
+  }
+}

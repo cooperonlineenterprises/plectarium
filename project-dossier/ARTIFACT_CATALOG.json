@@ -1,0 +1,762 @@
+{
+  "artifacts": [
+    {
+      "authority": "navigation_only",
+      "category": "navigation",
+      "classification": "core",
+      "generated": false,
+      "id": "DOS-0001",
+      "information_state": "navigation",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_maintainer",
+      "path": "project-dossier/README.md",
+      "review_cadence": "on_path_or_entry_point_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "artifact_path_change",
+        "profile_change"
+      ]
+    },
+    {
+      "authority": "dossier_interpretation_only",
+      "category": "governance",
+      "classification": "core",
+      "generated": false,
+      "id": "DOS-0002",
+      "information_state": "governance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "project_governance_owner",
+      "path": "project-dossier/AUTHORITY.md",
+      "review_cadence": "on_authority_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "authority_change",
+        "information_class_change"
+      ]
+    },
+    {
+      "authority": "source_ownership",
+      "category": "governance",
+      "classification": "core",
+      "generated": false,
+      "id": "DOS-0003",
+      "information_state": "governance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_maintainer",
+      "path": "project-dossier/CANONICAL_SOURCE_MAP.md",
+      "review_cadence": "on_source_owner_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0003"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "artifact_added",
+        "source_direction_change"
+      ]
+    },
+    {
+      "authority": "artifact_metadata",
+      "category": "inventory",
+      "classification": "core",
+      "generated": true,
+      "id": "DOS-0004",
+      "information_state": "governance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_maintainer",
+      "path": "project-dossier/ARTIFACT_CATALOG.json",
+      "review_cadence": "on_artifact_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0004"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "generation",
+        "artifact_added",
+        "artifact_removed"
+      ]
+    },
+    {
+      "authority": "generated_point_in_time_inventory",
+      "category": "integrity",
+      "classification": "core",
+      "generated": true,
+      "id": "DOS-0005",
+      "information_state": "generated",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "integrity_refresh_tool",
+      "path": "project-dossier/MANIFEST.json",
+      "review_cadence": "after_managed_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0005"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "generation",
+        "integrity_refresh"
+      ]
+    },
+    {
+      "authority": "dossier_version",
+      "category": "lifecycle",
+      "classification": "core",
+      "generated": false,
+      "id": "DOS-0006",
+      "information_state": "governance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_governance_owner",
+      "path": "project-dossier/VERSION.md",
+      "review_cadence": "on_semantic_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0006"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "dossier_contract_change",
+        "adoption"
+      ]
+    },
+    {
+      "authority": "dossier_supersession",
+      "category": "lifecycle",
+      "classification": "core",
+      "generated": false,
+      "id": "DOS-0007",
+      "information_state": "historical",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_governance_owner",
+      "path": "project-dossier/SUPERSESSION.json",
+      "review_cadence": "on_supersession",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0007"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "artifact_superseded",
+        "dossier_version_change"
+      ]
+    },
+    {
+      "authority": "generated_from_artifact_catalog",
+      "category": "governance",
+      "classification": "core",
+      "generated": true,
+      "id": "DOS-0008",
+      "information_state": "generated",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "artifact_catalog_generator",
+      "path": "project-dossier/machine-readable/path-authority.json",
+      "review_cadence": "on_artifact_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0008"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "generation",
+        "artifact_catalog_change"
+      ]
+    },
+    {
+      "authority": "byte_integrity_only",
+      "category": "integrity",
+      "classification": "conditional",
+      "generated": true,
+      "id": "DOS-0009",
+      "information_state": "generated",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "integrity_refresh_tool",
+      "path": "project-dossier/CHECKSUMS.sha256",
+      "review_cadence": "after_managed_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DOS-0009"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "generation",
+        "integrity_refresh"
+      ]
+    },
+    {
+      "authority": "project_target_definition",
+      "category": "project_definition",
+      "classification": "core",
+      "generated": false,
+      "id": "DEF-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "project_owner",
+      "path": "project-dossier/canonical/executive-project-definition.md",
+      "review_cadence": "on_strategy_or_scope_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DEF-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "scope_change",
+        "outcome_change",
+        "ownership_change"
+      ]
+    },
+    {
+      "authority": "requirement_policy_and_minimal_definitions",
+      "category": "requirements",
+      "classification": "core",
+      "generated": false,
+      "id": "REQ-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "requirements_owner",
+      "path": "project-dossier/canonical/requirements-and-constraints.md",
+      "review_cadence": "on_requirement_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#REQ-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "requirement_proposed",
+        "decision_accepted",
+        "constraint_change"
+      ]
+    },
+    {
+      "authority": "authoritative_requirement_records_in_standard_and_high_profiles",
+      "category": "requirements",
+      "classification": "core",
+      "generated": false,
+      "id": "REQ-0002",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "requirements_owner",
+      "path": "project-dossier/machine-readable/requirements.json",
+      "review_cadence": "on_requirement_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#REQ-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "requirement_status_change",
+        "traceability_change"
+      ]
+    },
+    {
+      "authority": "intended_structure",
+      "category": "architecture_or_outcome",
+      "classification": "core",
+      "generated": false,
+      "id": "ARC-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "architecture_or_design_owner",
+      "path": "project-dossier/canonical/architecture-or-outcome-model.md",
+      "review_cadence": "on_accepted_design_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#ARC-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "component_change",
+        "boundary_change",
+        "workflow_change"
+      ]
+    },
+    {
+      "authority": "status_dependent_decision_store",
+      "category": "decisions",
+      "classification": "core",
+      "generated": false,
+      "id": "DEC-0001",
+      "information_state": "governance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "decision_owner",
+      "path": ".agent/decisions/README.md",
+      "review_cadence": "on_durable_choice",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#DEC-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "decision_proposed",
+        "decision_superseded"
+      ]
+    },
+    {
+      "authority": "criteria_not_approval",
+      "category": "governance",
+      "classification": "core",
+      "generated": false,
+      "id": "GOV-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "project_governance_owner",
+      "path": "project-dossier/canonical/constraints-gates-and-readiness.md",
+      "review_cadence": "on_gate_or_risk_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#GOV-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "gate_added",
+        "risk_change",
+        "environment_change"
+      ]
+    },
+    {
+      "authority": "dated_observed_scope_only",
+      "category": "current_state",
+      "classification": "core",
+      "generated": false,
+      "id": "CUR-0001",
+      "information_state": "current_state",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "current_state_assessor",
+      "path": "project-dossier/current-state/README.md",
+      "review_cadence": "on_material_change_or_evidence_expiry",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#CUR-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "implementation_change",
+        "environment_change",
+        "evidence_expired"
+      ]
+    },
+    {
+      "authority": "assessment_method_and_summary",
+      "category": "conformance",
+      "classification": "core",
+      "generated": false,
+      "id": "CNF-0001",
+      "information_state": "conformance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "conformance_assessor",
+      "path": "project-dossier/conformance/README.md",
+      "review_cadence": "on_target_or_evidence_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#CNF-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "requirement_change",
+        "current_state_change"
+      ]
+    },
+    {
+      "authority": "authoritative_finding_records",
+      "category": "conformance",
+      "classification": "core",
+      "generated": false,
+      "id": "CNF-0002",
+      "information_state": "conformance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "conformance_assessor",
+      "path": "project-dossier/machine-readable/findings.json",
+      "review_cadence": "on_finding_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#CNF-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "finding_created",
+        "evidence_change",
+        "remediation_change"
+      ]
+    },
+    {
+      "authority": "planning_method_and_summary",
+      "category": "planning",
+      "classification": "core",
+      "generated": false,
+      "id": "PLN-0001",
+      "information_state": "planning",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "planning_owner",
+      "path": "project-dossier/plans/README.md",
+      "review_cadence": "on_dependency_or_status_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#PLN-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "finding_change",
+        "gate_change",
+        "plan_status_change"
+      ]
+    },
+    {
+      "authority": "authoritative_plan_item_records",
+      "category": "planning",
+      "classification": "core",
+      "generated": false,
+      "id": "PLN-0002",
+      "information_state": "planning",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "planning_owner",
+      "path": "project-dossier/machine-readable/plan.json",
+      "review_cadence": "on_plan_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#PLN-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "plan_item_added",
+        "dependency_change",
+        "status_change"
+      ]
+    },
+    {
+      "authority": "register_method_and_summary",
+      "category": "register",
+      "classification": "core",
+      "generated": false,
+      "id": "REG-0001",
+      "information_state": "register",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "register_maintainer",
+      "path": "project-dossier/registers/README.md",
+      "review_cadence": "weekly_during_active_work",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#REG-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "risk_or_question_discovered",
+        "review_date_reached"
+      ]
+    },
+    {
+      "authority": "authoritative_unresolved_item_records",
+      "category": "register",
+      "classification": "core",
+      "generated": false,
+      "id": "REG-0002",
+      "information_state": "register",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "register_maintainer",
+      "path": "project-dossier/machine-readable/raidq.json",
+      "review_cadence": "weekly_during_active_work",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#REG-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "item_added",
+        "item_status_change",
+        "review_date_reached"
+      ]
+    },
+    {
+      "authority": "provenance_method_and_summary",
+      "category": "provenance",
+      "classification": "core",
+      "generated": false,
+      "id": "PRV-0001",
+      "information_state": "provenance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "source_curator",
+      "path": "project-dossier/provenance/README.md",
+      "review_cadence": "on_consequential_source_use",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#PRV-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "source_added",
+        "source_expired",
+        "license_or_rights_change"
+      ]
+    },
+    {
+      "authority": "authoritative_source_records",
+      "category": "provenance",
+      "classification": "core",
+      "generated": false,
+      "id": "PRV-0002",
+      "information_state": "provenance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "source_curator",
+      "path": "project-dossier/machine-readable/sources.json",
+      "review_cadence": "on_source_change_or_expiry",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#PRV-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "source_added",
+        "source_reverified",
+        "source_expired"
+      ]
+    },
+    {
+      "authority": "validation_method_only",
+      "category": "validation",
+      "classification": "core",
+      "generated": false,
+      "id": "VAL-0001",
+      "information_state": "evidence",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "validation_owner",
+      "path": "project-dossier/validation/README.md",
+      "review_cadence": "on_validation_contract_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#VAL-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "requirement_change",
+        "validator_change",
+        "gate_change"
+      ]
+    },
+    {
+      "authority": "authoritative_setup_quality_gate_registry",
+      "category": "validation",
+      "classification": "core",
+      "generated": false,
+      "id": "VAL-0002",
+      "information_state": "evidence",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "validation_owner",
+      "path": "project-dossier/validation/QUALITY_GATES.json",
+      "review_cadence": "on_gate_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#VAL-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "adoption",
+        "quality_gate_change"
+      ]
+    },
+    {
+      "authority": "authoritative_evidence_metadata",
+      "category": "validation",
+      "classification": "core",
+      "generated": false,
+      "id": "VAL-0003",
+      "information_state": "evidence",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "validation_owner",
+      "path": "project-dossier/machine-readable/evidence-index.json",
+      "review_cadence": "on_evidence_change_or_expiry",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#VAL-0003"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "evidence_recorded",
+        "evidence_expired",
+        "evidence_superseded"
+      ]
+    },
+    {
+      "authority": "navigation_only",
+      "category": "handoff",
+      "classification": "core",
+      "generated": false,
+      "id": "HOF-0001",
+      "information_state": "handoff",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "current_task_owner",
+      "path": "project-dossier/handoff/START_HERE.md",
+      "review_cadence": "before_handoff",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#HOF-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "active_task_change",
+        "blocker_change",
+        "handoff"
+      ]
+    },
+    {
+      "authority": "checklist_only",
+      "category": "handoff",
+      "classification": "core",
+      "generated": false,
+      "id": "HOF-0002",
+      "information_state": "handoff",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "project_owner",
+      "path": "project-dossier/handoff/ADOPTION_CHECKLIST.md",
+      "review_cadence": "during_adoption",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#HOF-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "adoption_progress",
+        "profile_change"
+      ]
+    },
+    {
+      "authority": "specialist_criteria_not_conclusion",
+      "category": "specialist_governance",
+      "classification": "conditional",
+      "generated": false,
+      "id": "GOV-0002",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "qualified_governance_owner",
+      "path": "project-dossier/governance/README.md",
+      "review_cadence": "on_risk_or_obligation_change",
+      "sensitivity": "restricted",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#GOV-0002"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "sensitive_data",
+        "external_effect",
+        "regulated_obligation"
+      ]
+    },
+    {
+      "authority": "domain_model_entry_point",
+      "category": "domain_model",
+      "classification": "conditional",
+      "generated": false,
+      "id": "MOD-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "domain_owner",
+      "path": "project-dossier/models/README.md",
+      "review_cadence": "on_model_change",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#MOD-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "entity_change",
+        "workflow_change",
+        "interface_change"
+      ]
+    },
+    {
+      "authority": "operational_procedure_entry_point",
+      "category": "operations",
+      "classification": "conditional",
+      "generated": false,
+      "id": "OPS-0001",
+      "information_state": "canonical_target",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "operations_owner",
+      "path": "project-dossier/operations/README.md",
+      "review_cadence": "quarterly_and_per_release",
+      "sensitivity": "restricted",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#OPS-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "deployment",
+        "external_effect",
+        "recovery_change"
+      ]
+    },
+    {
+      "authority": "research_method_entry_point",
+      "category": "research",
+      "classification": "conditional",
+      "generated": false,
+      "id": "RES-0001",
+      "information_state": "provenance",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "research_owner",
+      "path": "project-dossier/research/README.md",
+      "review_cadence": "on_fact_expiry",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#RES-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "external_fact_used",
+        "source_expired",
+        "contradiction_found"
+      ]
+    },
+    {
+      "authority": "transition_plan_entry_point",
+      "category": "transition",
+      "classification": "conditional",
+      "generated": false,
+      "id": "TRN-0001",
+      "information_state": "planning",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "transition_owner",
+      "path": "project-dossier/transition/README.md",
+      "review_cadence": "during_transition",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#TRN-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "existing_project_adoption",
+        "blueprint_upgrade",
+        "system_replacement"
+      ]
+    },
+    {
+      "authority": "noncurrent_history_entry_point",
+      "category": "history",
+      "classification": "conditional",
+      "generated": false,
+      "id": "HIS-0001",
+      "information_state": "historical",
+      "last_reviewed": "2026-08-31",
+      "owner_role": "dossier_custodian",
+      "path": "project-dossier/history/README.md",
+      "review_cadence": "on_archive_or_supersession",
+      "sensitivity": "internal",
+      "source_refs": [
+        "project-blueprint:dossier/artifact-types.json#HIS-0001"
+      ],
+      "superseded_by": null,
+      "update_triggers": [
+        "baseline_archived",
+        "artifact_superseded"
+      ]
+    }
+  ],
+  "authority": "Artifact metadata and source ownership only; not permission.",
+  "dossier_version": "1.0.0",
+  "schema_version": "project-dossier.artifact-catalog.v1"
+}

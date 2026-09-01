@@ -1,0 +1,22 @@
+{
+  "schema_version": "plectarium.family-source-lock.v1",
+  "publication_status": "resolved",
+  "family_id": "standalone-capability-family",
+  "repository": "https://github.com/cooperonlineenterprises/plectarium-family.git",
+  "git_commit": "0b6c476682e416bd4fb770622c56758f5a380f09",
+  "packet_path": "standalone-capability-family-packet-v1",
+  "packet_version": "1.2.0",
+  "packet_manifest_sha256": "54116db0e4f518ffe793df3d3ebd2b87064f00aab10b373bf1909f9126b24867",
+  "packet_checksums_sha256": "e0134782dff26755d450f2aa2117d4a8d8afebbf53578e51c9dbbb809fabf4ee",
+  "contracts": [
+    {"path": "spec/family-identity-and-repository-map.md", "sha256": "593d2ed0211b357c9e2a65ecf21fb35b5d8c6d5fe4ac061cbed25109ba46647d", "status": "ACCEPTED"},
+    {"path": "spec/schemas/standalone-capability-manifest.v0.schema.json", "sha256": "47bac44717652d531548fa360d19021939333b73636cfe50265ecd418a2a06d7", "status": "PROVISIONAL"},
+    {"path": "spec/schemas/result-envelope.v0.schema.json", "sha256": "3305a484ed96e5475fed3a16cb98050ed36fde0946fee1d4c4565737ad88ded6", "status": "PROVISIONAL"},
+    {"path": "spec/schemas/result-reference.v0.schema.json", "sha256": "37b9a1401cb3fae49a301c55fd82840d91907784f5f682742b517ff1e1f949a5", "status": "PROVISIONAL"},
+    {"path": "spec/schemas/permission-set.v0.schema.json", "sha256": "802eab8a7628ba00548c81f5986c507624b6fcfd0866b919b77f058054b2072b", "status": "PROVISIONAL"},
+    {"path": "spec/schemas/completion.v0.schema.json", "sha256": "0fbed79bd39cc925656867af054b59bf31e2c3f078e27b8bbcab368427f72a35", "status": "PROVISIONAL"}
+  ],
+  "limitations": [
+    "The consumed family v0 contracts remain PROVISIONAL even though their exact published bytes are immutably pinned."
+  ]
+}

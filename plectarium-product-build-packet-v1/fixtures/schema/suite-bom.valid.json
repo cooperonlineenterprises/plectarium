@@ -1,0 +1,22 @@
+{
+  "schema_version": "plectarium.suite-bom.v1",
+  "bom_id": "bom.plectarium.1",
+  "plectarium_version": "1.0.0",
+  "catalog_snapshot_digest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+  "entries": [{
+    "coordinate": {
+      "family_id": "standalone-capability-family",
+      "capability_id": "universal-code-audit",
+      "capability_version": "1.0.0",
+      "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "manifest_schema": "standalone-capability-manifest.v0",
+      "manifest_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "status": "unknown",
+    "constraints": [],
+    "evidence_refs": []
+  }],
+  "produced_at": "2026-08-31T12:00:00Z",
+  "compatibility_status": "unassessed",
+  "limitations": ["fixture makes no support claim"]
+}

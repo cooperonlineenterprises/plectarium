@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/runner.schema.json",
+  "title": "Plectarium Runner Registration v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "runner_id", "tenant_id", "principal_id", "protocol_version", "mode", "platform", "capability_coordinates", "execution_profiles", "attestation_status", "last_seen_at"],
+  "properties": {
+    "schema_version": {"const": "plectarium.runner.v1"},
+    "runner_id": {"type": "string", "pattern": "^run_[A-Za-z0-9_-]{8,64}$"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "principal_id": {"$ref": "common-definitions.schema.json#/$defs/principal_id"},
+    "protocol_version": {"type": "string"},
+    "mode": {"enum": ["local", "hosted", "private_runner", "customer_controlled", "air_gapped"]},
+    "platform": {"type": "object", "required": ["os", "architecture"], "properties": {"os": {"type": "string"}, "architecture": {"type": "string"}}},
+    "capability_coordinates": {"type": "array", "items": {"$ref": "capability-coordinate.schema.json"}},
+    "execution_profiles": {"type": "array", "items": {"type": "string"}},
+    "attestation_status": {"enum": ["verified", "untrusted", "invalid", "unsupported", "not_present", "not_checked"]},
+    "last_seen_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"}
+  }
+}

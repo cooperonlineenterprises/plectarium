@@ -1,0 +1,22 @@
+{
+  "schema_version": "plectarium.catalog-entry.v1",
+  "entry_id": "catalog.verity.1",
+  "coordinate": {
+    "family_id": "standalone-capability-family",
+    "capability_id": "universal-code-audit",
+    "capability_version": "1.0.0",
+    "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "manifest_schema": "standalone-capability-manifest.v0",
+    "manifest_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "family_source": {
+    "git_commit": "1111111111111111111111111111111111111111",
+    "packet_manifest_sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "display": {"name": "Universal Code Audit", "character_identity": "Verity"},
+  "operations": ["discover", "plan", "audit", "inspect"],
+  "interfaces": ["cli", "oci"],
+  "execution_profiles": ["offline_read_only"],
+  "ingestion": {"status": "accepted", "validated_at": "2026-08-31T12:00:00Z"},
+  "limitations": []
+}

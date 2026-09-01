@@ -1,0 +1,16 @@
+{
+  "schema_version": "plectarium.air-gap-bundle-manifest.v1",
+  "bundle_id": "bundle.airgap.1",
+  "direction": "execution_export",
+  "tenant_id": "ten_abcdefgh",
+  "nonce": "abcdefghijklmnop",
+  "created_at": "2026-08-31T12:00:00Z",
+  "expires_at": "2026-09-01T12:00:00Z",
+  "source_context_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+  "catalog_snapshot_digest": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+  "suite_bom_digest": "sha256:9999999999999999999999999999999999999999999999999999999999999999",
+  "family_source_lock_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "artifacts": [{"path": "request.json", "content_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "bytes": 100}],
+  "signature_status": "not_present",
+  "limitations": ["fixture only"]
+}

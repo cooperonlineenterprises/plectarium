@@ -1,0 +1,13 @@
+{
+  "schema_version": "plectarium.artifact-record.v1",
+  "artifact_id": "art_abcdefgh",
+  "tenant_id": "ten_abcdefgh",
+  "content_digest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+  "media_type": "application/json",
+  "bytes": 128,
+  "schema_id": "example.fixture.v1",
+  "producer": {"kind": "capability", "id": "universal-code-audit"},
+  "created_at": "2026-08-31T12:00:00Z",
+  "verification": {"checksum": "verified", "signature": "not_present", "schema": "valid"},
+  "retention_status": "active"
+}

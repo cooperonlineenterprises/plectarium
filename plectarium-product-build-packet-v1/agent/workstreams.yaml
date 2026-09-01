@@ -1,0 +1,50 @@
+schema_version: plectarium.workstreams.v1
+workstreams:
+  - id: WS-ARCH
+    name: Architecture and Authority
+    owns: [charter alignment, ADRs, module boundaries, cross-workstream contracts]
+    forbidden: [capability-domain semantics, silent authority changes]
+  - id: WS-SCHEMA
+    name: Schemas and Compatibility
+    owns: [schema registry, canonical encoding, migrations, family conformance]
+    forbidden: [forking family schemas, changing product meaning without ADR]
+  - id: WS-IAM
+    name: Identity and Tenancy
+    owns: [principals, tenants, sessions, resource authorization]
+    forbidden: [secret storage, capability permission decisions]
+  - id: WS-CATALOG
+    name: Catalog and Suite BOM
+    owns: [source locks, coordinates, discovery, compatibility, BOM]
+    forbidden: [domain payload interpretation, unknown-as-supported]
+  - id: WS-POLICY
+    name: Plan and Permission Review
+    owns: [request binding, plan digests, approval, revocation]
+    forbidden: [plan mutation, permission widening, downstream authority]
+  - id: WS-JOBS
+    name: Jobs and Scheduling
+    owns: [state machine, attempts, idempotency, quotas, reconciliation]
+    forbidden: [exactly-once claims, hiding partial/cancel races]
+  - id: WS-RUNNER
+    name: Runners and Execution Profiles
+    owns: [registration, leases, profiles, heartbeat, credential references]
+    forbidden: [ambient credentials, unbounded execution, in-process engines]
+  - id: WS-RESULTS
+    name: Artifacts, Results, and Provenance
+    owns: [content store contracts, verification, lineage, retention status]
+    forbidden: [mutable canonical results, collapsed verification states]
+  - id: WS-INTERFACE
+    name: Product Experience and Interfaces
+    owns: [web, suite CLI, API, events, truthful projections]
+    forbidden: [transport privilege, divergent application semantics]
+  - id: WS-MODES
+    name: Distribution and Deployment Modes
+    owns: [local, hosted, private, customer-controlled, air-gap contracts]
+    forbidden: [silent network fallback, mode-specific authority widening]
+  - id: WS-SECOPS
+    name: Security, Privacy, and Operations
+    owns: [threat controls, audit, retention, SLOs, migration, recovery]
+    forbidden: [unsupported compliance/readiness claims, secrets in telemetry]
+  - id: WS-EVAL
+    name: Evaluation and Release
+    owns: [claim gates, corpora, resilience, performance, release evidence]
+    forbidden: [text-existence proof, stale evidence, omitted limitations]

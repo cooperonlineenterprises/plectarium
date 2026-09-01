@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/suite.schema.json",
+  "title": "Plectarium Suite Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "product_id", "name", "product_kind", "ecosystem_relationship", "packet_version", "family_sources", "owned_semantics", "prohibited_semantics", "deployment_modes", "implementation_status", "readiness_status"],
+  "properties": {
+    "schema_version": {"const": "plectarium.suite.v1"},
+    "product_id": {"const": "plectarium"},
+    "name": {"const": "Plectarium"},
+    "product_kind": {"const": "suite_and_optional_control_plane"},
+    "ecosystem_relationship": {"const": "part_of_octon_ecosystem_without_runtime_or_authority_dependency"},
+    "packet_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "family_sources": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "owned_semantics": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string"}},
+    "prohibited_semantics": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string"}},
+    "deployment_modes": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"enum": ["local", "hosted", "private_runner", "customer_controlled", "air_gapped"]}},
+    "implementation_status": {"const": "absent_setup_specification_only"},
+    "readiness_status": {"const": "not_assessed"}
+  }
+}

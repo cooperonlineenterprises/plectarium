@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0003",
+  "occurred_at": "2026-08-31T12:02:00Z",
+  "kind": "task_in_progress",
+  "subject": "TASK-0001",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Project-specific harness, dossier, and product packet authoring began.",
+  "evidence": [],
+  "redaction_applied": false
+}

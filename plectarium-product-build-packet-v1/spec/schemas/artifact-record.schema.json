@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/artifact-record.schema.json",
+  "title": "Plectarium Artifact Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "artifact_id", "tenant_id", "content_digest", "media_type", "bytes", "producer", "created_at", "verification", "retention_status"],
+  "properties": {
+    "schema_version": {"const": "plectarium.artifact-record.v1"},
+    "artifact_id": {"$ref": "common-definitions.schema.json#/$defs/artifact_id"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "content_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "media_type": {"type": "string", "minLength": 1},
+    "bytes": {"type": "integer", "minimum": 0},
+    "schema_id": {"type": "string"},
+    "producer": {"type": "object", "required": ["kind", "id"], "properties": {"kind": {"enum": ["capability", "runner", "plectarium", "human", "import"]}, "id": {"type": "string"}}},
+    "created_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "verification": {"type": "object", "required": ["checksum", "signature", "schema"], "properties": {"checksum": {"enum": ["verified", "mismatch", "missing", "not_checked"]}, "signature": {"enum": ["verified", "invalid", "untrusted_signer", "unsupported", "not_present", "not_checked"]}, "schema": {"enum": ["valid", "invalid", "unknown_schema", "not_checked"]}}},
+    "retention_status": {"enum": ["active", "held", "expired", "purge_pending", "purged", "quarantined"]},
+    "successor_artifact_id": {"$ref": "common-definitions.schema.json#/$defs/artifact_id"}
+  }
+}

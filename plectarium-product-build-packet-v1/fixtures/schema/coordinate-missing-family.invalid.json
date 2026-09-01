@@ -1,0 +1,7 @@
+{
+  "capability_id": "universal-code-audit",
+  "capability_version": "1.0.0",
+  "artifact_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "manifest_schema": "standalone-capability-manifest.v0",
+  "manifest_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+}

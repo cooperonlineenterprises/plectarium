@@ -1,0 +1,26 @@
+{
+  "core_version": "1.0.0",
+  "extension_api": "harness.extension.v1",
+  "extensions": [
+    {
+      "authority_effect": "restrictions_only",
+      "config": ".agent/extensions/sample-restriction/config.json",
+      "deprecated_at": null,
+      "enabled": false,
+      "id": "sample-restriction",
+      "owner": "Plectarium repository maintainers",
+      "path": ".agent/extensions/sample-restriction",
+      "provenance": "generated_domain_neutral_reference_extension",
+      "requires_core": "^1.0.0",
+      "side_effects": "read_only",
+      "successor": null,
+      "validator": ".agent/extensions/sample-restriction/validate.py",
+      "version": "1.0.0"
+    }
+  ],
+  "limitations": [
+    "The generated reference extension is disabled because no project-specific restrictions-only extension is justified for setup-only work."
+  ],
+  "permission_grant": false,
+  "schema_version": "harness.extension-registry.v1"
+}

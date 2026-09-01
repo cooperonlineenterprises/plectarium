@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0001",
+  "occurred_at": "2026-08-31T12:00:00Z",
+  "kind": "task_proposed",
+  "subject": "TASK-0001",
+  "actor_or_source": "current operator invocation",
+  "summary": "Repository-foundation scope, non-goals, and publication gates recorded.",
+  "evidence": [],
+  "redaction_applied": false
+}

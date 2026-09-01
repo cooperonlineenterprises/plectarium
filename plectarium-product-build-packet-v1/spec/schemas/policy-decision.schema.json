@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/policy-decision.schema.json",
+  "title": "Plectarium Plan Permission Decision v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "decision_id", "tenant_id", "actor_id", "plan_digest", "decision", "requested_permissions", "accepted_permissions", "constraints", "decided_at", "expires_at", "authority_effect"],
+  "properties": {
+    "schema_version": {"const": "plectarium.policy-decision.v1"},
+    "decision_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "actor_id": {"$ref": "common-definitions.schema.json#/$defs/principal_id"},
+    "plan_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "decision": {"enum": ["approved", "approved_with_narrowing", "denied", "expired", "revoked"]},
+    "requested_permissions": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "accepted_permissions": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "constraints": {"type": "object"},
+    "decided_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "expires_at": {"oneOf": [{"$ref": "common-definitions.schema.json#/$defs/timestamp"}, {"type": "null"}]},
+    "authority_sources": {"type": "array", "items": {"type": "string"}},
+    "authority_effect": {"const": "execute_exact_bound_plan_only"}
+  }
+}

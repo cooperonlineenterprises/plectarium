@@ -1,0 +1,59 @@
+{
+  "schema_version": "project.dossier.raidq.v1",
+  "document_role": "authoritative_unresolved_item_store",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "items": [
+    {
+      "id": "DEP-0001",
+      "type": "dependency",
+      "title": "Final family publication identity",
+      "status": "resolved",
+      "owner_role": "Primary Portfolio Agent",
+      "description": "The final family Git commit and packet manifest/checksum and consumed-contract digests were supplied to and verified by the source lock.",
+      "impact": "Resolved by the exact published closure commit and recorded digests.",
+      "blocking": false
+    },
+    {
+      "id": "DEP-0002",
+      "type": "dependency",
+      "title": "Initial and closure repository publication",
+      "status": "open",
+      "owner_role": "Primary Portfolio Agent",
+      "description": "TASK-0002 must initialize Git, publish the exact private remote, record equality, and close with one narrow evidence commit.",
+      "impact": "Remote repository foundation remains incomplete until publication evidence passes.",
+      "blocking": true
+    },
+    {
+      "id": "RISK-0001",
+      "type": "risk",
+      "title": "Suite absorbs capability semantics",
+      "status": "monitoring",
+      "owner_role": "Architecture Owner",
+      "description": "Catalog normalization or UI convenience could evolve into duplicated domain semantics.",
+      "impact": "Semantic drift, coupling, and loss of independent capability authority.",
+      "blocking": false
+    },
+    {
+      "id": "OQ-0001",
+      "type": "open_question",
+      "title": "Package and suite CLI identifiers",
+      "status": "open",
+      "owner_role": "Product Owner",
+      "description": "Repository and product identity do not automatically select package, binary, or protocol names.",
+      "impact": "Implementation naming remains gated by collision and compatibility review.",
+      "blocking": false
+    },
+    {
+      "id": "OQ-0002",
+      "type": "open_question",
+      "title": "Provider, retention, signing, and numeric SLO decisions",
+      "status": "open",
+      "owner_role": "Security and Operations Owners",
+      "description": "Provider technologies, regional obligations, retention defaults, signing requirements, and numeric SLOs lack implementation evidence and owner approval.",
+      "impact": "Production and release readiness remain unassessed.",
+      "blocking": false
+    }
+  ]
+}

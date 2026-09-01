@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/common-definitions.schema.json",
+  "title": "Plectarium Common Definitions v1",
+  "$defs": {
+    "nonempty": {"type": "string", "minLength": 1},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "identifier": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"},
+    "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "raw_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "git_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "tenant_id": {"type": "string", "pattern": "^ten_[A-Za-z0-9_-]{8,64}$"},
+    "principal_id": {"type": "string", "pattern": "^prn_[A-Za-z0-9_-]{8,64}$"},
+    "job_id": {"type": "string", "pattern": "^job_[A-Za-z0-9_-]{8,64}$"},
+    "attempt_id": {"type": "string", "pattern": "^att_[A-Za-z0-9_-]{8,64}$"},
+    "artifact_id": {"type": "string", "pattern": "^art_[A-Za-z0-9_-]{8,64}$"},
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+  }
+}

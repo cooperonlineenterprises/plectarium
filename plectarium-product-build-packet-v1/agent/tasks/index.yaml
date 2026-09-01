@@ -1,0 +1,122 @@
+schema_version: plectarium.task-index.v1
+tasks:
+  - id: PLEC-FND-001
+    status: ready
+    title: Validate product authority and immutable family source
+    workstream: WS-ARCH
+    stage: S0
+    dependencies: []
+  - id: PLEC-FND-002
+    status: blocked
+    title: Implement schema registry and canonical content identity
+    workstream: WS-SCHEMA
+    stage: S1
+    dependencies: [PLEC-FND-001]
+  - id: PLEC-SEC-001
+    status: blocked
+    title: Establish foundational threat and isolation controls
+    workstream: WS-SECOPS
+    stage: S1
+    dependencies: [PLEC-FND-001, PLEC-FND-002]
+  - id: PLEC-IAM-001
+    status: blocked
+    title: Implement tenant and principal authorization contracts
+    workstream: WS-IAM
+    stage: S1
+    dependencies: [PLEC-FND-002, PLEC-SEC-001]
+  - id: PLEC-CAT-001
+    status: blocked
+    title: Implement exact catalog discovery and snapshots
+    workstream: WS-CATALOG
+    stage: S1
+    dependencies: [PLEC-FND-002]
+  - id: PLEC-POL-001
+    status: blocked
+    title: Implement request plan binding and permission decisions
+    workstream: WS-POLICY
+    stage: S1
+    dependencies: [PLEC-FND-002, PLEC-IAM-001]
+  - id: PLEC-JOB-001
+    status: blocked
+    title: Implement truthful job attempts and reconciliation
+    workstream: WS-JOBS
+    stage: S1
+    dependencies: [PLEC-FND-002, PLEC-POL-001]
+  - id: PLEC-ART-001
+    status: blocked
+    title: Implement immutable artifact result and lineage records
+    workstream: WS-RESULTS
+    stage: S1
+    dependencies: [PLEC-FND-002, PLEC-CAT-001, PLEC-SEC-001]
+  - id: PLEC-RUN-001
+    status: blocked
+    title: Implement runner lease and execution profile contracts
+    workstream: WS-RUNNER
+    stage: S1
+    dependencies: [PLEC-IAM-001, PLEC-CAT-001, PLEC-POL-001, PLEC-JOB-001, PLEC-SEC-001]
+  - id: PLEC-BOM-001
+    status: blocked
+    title: Implement compatibility assertions and exact suite BOM
+    workstream: WS-CATALOG
+    stage: S1
+    dependencies: [PLEC-CAT-001, PLEC-ART-001]
+  - id: PLEC-MCA-001
+    status: blocked
+    title: Prove the minimum complete control-plane vertical path
+    workstream: WS-ARCH
+    stage: S2
+    dependencies: [PLEC-JOB-001, PLEC-ART-001, PLEC-RUN-001, PLEC-BOM-001]
+  - id: PLEC-MCA-002
+    status: blocked
+    title: Prove denial cancellation duplicate and recovery paths
+    workstream: WS-EVAL
+    stage: S2
+    dependencies: [PLEC-MCA-001]
+  - id: PLEC-API-001
+    status: blocked
+    title: Implement API event and suite CLI projections
+    workstream: WS-INTERFACE
+    stage: S3
+    dependencies: [PLEC-MCA-001, PLEC-MCA-002]
+  - id: PLEC-UX-001
+    status: blocked
+    title: Implement the cohesive web application experience
+    workstream: WS-INTERFACE
+    stage: S3
+    dependencies: [PLEC-API-001]
+  - id: PLEC-MODE-001
+    status: blocked
+    title: Implement local hosted private and air-gapped modes
+    workstream: WS-MODES
+    stage: S3
+    dependencies: [PLEC-API-001, PLEC-RUN-001, PLEC-BOM-001]
+  - id: PLEC-PRIV-001
+    status: blocked
+    title: Implement privacy retention purge and legal-hold mechanics
+    workstream: WS-SECOPS
+    stage: S4
+    dependencies: [PLEC-UX-001, PLEC-MODE-001]
+  - id: PLEC-OPS-001
+    status: blocked
+    title: Implement audit observability migration and recovery
+    workstream: WS-SECOPS
+    stage: S4
+    dependencies: [PLEC-MCA-002, PLEC-MODE-001]
+  - id: PLEC-SEC-002
+    status: blocked
+    title: Complete tenant runner artifact and credential adversarial testing
+    workstream: WS-SECOPS
+    stage: S4
+    dependencies: [PLEC-PRIV-001, PLEC-OPS-001]
+  - id: PLEC-EVAL-001
+    status: blocked
+    title: Complete conformance resilience performance and mode evaluation
+    workstream: WS-EVAL
+    stage: S4
+    dependencies: [PLEC-UX-001, PLEC-MODE-001, PLEC-SEC-002]
+  - id: PLEC-REL-001
+    status: blocked
+    title: Produce reproducible distribution evidence and mature v1 release
+    workstream: WS-EVAL
+    stage: S5
+    dependencies: [PLEC-EVAL-001, PLEC-OPS-001]

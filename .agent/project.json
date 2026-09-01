@@ -1,0 +1,29 @@
+{
+  "schema_version": "harness.project.v1",
+  "project": {
+    "id": "plectarium",
+    "name": "Plectarium",
+    "repository_root": ".",
+    "profile": "high-assurance",
+    "blueprint_version": "1.0.0",
+    "adoption_status": "adopted_local_foundation"
+  },
+  "paths": {
+    "source": [],
+    "tests": [".agent/tests", "plectarium-product-build-packet-v1/fixtures"],
+    "generated": [".agent/generated"],
+    "instruction_roots": ["AGENTS.md"],
+    "fingerprint_exclusions": []
+  },
+  "commands": {
+    "project_test": {"status": "active_setup_only", "run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family", "runtime_limitation": "Uses the already-configured Python 3.14 runtime with PyYAML and jsonschema; installs nothing."},
+    "project_lint": {"status": "not_applicable_no_product_code", "run": null},
+    "project_build": {"status": "not_applicable_no_product_code", "run": null},
+    "project_closure": {"status": "active_setup_only", "run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family"}
+  },
+  "extensions": {
+    "registry": ".agent/extensions/registry.json",
+    "registry_required_in_profile": "standard_or_higher"
+  },
+  "mutable_work_status": "prohibited_here"
+}

@@ -1,0 +1,102 @@
+schema_version: plectarium.decision-ledger.v1
+decisions:
+  - id: PLEC-001
+    status: ESTABLISHED
+    title: Plectarium suite identity
+    decision: Plectarium is the formal suite product and is part of the Octon ecosystem without an Octon-prefixed name, runtime dependency, or authority transfer.
+    adr: ADR-001
+  - id: PLEC-002
+    status: ESTABLISHED
+    title: Suite is not a capability
+    decision: Plectarium is not an eleventh specialist and owns no capability-domain conclusions.
+    adr: ADR-001
+  - id: PLEC-003
+    status: ESTABLISHED
+    title: Capability independence
+    decision: Every capability remains directly usable, independently versioned, and harness-agnostic.
+    adr: ADR-001
+  - id: PLEC-004
+    status: ACCEPTED
+    title: Immutable family contract consumption
+    decision: Plectarium pins the external family Git commit and packet/contract digests and must not fork family schemas.
+    adr: ADR-002
+  - id: PLEC-005
+    status: ACCEPTED
+    title: Multi-family exact coordinate
+    decision: Canonical suite identity uses family_id, capability_id, exact version, artifact digest, and contract identity.
+    adr: ADR-002
+  - id: PLEC-006
+    status: ACCEPTED
+    title: Modular control plane first
+    decision: Start with testable modules in one control-plane product boundary and extract deployables only with security, scale, failure, ownership, or operational evidence.
+    adr: ADR-003
+  - id: PLEC-007
+    status: ACCEPTED
+    title: Out-of-process capability execution
+    decision: Capabilities normally execute through canonical CLIs or exact OCI artifacts under runner isolation rather than in-process engine imports.
+    adr: ADR-003
+  - id: PLEC-008
+    status: ACCEPTED
+    title: Capability-authored immutable plan
+    decision: Approval and execution bind the exact digest of a capability-authored plan; material substitution requires a new plan.
+    adr: ADR-004
+  - id: PLEC-009
+    status: ESTABLISHED
+    title: No transport or result authority escalation
+    decision: Interface, runner mode, approval UI, and capability conclusion cannot widen permission or authorize downstream action.
+    adr: ADR-004
+  - id: PLEC-010
+    status: ACCEPTED
+    title: Separate job and capability completion
+    decision: Control-plane terminal state and family capability completion remain distinct and simultaneously visible.
+    adr: ADR-004
+  - id: PLEC-011
+    status: ACCEPTED
+    title: At-least-once delivery with fenced attempts
+    decision: Queue delivery is at-least-once; immutable attempts, idempotency, fencing, and reconciliation prevent stale terminalization.
+    adr: ADR-004
+  - id: PLEC-012
+    status: ACCEPTED
+    title: Immutable content-addressed artifacts and results
+    decision: Canonical bytes and records are immutable; correction and status change use successor or annotation records.
+    adr: ADR-005
+  - id: PLEC-013
+    status: ACCEPTED
+    title: Preserve independent verification dimensions
+    decision: Completion, freshness, checksum, signature, signer trust, provenance, lineage, compatibility, and limitations remain distinct.
+    adr: ADR-005
+  - id: PLEC-014
+    status: ACCEPTED
+    title: Plectarium owns the exact suite BOM
+    decision: Supported distributions resolve exact coordinates and unknown compatibility never means supported.
+    adr: ADR-005
+  - id: PLEC-015
+    status: ACCEPTED
+    title: Equivalent deployment modes
+    decision: Local, hosted, private-runner, customer-controlled, and air-gapped modes preserve the same identity, authority, completion, and provenance semantics.
+    adr: ADR-006
+  - id: PLEC-016
+    status: ACCEPTED
+    title: Just-in-time opaque credential references
+    decision: Secret values remain in credential brokers; plans, queues, logs, and durable results carry no secret values.
+    adr: ADR-006
+  - id: PLEC-017
+    status: ACCEPTED
+    title: End-to-end tenant isolation
+    decision: Tenant authorization covers control metadata, bytes, caches, queues, runners, indexes, audit, and deduplication side channels.
+    adr: ADR-006
+  - id: PLEC-018
+    status: ESTABLISHED
+    title: Direct capability use remains first-class
+    decision: Hosted or suite operation cannot become mandatory for canonical capability CLI and CI use.
+    adr: ADR-001
+  - id: PLEC-019
+    status: DEFERRED
+    title: Shared capability runtime or SDK
+    decision: Extraction remains governed by the family implementation-evidence threshold and a later accepted ADR.
+    adr: ADR-003
+  - id: PLEC-020
+    status: ESTABLISHED
+    title: AI and structural evidence limits
+    decision: AI is optional and non-authorizing; packet integrity or architecture completion cannot establish product readiness.
+    adr: ADR-006

@@ -1,0 +1,50 @@
+{
+  "schema_version": "project.dossier.plan.v1",
+  "document_role": "authoritative_dependency_aware_plan_store",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "status_vocabulary": ["planned", "in_progress", "blocked", "completed", "deferred", "cancelled"],
+  "plan_items": [
+    {
+      "id": "PLAN-0001",
+      "title": "Author and locally validate the setup foundation",
+      "objective": "Create the governed repository foundation and substantive packet without product implementation.",
+      "status": "completed",
+      "owner_role": "Repository Foundation Owner",
+      "depends_on": [],
+      "requirement_refs": ["REQ-0001", "REQ-0002", "REQ-0003", "REQ-0004", "REQ-0005", "REQ-0006", "REQ-0007", "REQ-0008"],
+      "finding_refs": ["FIND-0001", "FIND-0002", "FIND-0003"],
+      "gate_refs": ["GATE-0001", "GATE-0002"],
+      "acceptance_criteria": ["packet validates", "harness mutation tests pass", "limitations remain explicit"],
+      "evidence_expected": ["local validator and review evidence"],
+      "evidence_refs": ["EVD-0001", "EVD-0002"]
+    },
+    {
+      "id": "PLAN-0002",
+      "title": "Resolve family lock and publish the repository foundation",
+      "objective": "Pin the final family commit/digests, refresh root integrity, and perform the exact authorized publication sequence.",
+      "status": "planned",
+      "owner_role": "Primary Portfolio Agent",
+      "depends_on": ["PLAN-0001"],
+      "requirement_refs": ["REQ-0002", "REQ-0008"],
+      "finding_refs": ["FIND-0004"],
+      "gate_refs": ["GATE-0004"],
+      "acceptance_criteria": ["immutable family equality", "initial and closure pushes", "final local/tracking/remote equality", "clean worktree"],
+      "evidence_expected": ["family lock validation", "Git and GitHub publication evidence"]
+    },
+    {
+      "id": "PLAN-0003",
+      "title": "Begin PLEC-FND-001 under separate implementation authority",
+      "objective": "Validate product authority and foundational contracts before code-bearing work.",
+      "status": "blocked",
+      "owner_role": "Future Product Implementation Owner",
+      "depends_on": ["PLAN-0002"],
+      "requirement_refs": ["REQ-0001", "REQ-0002", "REQ-0003", "REQ-0004", "REQ-0005", "REQ-0006"],
+      "finding_refs": ["FIND-0001"],
+      "gate_refs": ["GATE-0003"],
+      "acceptance_criteria": ["separate code-bearing authority", "family lock resolved", "packet task dependencies satisfied"],
+      "evidence_expected": ["new authorized task and implementation evidence"]
+    }
+  ]
+}

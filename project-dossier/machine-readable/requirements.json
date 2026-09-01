@@ -1,0 +1,90 @@
+{
+  "schema_version": "project.dossier.requirements.v1",
+  "document_role": "authoritative_project_requirement_store",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "status_vocabulary": ["active", "proposed", "gated", "deferred", "superseded"],
+  "requirements": [
+    {
+      "id": "REQ-0001",
+      "title": "Plectarium suite identity and product boundary",
+      "statement": "Plectarium is a cohesive suite and optional control plane in the Octon ecosystem, not a capability, domain engine, or Octon dependency.",
+      "status": "active",
+      "owner_role": "Product and Architecture Owner",
+      "basis": "Established portfolio identity and ownership decision",
+      "source_refs": ["SRC-0001", "SRC-0002"],
+      "validation": {"method": "boundary decision, source-map, and no-domain-semantics gates"}
+    },
+    {
+      "id": "REQ-0002",
+      "title": "Immutable multi-family capability coordinates",
+      "statement": "Catalog and result identities bind family_id, capability_id, exact version, schema identity, and artifact digest to an immutable family source lock.",
+      "status": "active",
+      "owner_role": "Catalog and Compatibility Owner",
+      "basis": "Future family growth and FAM-036 namespace contract",
+      "source_refs": ["SRC-0001", "SRC-0002"],
+      "validation": {"method": "schema fixtures, family lock equality, and collision tests"}
+    },
+    {
+      "id": "REQ-0003",
+      "title": "Independent capability semantic engines",
+      "statement": "Capabilities remain independently usable and Plectarium treats capability plans and payloads as contract-bound opaque domain documents.",
+      "status": "active",
+      "owner_role": "Architecture Owner",
+      "basis": "Family invariants and suite non-goal",
+      "source_refs": ["SRC-0001", "SRC-0002"],
+      "validation": {"method": "dependency boundaries and opaque-payload round-trip tests"}
+    },
+    {
+      "id": "REQ-0004",
+      "title": "Explicit plan and permission authority",
+      "statement": "Execution requires external approval bound to the exact capability-authored plan digest; no transport, runner, result, or capability conclusion expands authority.",
+      "status": "active",
+      "owner_role": "Policy and Security Owner",
+      "basis": "Family authority invariants and prompt constraints",
+      "source_refs": ["SRC-0001", "SRC-0002"],
+      "validation": {"method": "TOCTOU, subset, denial, expiry, and transport-equivalence fixtures"}
+    },
+    {
+      "id": "REQ-0005",
+      "title": "Isolated runner modes and just-in-time credentials",
+      "statement": "Local, hosted, private, customer-controlled, and air-gapped modes use operation-specific profiles, fenced leases, and opaque short-lived credential references.",
+      "status": "active",
+      "owner_role": "Runner and Security Owner",
+      "basis": "Accepted suite architecture",
+      "source_refs": ["SRC-0001"],
+      "validation": {"method": "runner, lease, isolation, credential, and mode-equivalence gates"}
+    },
+    {
+      "id": "REQ-0006",
+      "title": "Immutable artifacts, provenance, compatibility, and suite BOM",
+      "statement": "The suite preserves content identity, completion, freshness, checksums, signatures, lineage, limitations, and exact supported-version BOM without upgrading unknown compatibility.",
+      "status": "active",
+      "owner_role": "Artifact and Release Owner",
+      "basis": "Prompt and family evidence conventions",
+      "source_refs": ["SRC-0001", "SRC-0002"],
+      "validation": {"method": "tamper, lineage, completion, compatibility, and BOM gates"}
+    },
+    {
+      "id": "REQ-0007",
+      "title": "Setup-only repository foundation",
+      "statement": "Foundation work contains governance and substantive specification only; product code, dependencies, services, deployments, and production resources remain absent.",
+      "status": "active",
+      "owner_role": "Repository Foundation Owner",
+      "basis": "Current task scope",
+      "source_refs": ["SRC-0001"],
+      "validation": {"method": "filesystem prohibition scan and direct inventory"}
+    },
+    {
+      "id": "REQ-0008",
+      "title": "High-assurance validation and truthful readiness",
+      "statement": "Harness, dossier, packet, fixtures, graphs, manifests, and checksums validate while structural success remains distinct from product readiness.",
+      "status": "active",
+      "owner_role": "Verification Owner",
+      "basis": "Project Blueprint profile and prompt validation contract",
+      "source_refs": ["SRC-0001", "SRC-0003"],
+      "validation": {"method": "read-only checks, mutation tests, designated integrity refresh, and evidence review"}
+    }
+  ]
+}

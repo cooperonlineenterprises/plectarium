@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0006",
+  "occurred_at": "2026-08-31T12:05:00Z",
+  "kind": "task_completed",
+  "subject": "TASK-0001",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Immutable family equality and all local foundation validation gates passed; no external effects occurred.",
+  "evidence": ["EVD-0001", "EVD-0002", "REV-0001", "CHK-0001"],
+  "redaction_applied": false
+}

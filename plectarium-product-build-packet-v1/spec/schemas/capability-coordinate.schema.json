@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/capability-coordinate.schema.json",
+  "title": "Plectarium Capability Coordinate v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["family_id", "capability_id", "capability_version", "artifact_digest", "manifest_schema", "manifest_digest"],
+  "properties": {
+    "family_id": {"$ref": "common-definitions.schema.json#/$defs/slug"},
+    "capability_id": {"$ref": "common-definitions.schema.json#/$defs/slug"},
+    "capability_version": {"type": "string", "minLength": 1},
+    "artifact_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "manifest_schema": {"type": "string", "minLength": 1},
+    "manifest_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "distribution_variant": {"type": "string", "minLength": 1}
+  }
+}

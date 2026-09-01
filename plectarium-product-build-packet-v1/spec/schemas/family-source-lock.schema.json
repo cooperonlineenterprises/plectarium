@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/family-source-lock.schema.json",
+  "title": "Plectarium Family Source Lock v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "publication_status", "family_id", "repository", "git_commit", "packet_path", "packet_version", "packet_manifest_sha256", "packet_checksums_sha256", "contracts", "limitations"],
+  "properties": {
+    "schema_version": {"const": "plectarium.family-source-lock.v1"},
+    "publication_status": {"enum": ["pending", "resolved"]},
+    "family_id": {"const": "standalone-capability-family"},
+    "repository": {"const": "https://github.com/cooperonlineenterprises/plectarium-family.git"},
+    "git_commit": {"oneOf": [{"$ref": "common-definitions.schema.json#/$defs/git_commit"}, {"type": "null"}]},
+    "packet_path": {"const": "standalone-capability-family-packet-v1"},
+    "packet_version": {"const": "1.2.0"},
+    "packet_manifest_sha256": {"oneOf": [{"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}, {"type": "null"}]},
+    "packet_checksums_sha256": {"oneOf": [{"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}, {"type": "null"}]},
+    "contracts": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "status"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^spec/(?:schemas/)?[A-Za-z0-9._/-]+$"},
+          "sha256": {"oneOf": [{"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}, {"type": "null"}]},
+          "status": {"enum": ["ESTABLISHED", "ACCEPTED", "PROVISIONAL"]}
+        }
+      }
+    },
+    "limitations": {"$ref": "common-definitions.schema.json#/$defs/limitations"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"publication_status": {"const": "resolved"}}},
+      "then": {
+        "properties": {
+          "git_commit": {"$ref": "common-definitions.schema.json#/$defs/git_commit"},
+          "packet_manifest_sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"},
+          "packet_checksums_sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"},
+          "contracts": {"items": {"properties": {"sha256": {"$ref": "common-definitions.schema.json#/$defs/raw_sha256"}}}}
+        }
+      },
+      "else": {
+        "properties": {
+          "git_commit": {"type": "null"},
+          "packet_manifest_sha256": {"type": "null"},
+          "packet_checksums_sha256": {"type": "null"},
+          "limitations": {"minItems": 1}
+        }
+      }
+    }
+  ]
+}

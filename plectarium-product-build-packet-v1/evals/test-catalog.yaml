@@ -1,0 +1,36 @@
+schema_version: plectarium.test-catalog.v1
+tests:
+  - {id: TEST-PACKET-001, kind: structural, claim: Packet files decisions tasks claims manifest and checksums agree.}
+  - {id: TEST-SCHEMA-001, kind: contract, claim: Strict parsing schemas references and positive/negative fixtures behave as declared.}
+  - {id: TEST-GRAPH-001, kind: structural, claim: Workstream stage task and gate graphs resolve and remain acyclic.}
+  - {id: TEST-BOUNDARY-001, kind: architecture, claim: No domain algorithms tables or sibling source imports exist.}
+  - {id: TEST-BOUNDARY-002, kind: equivalence, claim: Unknown domain payloads round-trip unchanged and direct capability CLI remains independent.}
+  - {id: TEST-CATALOG-001, kind: contract, claim: Family-capability-version-digest coordinates cannot collide.}
+  - {id: TEST-CATALOG-002, kind: adversarial, claim: Missing family stale schema and same-coordinate substitution are rejected or quarantined.}
+  - {id: TEST-AUTH-001, kind: authority, claim: Approval binds exact plan digest subject scope profile expiry and coordinate.}
+  - {id: TEST-AUTH-002, kind: authority, claim: Accepted permissions are a subset and denial revocation expiry stop scheduling.}
+  - {id: TEST-AUTH-003, kind: equivalence, claim: Web CLI API queue runner and air-gap transports cannot widen authority.}
+  - {id: TEST-TENANT-001, kind: security, claim: Cross-tenant control and artifact access is denied.}
+  - {id: TEST-TENANT-002, kind: security, claim: Cache deduplication search queue runner and timing paths leak no cross-tenant existence.}
+  - {id: TEST-JOB-001, kind: model_based, claim: Valid transitions pass and invalid transitions fail.}
+  - {id: TEST-JOB-002, kind: fault, claim: Duplicate reordered stale and raced attempt events cannot corrupt terminal state.}
+  - {id: TEST-JOB-003, kind: fault, claim: Cancellation retry timeout and orphan recovery remain truthful.}
+  - {id: TEST-RUNNER-001, kind: security, claim: Filesystem process network browser and controlled-resource profiles fail closed.}
+  - {id: TEST-RUNNER-002, kind: security, claim: Credential references are scoped expiring and secret values never persist.}
+  - {id: TEST-RUNNER-003, kind: adversarial, claim: Runner impersonation stale lease resource exhaustion and escape attempts are contained.}
+  - {id: TEST-RESULT-001, kind: contract, claim: Family results validate against the exact pinned external schemas.}
+  - {id: TEST-RESULT-002, kind: adversarial, claim: Tamper malicious archive lineage cycle and substitution are rejected.}
+  - {id: TEST-RESULT-003, kind: lifecycle, claim: Successor quarantine withdrawal and purge preserve truthful history and availability.}
+  - {id: TEST-COMPAT-001, kind: contract, claim: Supported constrained incompatible unknown and withdrawn remain distinct.}
+  - {id: TEST-COMPAT-002, kind: reproducibility, claim: Every released suite BOM resolves exact bytes and contract/profile digests.}
+  - {id: TEST-MODE-001, kind: conformance, claim: Common workflows preserve semantics across all supported modes.}
+  - {id: TEST-MODE-002, kind: adversarial, claim: Air-gap replay rollback stale BOM tamper and silent network fallback fail.}
+  - {id: TEST-PRIV-001, kind: privacy, claim: Data minimization and secret/sensitive telemetry redaction pass.}
+  - {id: TEST-PRIV-002, kind: lifecycle, claim: Hold expiry purge and authorized tombstone behavior are truthful.}
+  - {id: TEST-RES-001, kind: resilience, claim: Queue store runner credential and verification outages reconcile safely.}
+  - {id: TEST-RES-002, kind: recovery, claim: Migration backup restore preserve identity authorization revisions fencing and audit.}
+  - {id: TEST-UX-001, kind: accessibility, claim: Critical approval and completion meaning is perceivable without color hover animation or character imagery.}
+  - {id: TEST-UX-002, kind: security, claim: Malicious result content and partial unknown states render safely and truthfully.}
+  - {id: TEST-SLO-001, kind: performance, claim: Accepted SLOs derive from measured workload capacity error-budget and recovery evidence.}
+  - {id: TEST-SUPPLY-001, kind: supply_chain, claim: Distribution is reproducible and carries exact SBOM provenance checksums and required signatures.}
+  - {id: TEST-RELEASE-001, kind: review, claim: Every required gate is current and all exceptions limitations and external effects are approved and explicit.}

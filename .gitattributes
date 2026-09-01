@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+plectarium-product-build-packet-v1/*.md whitespace=-trailing-space
+plectarium-product-build-packet-v1/**/*.md whitespace=-trailing-space

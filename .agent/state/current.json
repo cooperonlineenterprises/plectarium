@@ -1,0 +1,16 @@
+{
+  "schema_version": "harness.current-state.v1",
+  "project_slug": "plectarium",
+  "updated_at": "2026-08-31",
+  "authority": "Compact operational view derived from authoritative task, decision, and evidence records. This file does not grant permission.",
+  "adoption_status": "adopted_local_foundation",
+  "active_tasks": ["TASK-0002"],
+  "accepted_decisions": ["DEC-0001", "DEC-0002"],
+  "fresh_evidence": ["EVD-0001", "EVD-0002"],
+  "blocked_by": [
+    "initial_and_closure_publication_evidence_pending"
+  ],
+  "next_action": "refresh integrity after Git initialization, validate, and inspect exact staged foundation content before remote creation",
+  "external_effects_authorized": false,
+  "limitations": ["no_product_implementation", "no_dependency_installation", "no_services", "no_commit_or_remote_publication_recorded", "product_security_operational_and_release_readiness_not_assessed"]
+}

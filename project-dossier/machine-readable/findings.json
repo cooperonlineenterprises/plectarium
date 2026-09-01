@@ -1,0 +1,62 @@
+{
+  "schema_version": "project.dossier.findings.v1",
+  "document_role": "authoritative_conformance_finding_store",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "classification_vocabulary": [
+    "conformant",
+    "compatible",
+    "transitional",
+    "nonconformant",
+    "absent",
+    "not_assessed",
+    "not_applicable"
+  ],
+  "findings": [
+    {
+      "id": "FIND-0001",
+      "title": "Setup specification present; product implementation absent",
+      "requirement_refs": ["REQ-0001", "REQ-0003", "REQ-0004", "REQ-0005", "REQ-0006", "REQ-0007"],
+      "status": "conformant",
+      "assessed_on": "2026-08-31",
+      "subject_version": "local packet 1.0.0 candidate",
+      "inspected_evidence": ["EVD-0001"],
+      "rationale": "The governed product target exists and implementation remains absent by task design.",
+      "owner_role": "Conformance Assessor"
+    },
+    {
+      "id": "FIND-0002",
+      "title": "Immutable family publication pin verified",
+      "requirement_refs": ["REQ-0002"],
+      "status": "conformant",
+      "assessed_on": "2026-08-31",
+      "subject_version": "family packet 1.2.0 at 0b6c476682e416bd4fb770622c56758f5a380f09",
+      "inspected_evidence": ["EVD-0002"],
+      "rationale": "Family closure commit, packet manifest/checksums, and all consumed contract digests match the clean published worktree.",
+      "owner_role": "Catalog and Compatibility Owner"
+    },
+    {
+      "id": "FIND-0003",
+      "title": "Local root integrity and validation conform; publication pending",
+      "requirement_refs": ["REQ-0008"],
+      "status": "conformant",
+      "assessed_on": "2026-08-31",
+      "subject_version": "local pre-Git foundation candidate",
+      "inspected_evidence": ["EVD-0002"],
+      "rationale": "Designated packet/root refresh, full harness check, and mutation tests pass on the live tree.",
+      "owner_role": "Repository Foundation Owner"
+    },
+    {
+      "id": "FIND-0004",
+      "title": "Git and GitHub publication not yet performed",
+      "requirement_refs": ["REQ-0008"],
+      "status": "absent",
+      "assessed_on": "2026-08-31",
+      "subject_version": "locally adopted pre-Git foundation",
+      "inspected_evidence": ["EVD-0002"],
+      "rationale": "No local Git repository or external effect was created in the local-foundation task; TASK-0002 owns publication.",
+      "owner_role": "Primary Portfolio Agent"
+    }
+  ]
+}

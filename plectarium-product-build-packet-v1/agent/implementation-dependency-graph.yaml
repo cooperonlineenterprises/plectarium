@@ -1,0 +1,32 @@
+schema_version: plectarium.implementation-graph.v1
+stages:
+  - id: S0
+    name: Constitution and immutable source validation
+    depends_on: []
+  - id: S1
+    name: Foundational schemas and control contracts
+    depends_on: [S0]
+  - id: S2
+    name: Minimum Complete Control Plane
+    depends_on: [S1]
+  - id: S3
+    name: Product experience and deployment modes
+    depends_on: [S2]
+  - id: S4
+    name: Security, privacy, operations, and resilience hardening
+    depends_on: [S3]
+  - id: S5
+    name: Reproducible distribution and mature v1 release
+    depends_on: [S4]
+critical_path: [S0, S1, S2, S3, S4, S5]
+contract_freezes:
+  - after: S0
+    name: authority-and-family-pin-freeze
+  - after: S1
+    name: foundational-contract-freeze
+  - after: S2
+    name: minimum-complete-control-plane
+  - after: S3
+    name: external-interface-and-mode-freeze
+  - after: S4
+    name: release-candidate-freeze

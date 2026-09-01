@@ -1,0 +1,13 @@
+{
+  "schema_version": "plectarium.runner.v1",
+  "runner_id": "run_abcdefgh",
+  "tenant_id": "ten_abcdefgh",
+  "principal_id": "prn_abcdefgh",
+  "protocol_version": "1.0.0",
+  "mode": "private_runner",
+  "platform": {"os": "linux", "architecture": "amd64"},
+  "capability_coordinates": [],
+  "execution_profiles": ["offline_read_only"],
+  "attestation_status": "not_checked",
+  "last_seen_at": "2026-08-31T12:00:00Z"
+}

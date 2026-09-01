@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0005",
+  "occurred_at": "2026-08-31T12:04:00Z",
+  "kind": "task_review",
+  "subject": "TASK-0001",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Local candidate entered review with family-pin, root-integrity, and publication gates open.",
+  "evidence": ["EVD-0001", "REV-0001"],
+  "redaction_applied": false
+}

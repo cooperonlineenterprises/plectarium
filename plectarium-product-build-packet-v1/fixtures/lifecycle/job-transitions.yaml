@@ -1,0 +1,17 @@
+schema_version: plectarium.job-transition-fixtures.v1
+cases:
+  - id: normal-completion
+    expected_valid: true
+    states: [received, planning, awaiting_approval, queued, leased, running, finalizing, completed]
+  - id: denial
+    expected_valid: true
+    states: [received, planning, awaiting_approval, denied]
+  - id: cancellation
+    expected_valid: true
+    states: [received, planning, awaiting_approval, queued, leased, running, cancel_requested, cancelled]
+  - id: invalid-skip-approval
+    expected_valid: false
+    states: [received, queued, running, completed]
+  - id: invalid-reopen-terminal
+    expected_valid: false
+    states: [received, planning, awaiting_approval, denied, queued]

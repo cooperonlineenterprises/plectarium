@@ -1,0 +1,12 @@
+{
+  "schema_version": "plectarium.execution-profile.v1",
+  "profile_id": "offline_read_only",
+  "filesystem": {"read_paths": ["/subject"], "write_paths": ["/output"]},
+  "project_execution": false,
+  "network": {"allowed": false, "destination_classes": [], "data_categories": []},
+  "browser": {"allowed": false, "origins": [], "downloads": false},
+  "controlled_resources": [],
+  "credentials": [],
+  "resources": {"cpu": 1, "memory_bytes": 268435456, "wall_seconds": 600, "output_bytes": 10485760},
+  "prohibited_effects": ["repository_write", "git_write", "infrastructure_apply", "database_write", "artifact_publish", "deployment", "issue_creation", "external_communication"]
+}

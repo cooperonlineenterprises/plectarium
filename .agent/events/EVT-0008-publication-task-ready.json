@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0008",
+  "occurred_at": "2026-08-31T12:07:00Z",
+  "kind": "task_ready",
+  "subject": "TASK-0002",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Publication scope, dependency, authority basis, acceptance criteria, and validation plan are explicit.",
+  "evidence": ["EVD-0002"],
+  "redaction_applied": false
+}

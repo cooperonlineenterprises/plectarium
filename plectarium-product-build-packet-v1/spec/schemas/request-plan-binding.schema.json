@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/request-plan-binding.schema.json",
+  "title": "Plectarium Request and Plan Binding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "tenant_id", "requester_id", "idempotency_key", "request_digest", "coordinate", "operation", "subject_identity", "scope_digest", "plan", "requested_permissions", "execution_profile", "replay_safety", "created_at"],
+  "properties": {
+    "schema_version": {"const": "plectarium.request-plan-binding.v1"},
+    "request_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "requester_id": {"$ref": "common-definitions.schema.json#/$defs/principal_id"},
+    "idempotency_key": {"type": "string", "minLength": 8, "maxLength": 128},
+    "request_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "coordinate": {"$ref": "capability-coordinate.schema.json"},
+    "operation": {"type": "string", "minLength": 1},
+    "subject_identity": {"type": "string", "minLength": 1},
+    "scope_digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"},
+    "plan": {"type": "object", "additionalProperties": false, "required": ["schema_id", "digest", "artifact_id"], "properties": {"schema_id": {"type": "string"}, "digest": {"$ref": "common-definitions.schema.json#/$defs/sha256"}, "artifact_id": {"$ref": "common-definitions.schema.json#/$defs/artifact_id"}}},
+    "requested_permissions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "execution_profile": {"type": "string", "minLength": 1},
+    "replay_safety": {"enum": ["safe", "unsafe", "unknown"]},
+    "created_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"}
+  }
+}

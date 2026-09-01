@@ -1,0 +1,26 @@
+schema_version: plectarium.conformance-matrix.v1
+contracts:
+  - id: family-manifest-v0
+    owner: external_family_source_lock
+    status: provisional_external
+    required_tests: [TEST-RESULT-001, TEST-CATALOG-001, TEST-CATALOG-002]
+  - id: family-result-reference-v0
+    owner: external_family_source_lock
+    status: provisional_external
+    required_tests: [TEST-RESULT-001, TEST-RESULT-002]
+  - id: plectarium-coordinate-v1
+    owner: spec/schemas/capability-coordinate.schema.json
+    status: accepted_target
+    required_tests: [TEST-CATALOG-001, TEST-CATALOG-002]
+  - id: plectarium-plan-approval-v1
+    owner: spec/schemas/policy-decision.schema.json
+    status: accepted_target
+    required_tests: [TEST-AUTH-001, TEST-AUTH-002, TEST-AUTH-003]
+  - id: plectarium-job-v1
+    owner: spec/schemas/job.schema.json
+    status: accepted_target
+    required_tests: [TEST-JOB-001, TEST-JOB-002, TEST-JOB-003]
+  - id: plectarium-result-record-v1
+    owner: spec/schemas/result-record.schema.json
+    status: accepted_target
+    required_tests: [TEST-RESULT-001, TEST-RESULT-002, TEST-RESULT-003]

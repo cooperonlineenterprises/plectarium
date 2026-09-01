@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/execution-profile.schema.json",
+  "title": "Plectarium Execution Profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "profile_id", "filesystem", "project_execution", "network", "browser", "controlled_resources", "credentials", "resources", "prohibited_effects"],
+  "properties": {
+    "schema_version": {"const": "plectarium.execution-profile.v1"},
+    "profile_id": {"enum": ["offline_read_only", "sandboxed_project_execution", "browser_execution", "private_network_observation", "controlled_resource_read"]},
+    "filesystem": {"type": "object", "required": ["read_paths", "write_paths"], "properties": {"read_paths": {"type": "array", "items": {"type": "string"}}, "write_paths": {"type": "array", "items": {"type": "string"}}}},
+    "project_execution": {"type": "boolean"},
+    "network": {"type": "object", "required": ["allowed"], "properties": {"allowed": {"type": "boolean"}, "destination_classes": {"type": "array", "items": {"type": "string"}}, "data_categories": {"type": "array", "items": {"type": "string"}}}},
+    "browser": {"type": "object", "required": ["allowed"], "properties": {"allowed": {"type": "boolean"}, "origins": {"type": "array", "items": {"type": "string"}}, "downloads": {"type": "boolean"}}},
+    "controlled_resources": {"type": "array", "items": {"enum": ["infrastructure_read", "database_read", "production_read"]}},
+    "credentials": {"type": "array", "items": {"type": "object", "required": ["reference", "audience", "expires_at"], "properties": {"reference": {"type": "string"}, "audience": {"type": "string"}, "expires_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"}}}},
+    "resources": {"type": "object", "required": ["cpu", "memory_bytes", "wall_seconds", "output_bytes"], "properties": {"cpu": {"type": "number", "exclusiveMinimum": 0}, "memory_bytes": {"type": "integer", "minimum": 1}, "wall_seconds": {"type": "integer", "minimum": 1}, "output_bytes": {"type": "integer", "minimum": 1}}},
+    "prohibited_effects": {"type": "array", "contains": {"const": "deployment"}, "items": {"enum": ["repository_write", "git_write", "infrastructure_apply", "database_write", "artifact_publish", "deployment", "issue_creation", "external_communication"]}}
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "project.dossier.sources.v1",
+  "document_role": "authoritative_project_source_store",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "sources": [
+    {
+      "id": "SRC-0001",
+      "name": "Current operator invocation of Plectarium portfolio setup prompt v2",
+      "location": "authorized conversation channel; exact non-authorizing provenance copy at repo:../workspace/docs/orchestration/plectarium-portfolio-setup-prompt-v2.md",
+      "classification": "current_operator_authority_and_provenance",
+      "observed_on": "2026-08-31",
+      "intended_use": "Foundation scope, established product decisions, exact repository workflow, and exclusions",
+      "limitations": ["The saved file cannot replay authority after the invocation ends."],
+      "sensitivity": "internal",
+      "accepted_as_project_authority": true
+    },
+    {
+      "id": "SRC-0002",
+      "name": "Published Standalone Capability Family Packet v1.2.0",
+      "location": "repo:../family at commit 0b6c476682e416bd4fb770622c56758f5a380f09; packet standalone-capability-family-packet-v1",
+      "classification": "pinned_external_family_product_authority",
+      "observed_on": "2026-08-31",
+      "intended_use": "Family identity, invariants, and provisional manifest/result contracts",
+      "limitations": ["Consumed v0 schemas remain provisional by family authority; exact bytes are pinned in the product packet source lock."],
+      "sensitivity": "internal",
+      "accepted_as_project_authority": true
+    },
+    {
+      "id": "SRC-0003",
+      "name": "Project Blueprint 1.0.0 generated high-assurance snapshot",
+      "location": "repo:.project-blueprint-origin.json",
+      "classification": "generation_provenance_only",
+      "observed_on": "2026-08-31",
+      "intended_use": "Harness and dossier structure and validation patterns",
+      "limitations": ["Transfers no project facts, permissions, decisions, or readiness."],
+      "sensitivity": "internal",
+      "accepted_as_project_authority": false
+    }
+  ]
+}

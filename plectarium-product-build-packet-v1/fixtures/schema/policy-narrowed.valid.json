@@ -1,0 +1,15 @@
+{
+  "schema_version": "plectarium.policy-decision.v1",
+  "decision_id": "decision.approval.1",
+  "tenant_id": "ten_abcdefgh",
+  "actor_id": "prn_abcdefgh",
+  "plan_digest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+  "decision": "approved_with_narrowing",
+  "requested_permissions": ["repository_read", "network"],
+  "accepted_permissions": ["repository_read"],
+  "constraints": {"network": "denied"},
+  "decided_at": "2026-08-31T12:00:00Z",
+  "expires_at": "2026-08-31T13:00:00Z",
+  "authority_sources": ["tenant-policy-1"],
+  "authority_effect": "execute_exact_bound_plan_only"
+}

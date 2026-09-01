@@ -1,0 +1,11 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0002",
+  "occurred_at": "2026-08-31T12:01:00Z",
+  "kind": "task_ready",
+  "subject": "TASK-0001",
+  "actor_or_source": "repository foundation agent",
+  "summary": "Scope, authority basis, acceptance criteria, and validation plan satisfied the ready gate.",
+  "evidence": [],
+  "redaction_applied": false
+}

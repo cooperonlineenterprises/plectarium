@@ -1,0 +1,19 @@
+{
+  "schema_version": "plectarium.family-source-lock.v1",
+  "publication_status": "resolved",
+  "family_id": "standalone-capability-family",
+  "repository": "https://github.com/cooperonlineenterprises/plectarium-family.git",
+  "git_commit": null,
+  "packet_path": "standalone-capability-family-packet-v1",
+  "packet_version": "1.2.0",
+  "packet_manifest_sha256": null,
+  "packet_checksums_sha256": null,
+  "contracts": [
+    {"path": "spec/a.md", "sha256": null, "status": "ACCEPTED"},
+    {"path": "spec/b.md", "sha256": null, "status": "ACCEPTED"},
+    {"path": "spec/c.md", "sha256": null, "status": "PROVISIONAL"},
+    {"path": "spec/d.md", "sha256": null, "status": "PROVISIONAL"},
+    {"path": "spec/e.md", "sha256": null, "status": "PROVISIONAL"}
+  ],
+  "limitations": []
+}

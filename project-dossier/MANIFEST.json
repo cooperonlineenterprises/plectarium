@@ -1,0 +1,1142 @@
+{
+  "authority": "Generated point-in-time inventory and byte hashes only.",
+  "blueprint_version": "1.0.0",
+  "files": [
+    {
+      "layer": "agent_harness",
+      "path": ".agent/START_HERE.md",
+      "sha256": "dd3b9d8f03d83e933b13cabedd9a045e0ccec80e99353e57ba04f3243cfde160"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/artifacts/registry.json",
+      "sha256": "19205bffc0a38e2ea080481f8970a407f75152937b2ce5d209b503841505367e"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/checklists/task-closure.md",
+      "sha256": "989e9b6c2810963710b86f3350fc64a2ce7f61d668285c9ac1757d802147c6bc"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/checkpoints/CHK-0001-local-foundation-review.md",
+      "sha256": "c1b96964a9d3ae25baeaa3902ccb837c69775f579fa41319289a09433a162c94"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/checkpoints/README.md",
+      "sha256": "c033c280aa2c09046e1a86f5910664486fcdb3000679041df4620b95a6c7b250"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/context.json",
+      "sha256": "01933f0e146b3128ac763620ba8b4d419946cccec1618283b9a7cecc22d311d6"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/decisions/DEC-0001-foundation-authority-posture.md",
+      "sha256": "9fff26b71e6a23dff65b1a0937517f256531809143d743c6c59f54fb43804122"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/decisions/DEC-0002-suite-boundary-and-family-consumption.md",
+      "sha256": "0d0a0ce0b5340043614f0ae3771ec89006838e4b017825f9ea48fcc9f325bd65"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/decisions/README.md",
+      "sha256": "321f2910e7e6256e00dad950baf69484dc8b777249d62e5f8f0aa84ac018e1c2"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0001-task-proposed.json",
+      "sha256": "65e8e4c9ce4f82a2e7307d9855e3d4d2785382fb914e81aae8e2340ccf6a4da2"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0002-task-ready.json",
+      "sha256": "594bc7af426b7534da780124c3dbf41bbc3c550f2a3e091922e3087102b238d3"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0003-task-in-progress.json",
+      "sha256": "1f8f294cf7b732cb5c23fe49170fd3fe2095a12db74acda8da1699eabbc57651"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0004-task-validating.json",
+      "sha256": "4dbe2ca065ab94dbfa02b1286a8d3c63d82ebd8bae7e4265ceb2c9bdb382f2ae"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0005-task-review.json",
+      "sha256": "88dc538cb36490629bb93ab2041b8f91999649c3f3a18c51b9680b9eb3644726"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0006-task-completed.json",
+      "sha256": "762f83fa2465a5790e8aebd507a7dd0094f1c08557a42cb9f80a75e50a17de8d"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0007-publication-task-proposed.json",
+      "sha256": "dbb30c22db0e6a871b95b06a6322a408405965d1b936d0c3d5429f83f73a2842"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0008-publication-task-ready.json",
+      "sha256": "5e5c65aad933bf1a28848fc66b4fdbe1c6af8477bab4b536a5c9baa50c9028cc"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0009-independent-review-completed.json",
+      "sha256": "15fc641a3091b056574fbf2c63be4620070672f3450263c8510a87b7a1353f38"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0010-publication-task-in-progress.json",
+      "sha256": "c213a028b2c27edf4b9a093ac3351e417de149aabdeaf998d2fc4bc8b667847a"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/README.md",
+      "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0001-local-foundation-validation.md",
+      "sha256": "ea292e392c8d0dc921b05ff8a334e1fcb1af1ef96693343f58edefa697e95ed6"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
+      "sha256": "351a5e79f2f1ade19ebd7f4d0d6a11eac7e81f8cb090308df281568ec1fa9260"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/README.md",
+      "sha256": "68138e16a1146373c40e760402e3da10f90969c38f2bd6371cf72bbeaa25439a"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/extensions/README.md",
+      "sha256": "963991512bce7094e2346ad547345d6c8229bd575c176dbe7dbd4cfaaea678c4"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/extensions/registry.json",
+      "sha256": "00932a025627abadbf5d36f09e6af94ba1b8d57ea4056cd84d62792840755321"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/extensions/sample-restriction/README.md",
+      "sha256": "6a4cbd8be4221f761537c210f5ccfa998c8eedd1cbfd452f85c24f3510bae3ea"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/extensions/sample-restriction/config.json",
+      "sha256": "0d0d310e3186e873ba8489858ac62570dffe0a7c450c05c99cbb9080e8fafe23"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/extensions/sample-restriction/validate.py",
+      "sha256": "9125251f2ad72590bf0e9d07af95a3081fddc7ae5b975d220aeaad631104d7ce"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/lifecycle.json",
+      "sha256": "49db00094617bfdd1fd3ebcd9db0ec07c64a729adfe2bd3ef040d51c2fe5d88e"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/policy.json",
+      "sha256": "ed113ef2ee39a552e0e88a2fa07ccdd31312b3942616a9322da667e357f2e0ae"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/project.json",
+      "sha256": "1263e7fe43f84eb2eee28b55001e11512cd716f596bd4a040944e15ffb63f5a4"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/README.md",
+      "sha256": "d573877fd67d4b4dc1ce7ace1909ae7a69aabc0b5339f9ea9cb77e808425ba8a"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0001-foundation-candidate.md",
+      "sha256": "968cf91795a58f4189eed64ff18faada05ead235b170b363186f61f48320d4d2"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0002-independent-prepublication-review.md",
+      "sha256": "15df86a22473b7767352667f8a1183f31d6a33e975eaf979653bd3728c4c7c6c"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schema.json",
+      "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schemas/artifact-catalog.schema.json",
+      "sha256": "e164f0202a4560656ee4fd31db1948c6e054087bdf7cf2f5715a519808e4b7cd"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schemas/dossier-records.schema.json",
+      "sha256": "51c69c4447e8e8de52a33515e383b4196ecab6649011137aecef9d4b1dac38ac"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schemas/harness-extension-registry.schema.json",
+      "sha256": "4960af2d85a1c7467d56d06a202857eb0995b094b9129dc48b4a87efc8de65f8"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schemas/harness-record.schema.json",
+      "sha256": "da7d9682f4ae4538744fa89288b0a2b5bbbcec2d35e92c1b5251ee93ea5dbd90"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/schemas/project-blueprint-origin.schema.json",
+      "sha256": "42726c4542fddbc63f3d149c2582a5ef76f2c545b7283c4f043f4542b6e3c7a1"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/scripts/refresh.py",
+      "sha256": "a5943021f24e8d51207c81ea577c74cc351b611f28fe7d96c77b93725f7a29c6"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/scripts/validate.py",
+      "sha256": "a9afc76d62e4ca2781ed92741f023144a60f00f76065dd4dffcc52b66f409986"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/state/RESUME.md",
+      "sha256": "c6b38a53e6c1f857dcb424c793e57c35a2bfa2f9ac3a74be699264a083e10f54"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/state/current.json",
+      "sha256": "3c74d60d4c6cf11d902f323c334c4492223ac8ccc5d6a373cd8f24bd024f288f"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/README.md",
+      "sha256": "7e8b89542b07c6640ed046fefa45935fefc3ce4c3cf2bd9d01ce7ed524b9d8cb"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0001-repository-foundation.md",
+      "sha256": "2fc2167f3010e4b069e09d83934bdb242a6ded619f70a88d7cdb140f5c5aa7cc"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0002-foundation-publication.md",
+      "sha256": "d10c579e21372a6a4c6c5f471cd345f3f21ce6b6c5b70458c8e2e0ce18839e52"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/artifact.json",
+      "sha256": "055fa88e9ec92a9423e34db51d5dc45b0b0c6067c4512fdf1c28b7637f74828d"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/checkpoint.md",
+      "sha256": "6d7908758e595573cc9ff443787c5c525ac56b48be48fec27053dee816658a82"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/decision.md",
+      "sha256": "83aa685f80217fcb2a39ce1f88367c3dc54b3b69e42068719420213066f78403"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/event.json",
+      "sha256": "209b8b082ba50d130dad107ac82564ddfd2c0591c02098eb699fce3b9906c099"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/evidence.md",
+      "sha256": "147f89bffe9c97b1caeb95b68f6f4b3f68004cd9feb26ecfd6312b8ad3db5646"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/review.md",
+      "sha256": "cdd4648411083d2b6ee528111df795f79dd107a6d61521a6acf82783be758ac1"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/templates/task.md",
+      "sha256": "8f845774947005d0a149e52d0c79d6e6ee88ce843172444ef9f83e05d334d4b8"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tests/fixtures/invalid/duplicate-key.json",
+      "sha256": "f847ce79e2679479e9d72a5d6aed4d4382fba8045ddc265538da156bdf695ecb"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tests/fixtures/invalid/nested-agent-weakening.md",
+      "sha256": "ab8c35ddb13bf1a765d162a1cdbf43a2a23b7461e256696696706a71a0c775d2"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tests/fixtures/valid/kernel.json",
+      "sha256": "e1cbd067f509fd0d053852923069f796e70086e477b16b2735aac1c63edc16b7"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tests/test_validate.py",
+      "sha256": "a857f56911e6961da80e970158f92fe4568ffaf31d128311e72b1d0dac00d8f4"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tools.json",
+      "sha256": "84a67c73938b54aea625cd053ae3666de643d500655464994a6ea754c42e560e"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/validators.json",
+      "sha256": "3e15db4c07038b51785682192f0a46cce3973237cb12a618529da102dadb3dc0"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agents/README.md",
+      "sha256": "8c141f7dab3e6515042bbd997eac0b71b81b2f5823d68b5651b38b28373491b0"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agents/agents/reviewer.json",
+      "sha256": "067ce659aa93e967a25c3e3c92b2bd6bc5b44b5d8a280d2fee523bc447996fff"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agents/skills/change-review/SKILL.md",
+      "sha256": "c472d7e9343ce85b83491c1d2f5b63ebf5ad8a0e27de987075fcf07552d4a054"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agents/skills/change-review/references/provenance.md",
+      "sha256": "3d8382b9668c77dc1f249d2d298d605dbaeebcd7ec1819bd3630c2bd97d21528"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agents/workflows/safe-change.json",
+      "sha256": "3d41b7433ee7b46a53cd44ee8c79faab1674ec173f6bdc89d5d49cd6968f4461"
+    },
+    {
+      "layer": "project_source",
+      "path": ".editorconfig",
+      "sha256": "16b725578cc4efd980209803ceb7df16655549d90198b2c5ae8ebb179db9859f"
+    },
+    {
+      "layer": "project_source",
+      "path": ".gitattributes",
+      "sha256": "1133fceba5a88467e1996c3e2ca87e7942c93652840b7c9e3561494b27999a52"
+    },
+    {
+      "layer": "project_source",
+      "path": ".gitignore",
+      "sha256": "c4662344248206d110d11a583d216c17fa364f6d493ef1b1b2a1c7105215d290"
+    },
+    {
+      "layer": "generation_provenance",
+      "path": ".project-blueprint-origin.json",
+      "sha256": "2cd6038d2ac83b5675c0cf7874f0e1b93d5ceb0e4a6721165e6f99b80e837b7d"
+    },
+    {
+      "layer": "agent_harness",
+      "path": "AGENTS.md",
+      "sha256": "d38e3317a9a3a898f70c6d7042c10ee88176d633f7496935c273fc493112dd26"
+    },
+    {
+      "layer": "project_source",
+      "path": "README.md",
+      "sha256": "509076b18ed4835860af903553b0a87ad984e05d2bf66329e2525d6e662101e2"
+    },
+    {
+      "layer": "project_source",
+      "path": "SECURITY.md",
+      "sha256": "ba383196c3acc7d3d2c9132cfc24c5d73894f82195d55001b182ee263a430fad"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/ARCHITECTURE.md",
+      "sha256": "f3c4032c393ad962d0d0ca32bc24293a771b0881f4a50513cbe0bd602282046e"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/CHARTER.md",
+      "sha256": "35dc4fe7f6d5fd5301cf3ce2237e4afccc027f2d72e0a5724e269863a688dbe1"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/DECISIONS.md",
+      "sha256": "24d863a58e0fe23c744c4031567b1009e68fb3aef523f519ea4f1db316785b8a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/INTEGRITY-REPORT.md",
+      "sha256": "93e371ec07bfe57271bca7409986ccf35609adf5ebc7e318584724cff494d71c"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/OPEN-QUESTIONS.md",
+      "sha256": "81f267c72a6413a40a3a83265b032eb59cd071a317a4b88137d9151e4de5169e"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256",
+      "sha256": "76362d8f259986eba1758c5a7aca069b83e33e7cb90cbb3da7a7619d50b88347"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/PACKET-MANIFEST.json",
+      "sha256": "d77071033dad0c4a9160bba46d56304c542e021bf47d9202ee6e8fde96b1bf03"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/README.md",
+      "sha256": "940a85d8ed493c094fee0f3b7d7e97b04139cfd1f2b6b5c681463a577841376a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/RELEASE-CRITERIA.md",
+      "sha256": "9b8e84d1b100f5fb1f6c4134f7961cf3ea04b8300bfe278dcaeba3ab80deacb7"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/ROADMAP.md",
+      "sha256": "52224aa0aa97bf8464c8fcf7e4ee47d483f9a3854ef5030b692727c985f9388f"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/SECURITY.md",
+      "sha256": "e7cdd892aeb4e6619b20e139e12f1ad886c790e5d2d9356adde50ce4d8e8e580"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/BUILD-DIRECTIVE.md",
+      "sha256": "484d3ad769c55ac88b2782f11544cb1da96ceefb8f7ad3f480c9de7f9ce2bbfa"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/authority.md",
+      "sha256": "fcc2a5bd1aa5f87b0a9a272de8bd91448b81c77400ca91ca7f7f332a9f562d91"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/change-control.md",
+      "sha256": "ff6c7bea0b680d2f3529269efeacedc5870c14cfc7c344fbe5021101a7687c92"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/implementation-dependency-graph.md",
+      "sha256": "6008fba9deb0833bc26402e8f5e88713bbfb4f3800b187ad872a0b8ab225ed21"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/implementation-dependency-graph.yaml",
+      "sha256": "0363de3771c45a6ae67361a8634b1a1d65b68177d4e55326d4a3833b10b816d1"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/task-contract.md",
+      "sha256": "ec995b470429b3bd789fcebedbf25c6cf3ddda92c44b31734a7472d362162722"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-API-001.md",
+      "sha256": "dbf74972ee2e462b5334938ef4e08630377d37c0059a2c8ad1f0ca5ce772fbb4"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-ART-001.md",
+      "sha256": "78651f024fd4dbeb625fa1f923721864e782bcad7b0014181120c950f7a26a6b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-BOM-001.md",
+      "sha256": "6b4b6ab698420121e0868a15c17c9d85ec861fddf3bdfa852e146a27c76fa741"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-CAT-001.md",
+      "sha256": "a77c4e70936e36bae3a1d7ef1d81e0f3299dee5ae237246bb24cf1ee172deb40"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-EVAL-001.md",
+      "sha256": "b9c39a9f7ed7daf39abd74499555c10c13132ea2b8bbf6109f3aa5208b68ac3a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-FND-001.md",
+      "sha256": "2643f91b594669462ca8b9a3d398dfe3c7102bc8baf85c515dcde2a01b115079"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-FND-002.md",
+      "sha256": "b7a3159e80f88817f459cf590682efe56a6f12e68153c69de6cb31b84f73f222"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-IAM-001.md",
+      "sha256": "9c84a080fbd7d1cf265ac203b6add9bab32df176131c07d0bb7c47c392e8c128"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-JOB-001.md",
+      "sha256": "79ea6e19b4f208ceffa05845d50deef262a91baf19e2d12b334bd1b09f9f054b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-MCA-001.md",
+      "sha256": "303ae93712cb669f48d3ced29b5710e7f67f478d2447ddb89a412c51b5da9c17"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-MCA-002.md",
+      "sha256": "91cc9d8bc1e8c10dfabbb35332ba293a570e8e35eeabc26fc0b369adf7876cbc"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-MODE-001.md",
+      "sha256": "54fba8a373df75e4fbf11dd38cbd0a468d3774d48161cfd081e6323899a2a8aa"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-OPS-001.md",
+      "sha256": "d2051df77adcc7ad91a6822468941eb6ed0de3b3542fa0440d6ea9c952e4d2f8"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-POL-001.md",
+      "sha256": "44ace3dd75dfc056aa0dff12aa621e92d33a32b75529324f9eb771e145a391bc"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-PRIV-001.md",
+      "sha256": "3537073cdf5c0572cff28ea8ccd1ad061d0ffbba32efccf60c6c2258bcdd075e"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-REL-001.md",
+      "sha256": "334590bf2561e86fa9fb6636899553a662c3cf2e2b8bce8fb7e933ed04afa5ca"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-RUN-001.md",
+      "sha256": "a639ee6878a69552854ad9e666f9405b508ae89bd4a899e831523d961c4af787"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-SEC-001.md",
+      "sha256": "9dd145e0cfe2693379b547c192dd692b3b88756ba2c31c6362bf624c829d555c"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-SEC-002.md",
+      "sha256": "7e276777e7247a70dd36cf9bd84fc07ea3efe0c338db1543d046d323f5e596cb"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/PLEC-UX-001.md",
+      "sha256": "25dd03366fcc5304e727c58b6326e1925562a363b8d8eb21ed1f818ed98b274b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/tasks/index.yaml",
+      "sha256": "4a6f66076652f3507560288cbe469f9f7200d9fa27bfbfb0172a65e6f895eaba"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/validation-contract.md",
+      "sha256": "969ac522ea7aad3209f0de9f52308f25679134f96fbb9d4880bf0b649e471066"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/workstreams.md",
+      "sha256": "597d65638aeca93955ebe216378931bc3bf04d10339ded002de91a17d4deef8d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/agent/workstreams.yaml",
+      "sha256": "050746b6a7d4960cb51ed11f01b8cdca0ef76fb2af6e88c18fc1dbb157ec555a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-001.md",
+      "sha256": "ef6e62c7c782b97b9b28ef80aca5e4ba5d348e2b9a13559ac76af662bea21763"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-002.md",
+      "sha256": "b4803d0728b8c7443786d84bf161e2bc600afbffd050a5653fb94f6c8d3cd1fe"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-003.md",
+      "sha256": "beb8fa762e6fcea79859dac4b3e10d1c8d6a64cbddb0bbe4fb279f8f67edb46f"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-004.md",
+      "sha256": "4b06b2f80f629ec207bf4dc62f648be9c883a200c19504f1082ebd2f8e5567d5"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-005.md",
+      "sha256": "c263c3e7218d9e679bda74510948bec9d04f13e7798a023228909a1b83e0eb0c"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-006.md",
+      "sha256": "6e63b3bf2104ec8b33bce9e7e91acdb1a14bd1207edf44449dce4f6662a4ed35"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/data-ownership.md",
+      "sha256": "8c4c63d04c4a8eec3f583b469cf3a149b0b68dac53402783d7a01c2936f9b2f3"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/decision-ledger.md",
+      "sha256": "a722db9e9054e39451a30fdb2308d43784a296cfd2020550def43729a84713db"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/decisions.yaml",
+      "sha256": "3b42e380f0b3e3a2da30c30e6714b8c1506da38212893dbb100228be682f0ce5"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/module-boundaries.md",
+      "sha256": "6866ff6947f47944ad3da895ace3406676a239a2ce6ed58ecd4e9693e61ee17c"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/sequences/air-gap-export-import.md",
+      "sha256": "a1f20374ddf5ca452dd375f95c2455b47b1354a022b1c94b36bd5349c10bd0cf"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/sequences/cancellation-and-recovery.md",
+      "sha256": "c6f5c7211af1c3c7be6165b7406c313d6f3855c90650c9a5e4d0ffa2986f5b40"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/sequences/plan-approval-execution.md",
+      "sha256": "fa46219aee3a6be692fd8c8692998ef4b2e142ed0223bef15cce52e25832f38b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/evals/EVALUATION-SPEC.md",
+      "sha256": "a277489c7b96c35b441789548d503e5148017f6652b4c8b2727b5095dbb35c82"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/evals/claim-proof-matrix.md",
+      "sha256": "ad0dd39ab4488a4b840267f0c5352cc798a507d7ad7990ca17ba59f0686d7280"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/evals/conformance-matrix.yaml",
+      "sha256": "33c3073521ae59f680cd180080aa163c677217f6931b4e391522cd60e4e8b4d9"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/evals/release-gates.yaml",
+      "sha256": "2343f92e422cd33a526999de057a277163fc3a12ef5ea3fbd04cb6c8c7fb3922"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/evals/test-catalog.yaml",
+      "sha256": "e1690a1c48f76c2b9a4b984a1a3e55e724a97ede2b4603a61a2b36f2f74d1db1"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/README.md",
+      "sha256": "677b61b0ea5cdfec3a2cd7627b771b448e56e540ef911933df5d348fda5af1bf"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/index.yaml",
+      "sha256": "dbbfff16f23645ef533768d3aa0b25450d4b063e765fcd9e4887d46408f4e326"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/lifecycle/job-transitions.yaml",
+      "sha256": "398d3c70297fb49105e7275a23465ab171a47c082c68a36f849a616479e442f7"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/air-gap.valid.json",
+      "sha256": "7ba312b899d086699bc1f5d064da78037401aef75568b70a679ef7790b97d3e1"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/artifact.valid.json",
+      "sha256": "4c8ef2e82da94224c3d58e3106cbe18b2c79e79403f6766c97858d23963e3f27"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/catalog-entry.valid.json",
+      "sha256": "ec1f53ac72cf1d70d0e7071f6b637658e8fe2b262d5d4809c8264ed3a8fdb098"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/coordinate-missing-family.invalid.json",
+      "sha256": "62765c07a66c096851918d342d2fbd47358e913e5b08f74012e28ee87f986a03"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/coordinate.valid.json",
+      "sha256": "b6ed27c21de40195d3763f1512f505c08ee8afcc7413bd23a0ff0d783496e53c"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/family-lock-pending.valid.json",
+      "sha256": "21cd75b6448ec13ec838af118be7bc46d0662ad1bf6c1048b9a58e1aad4ec741"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/family-lock-resolved-null.invalid.json",
+      "sha256": "910dce309f9f9a8c4fe55374bcbb212b64c9ab2df7d0a687fab4e00f21313291"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/job.valid.json",
+      "sha256": "ed1d00a249549542eab42a3cd511abeeb5ac7ab637df58982a700f90c6228809"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/policy-narrowed.valid.json",
+      "sha256": "3ba0703a5a23c3949656f1dd8a4827684f0774488fd4555dd27974e983158326"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/policy-widened.invalid.json",
+      "sha256": "945152adb0fa40d0d2a3e75490156b2d878fb7b01ff2e793b248f85f565c5ac9"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/profile.valid.json",
+      "sha256": "fd8d3a4ec425220f4e099c6e8880f4cb2bce31686af6d3ac3190d6e18e57e868"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/result.valid.json",
+      "sha256": "0008a7c721f319cf3d6c95a1e2d29ef878c550f881d8bdc2fa7fb1cbad71c6ee"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/runner.valid.json",
+      "sha256": "71dd684adec2017a6437bca0daf229f5aa0fca1bdf5f99cbcc4c986b23023349"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/fixtures/schema/suite-bom.valid.json",
+      "sha256": "62e6d659ee2fdb9670a767c97a8d5abfd231bd1ac01b2a458ebd69de6d08071b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/integrations/air-gap-transfer.md",
+      "sha256": "4c66c7cb763e738078441f5d9ef228de039fb192316ca8b373497b407b198946"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/integrations/direct-cli-and-ci.md",
+      "sha256": "c8e5c54488d7cc1af71a1d54b61d58b02c5171c64ebdf7bd2f1a6079e07e13b3"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/integrations/family-contracts.md",
+      "sha256": "bd7a5de0788f81614981137561605b34652205a9b7c45ebdc688c93f135d9c29"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/integrations/octon-ecosystem.md",
+      "sha256": "eeab061f77f5820db62b20084e1ad38ff3717bb56ed28e407c52c234a178c0a7"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/integrations/private-runners.md",
+      "sha256": "81439e39e9b2b94ac517ea32773574b945f16b8296c2693f53d6b1a6de4e5373"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/reference/family-source-lock.json",
+      "sha256": "e4a7ec3b957102715c4d80f1937d3d596cd939f893f9d307b606c2f20b39843d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/reference/internal-consistency-review.md",
+      "sha256": "49798f2aa8285708c618e862c8c639819402ad385642ecb34b4597d4362571a2"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/reference/prompt-coverage.md",
+      "sha256": "efb35b6c67902bde62a0dd55be877ed8307bbec9fd8e01be199c63569430c23d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/reference/source-map.md",
+      "sha256": "27f2708e3839a6462ce47a52ff962287191934e1e4fb54002d95d5a19faccd66"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/research/licensing.md",
+      "sha256": "c7abbcf54ec11e96ac48e89eca4a21cc359ac5b3713fb3c168f234c67b064f37"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/research/source-register.md",
+      "sha256": "d9c0b64d369fffbf7c73ae2d9edd6d39501faec0112a7396cecd7ddf94a16de0"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/scripts/validate-packet.py",
+      "sha256": "39c060b9c47ffb609db00eb471d44d979eb9675489d87b1f91d978907e25fd51"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/api-event-and-queue-contracts.md",
+      "sha256": "7bd12bc1dfd98782b4f503cb2bead676ec966a486e3f9add82dfb554e0dc9c53"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/artifact-result-provenance.md",
+      "sha256": "94f4e4913268ce7e3b31f29d59bfe84e857b5bc81f472c0aea60f4e952edf280"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/catalog-and-discovery.md",
+      "sha256": "de4f4e88a8653d601d37a0c327b5e347f4d4725389e993d1e565eedbe317a44a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/deployment-modes.md",
+      "sha256": "d36ec4d5761912d78b60fdea2ac8205afed7c246c8e91c047541b83ef179da66"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/failure-recovery-and-idempotency.md",
+      "sha256": "8a4378f6724aed923602bb2469b3198999a14dc0c186d56d171b8585d8646575"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/family-contract-profile.md",
+      "sha256": "1976b675dd7882041eb859a1d243db456032a95675308d85797c2acc81659183"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/identity-tenancy-and-access.md",
+      "sha256": "1f27fb144ddd2241512e5eebff94063060267ae3718629baca4354b5c023160d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/invariants.md",
+      "sha256": "f4416e35925044af78cf909c565867edaafaf1275770c7adacbf613b46988627"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/job-lifecycle.md",
+      "sha256": "27ee4bb5c8f42f2876e458cd07b74aa7994b4d0bf970bddd1bacc0dc98eca66d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/operations-slos-and-migrations.md",
+      "sha256": "62d39848facaa4209b586ffaed62a988d23e29f6a3cf717bfb3ab4cc01a49f75"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/privacy-retention-and-audit.md",
+      "sha256": "92989ce67a5e327a7d1672164cedc89ffe1d46c48287dc46cf64035994efe5cf"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/product-experience.md",
+      "sha256": "56efcfb229ac581a41af7525196da943d2fbc9676d3eef4fbd98e232accd587a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/request-plan-and-approval.md",
+      "sha256": "32ce9dda28156baf7bde1e14e5b4771844da10b3b24ad3bc956a74dff0eab9ef"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/runner-coordination.md",
+      "sha256": "e1cb54c2de257b1df79b7d252f2935b23b54c61bec97c54decc31138f84f6211"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/scheduling-quotas-and-retention.md",
+      "sha256": "c608bb23124c3761f9a9e5cb1492f9213906ca5f6bdcd6b9184d3600a21abdb1"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/air-gap-bundle-manifest.schema.json",
+      "sha256": "9b7e4ed0b7c4c5fb5e15f835a1932841ad11b4d09c36e2458549affa0d84c340"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/artifact-record.schema.json",
+      "sha256": "877623c94a3cd0974ad513a43b1f2ed7e281a26b86007278c36b655d60a67c67"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/audit-event.schema.json",
+      "sha256": "655b0e8590bbcc0e6b0baaedc9aadf0b3817332363eccf51d20f0c4f8b211270"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/capability-coordinate.schema.json",
+      "sha256": "57ab6c4421feb660f678b2f0ff0d387119d93942be6efd88a0783d797a049d91"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/catalog-entry.schema.json",
+      "sha256": "e63aa5e5d213e5075d8efebcfab6b65a55e48b95d993652abf136716f025240b"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/common-definitions.schema.json",
+      "sha256": "f3c900b3d52de12ea488eeb97a60557458bfff5a8c9bd03526fa4f30c91874bb"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/execution-profile.schema.json",
+      "sha256": "9074b416e50256eba96c17501ca89022dcf287797317c137b22955f0c6cd979a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/family-source-lock.schema.json",
+      "sha256": "cdc8d7fcd0a7b6f4983677f73f76eecf147c1ce9a6063e36ff2e01ddcd2c37cc"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/job.schema.json",
+      "sha256": "ba24b5454951f1663382d35788d837d18559c801d7d096c8249a3503f335fa4d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/policy-decision.schema.json",
+      "sha256": "b4b373f49b01e63437fc120ab05f261c75734a81c527a1d08a26a49f3051c05a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/problem.schema.json",
+      "sha256": "4a5173fda99b7a9952c72f63243c2c259e259b51eb5059c2f58a6041b2d6060d"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/quota-retention-policy.schema.json",
+      "sha256": "bd34172efd223af654292007d16ab99ae2b4127769b3df37ff34e77e9db3ad7a"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/request-plan-binding.schema.json",
+      "sha256": "94a050f47857f87fc62748300cfcc00c6bf3b0090a3d74c683364cbff850fae2"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/result-record.schema.json",
+      "sha256": "ad03df646ea694ea1b5a0c20c38869bbc62faa829b32c185c923388e4476face"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/runner.schema.json",
+      "sha256": "5d660b98410aa4f34ccb3ad40b046c6f460ff7e1d307cc1b214be1b7197a0e0e"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/suite-bom.schema.json",
+      "sha256": "ba9f792c5e6c5e749cc56e7ee9eac171fd57e08389c1f287fda6f6585e2988df"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/schemas/suite.schema.json",
+      "sha256": "ece2202faf390759809b0415b4eacc735a2712d9f74d78fd2266fe953cdf7f1f"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/spec/terminology.md",
+      "sha256": "867553dd018d0f3c0232f88b173777f19ddf904bbf74515652befce3199e0ce5"
+    },
+    {
+      "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/suite.yaml",
+      "sha256": "23b276e703c88e0e0719ac2ff9367b723f2091ad40fbfdf86419167e0521d297"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/ARTIFACT_CATALOG.json",
+      "sha256": "f6fac75262ccbb59e8f368967185becc90c9c6b73bff1852c6d127e922186bcb"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/AUTHORITY.md",
+      "sha256": "02c4702e9f3034adc576e58f290d7e2c9b195cdb406d5305e75fe3a1aff5b526"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/CANONICAL_SOURCE_MAP.md",
+      "sha256": "bc02f5f69bdedd8231ebd698052b0962b57b19c9bcaf2db8469aa1d19e7d9261"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/README.md",
+      "sha256": "663f0ff9764aebf334c845547e2b491b90ac27fe7b12813769ef607010a23420"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/SUPERSESSION.json",
+      "sha256": "72f425e55c75bcb2210c5782445f413e766a913e33a7eb7a346b3197f359d4b6"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/VERSION.md",
+      "sha256": "6ad78f24d1a48bada20c3dddc08e2368a910aff3c1a2a4d12043bcd8d8583af5"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/canonical/architecture-or-outcome-model.md",
+      "sha256": "bb021466262b2d278a701e300022dfcb9885aec3daec75f288d8917f6b785608"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/canonical/constraints-gates-and-readiness.md",
+      "sha256": "fc6aba6142b05c96e08b80b49a4017ef69d1b0b969bcd78895ffe00c452f4e1e"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/canonical/executive-project-definition.md",
+      "sha256": "32127dbb748722b9517f10caac5f82517e5295260caf9dc2937e68e60520c381"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/canonical/requirements-and-constraints.md",
+      "sha256": "6641f82e7b2162ec44fa9dd9555c65a752de69e36de65ea1fbd8371720efb6f7"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/conformance/README.md",
+      "sha256": "dc6702f309dc76894b06eaeace1592d23660a78adde2016e2ef6066966ef132b"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/current-state/README.md",
+      "sha256": "8400d0a928a30b281ec6d9ba89cf9ec443c419010490c283a699eea49ebfc62c"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/governance/README.md",
+      "sha256": "6084ab6df2ca21e30af98ff0521c45dcedcab78a85ed55671d8d418f30411c87"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/handoff/ADOPTION_CHECKLIST.md",
+      "sha256": "d2aeeda9d002a669be92280e70789a97d41fe3b34a6dc5be78cfcf1b93beea5c"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/handoff/START_HERE.md",
+      "sha256": "a0aa42511171b4eaa904ba56140bb7dd7818427ea15ce5366e683bb499fbad64"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/history/README.md",
+      "sha256": "92f3285f9d0ce5e03fb694b3d09d1f46de4ed6151ec3e680fdeb3902e51731d0"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/evidence-index.json",
+      "sha256": "13cf809a362eeefc8bd0dbd57370471b8fe5b9be9e03e90bcd65755f23907697"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/findings.json",
+      "sha256": "eaff08fe22278710a4605d35aeac091e61f472ebca949875448b4819d0f80799"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/path-authority.json",
+      "sha256": "5efa2005dd6b170a67d23eaa1517be2498508ec6c74602cb4b2893562bd65880"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/plan.json",
+      "sha256": "2db3fac55295ed3d40970b1bb4c715455486484ed89fcff1b02f59a4045496d4"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/raidq.json",
+      "sha256": "7c4c53df98e00351273146a40539ff183f9808d1a1d813828e81ebb5cf836b12"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/requirements.json",
+      "sha256": "664ce548a6b26030a18752bba5235a02704e7e3d0b7f58baa3474db0f14d2e7c"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/machine-readable/sources.json",
+      "sha256": "42dc9c66293f3951587a39855e75e6e7fcb25dde3343466321c25a0197a6455e"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/models/README.md",
+      "sha256": "eeaff85e106f53089a0005bf778873efd58f2a314104e8e9fb63d7c7244de5b9"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/operations/README.md",
+      "sha256": "6a02a6825bf676d8b0b1e5bd79684b5b2b7cd789e75ef837aee23a651d14d812"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/plans/README.md",
+      "sha256": "fe59536fedf57fdf3624ee97f5d7970b25ab12006e4700c17c536c3af09feebe"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/provenance/README.md",
+      "sha256": "5d8d575b7abdb0d9cef9f5000fe6855cb5314118a2eac66bcef9a2faaa08864d"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/registers/README.md",
+      "sha256": "7c13e25d66560195b501e65edc9dff01f4aff948fd0bcc94039db693a80bfbcb"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/research/README.md",
+      "sha256": "c6606b526862fad7d1e5cce2c08bae3949e31a7791e43ad19c2237303e03a343"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/transition/README.md",
+      "sha256": "df4bec3e071a1a5e6aaf01c3a6f555419131a66885d3b3687ef9e30a1ec36c93"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/validation/QUALITY_GATES.json",
+      "sha256": "091f56a907b270a09857fcdd0ec0607330706c8d371a963d8bd527f13d5f9cdb"
+    },
+    {
+      "layer": "project_dossier",
+      "path": "project-dossier/validation/README.md",
+      "sha256": "eb9ac2b47d2160a87b52a5e604afab28921ab02173beca3268410b264d418aa3"
+    }
+  ],
+  "generated_on": "2026-09-01T02:32:47.323839+00:00",
+  "generation_id": "3c94828af2882dd0fd56b5488e8e6b46",
+  "harness_kernel_version": "1.0.0",
+  "profile": "high-assurance",
+  "schema_version": "project-dossier.manifest.v1",
+  "source_fingerprint": "60c1e8284a95fe1a74f75c0cce95ea25458aaaf7b502417713c06a2dfa706fa7"
+}

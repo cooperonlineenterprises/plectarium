@@ -1,0 +1,46 @@
+{
+  "schema_version": "project.dossier.quality-gates.v1",
+  "document_role": "adopted_criteria_not_approval",
+  "permission_grant": false,
+  "project_slug": "plectarium",
+  "last_reviewed": "2026-08-31",
+  "readiness": "not_assessed",
+  "gates": [
+    {
+      "id": "GATE-0001",
+      "title": "Dossier and harness structural integrity",
+      "status": "satisfied_local_foundation",
+      "owner_role": "Verification Owner",
+      "required_evidence": ["EVD-0001", "EVD-0002"],
+      "approval_source": null,
+      "limitations": ["Structural success does not establish project readiness."]
+    },
+    {
+      "id": "GATE-0002",
+      "title": "Immutable family source pin",
+      "status": "satisfied",
+      "owner_role": "Catalog and Compatibility Owner",
+      "required_evidence": ["EVD-0002"],
+      "approval_source": null,
+      "limitations": ["Family v0 contracts remain provisional despite exact byte pinning."]
+    },
+    {
+      "id": "GATE-0003",
+      "title": "Product implementation authority and readiness",
+      "status": "not_assessed",
+      "owner_role": "Product Owner",
+      "required_evidence": [],
+      "approval_source": null,
+      "limitations": ["The current setup prompt does not authorize implementation and no product behavior exists."]
+    },
+    {
+      "id": "GATE-0004",
+      "title": "Repository publication and equality",
+      "status": "ready_not_run",
+      "owner_role": "Primary Portfolio Agent",
+      "required_evidence": [],
+      "approval_source": null,
+      "limitations": ["No local Git or remote effect exists yet; TASK-0002 owns this gate."]
+    }
+  ]
+}

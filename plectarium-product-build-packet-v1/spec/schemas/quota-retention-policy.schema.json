@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.plectarium.invalid/v1/quota-retention-policy.schema.json",
+  "title": "Plectarium Quota and Retention Policy v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "policy_id", "tenant_id", "effective_at", "quotas", "retention", "authority_sources"],
+  "properties": {
+    "schema_version": {"const": "plectarium.quota-retention-policy.v1"},
+    "policy_id": {"$ref": "common-definitions.schema.json#/$defs/identifier"},
+    "tenant_id": {"$ref": "common-definitions.schema.json#/$defs/tenant_id"},
+    "effective_at": {"$ref": "common-definitions.schema.json#/$defs/timestamp"},
+    "quotas": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}},
+    "retention": {"type": "array", "items": {"type": "object", "required": ["data_class", "disposition"], "properties": {"data_class": {"type": "string"}, "duration_seconds": {"type": "integer", "minimum": 0}, "disposition": {"enum": ["retain", "expire", "purge", "hold"]}}}},
+    "authority_sources": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  }
+}
