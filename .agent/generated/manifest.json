@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T01:22:48.358603+00:00",
-  "generation_id": "3a577c7c85a799902b674ed932d9d070",
+  "generated_at": "2026-09-16T01:36:00.971164+00:00",
+  "generation_id": "5bfe90876c0546d8eb86b8442afc6203",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -54,6 +54,9 @@
     ".agent/events/EVT-0034-erratum-task-validating.json",
     ".agent/events/EVT-0035-erratum-review-recorded.json",
     ".agent/events/EVT-0036-erratum-task-review.json",
+    ".agent/events/EVT-0037-format-evidence-recorded.json",
+    ".agent/events/EVT-0038-format-review-recorded.json",
+    ".agent/events/EVT-0039-format-task-review.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -61,6 +64,7 @@
     ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
     ".agent/evidence/EVD-0005-review-remediation.md",
     ".agent/evidence/EVD-0006-review-lifecycle-erratum.md",
+    ".agent/evidence/EVD-0007-finding-format-erratum.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -76,6 +80,7 @@
     ".agent/reviews/REV-0003-publication-closure-review.md",
     ".agent/reviews/REV-0004-project-family-migration-review.md",
     ".agent/reviews/REV-0005-migration-review-erratum.md",
+    ".agent/reviews/REV-0006-finding-format-erratum.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -272,5 +277,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "4e279abd4f08a4804bc7e1cfbd2d7196b36a842f30150f5c1b1eed9a8db8f557"
+  "source_fingerprint": "da00f40590192fce6c00d7bc737a2decdc6b0210ccdd07ac849136c0aeb4a0b0"
 }

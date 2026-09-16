@@ -14,7 +14,8 @@
   "closure_evidence": [
     "EVD-0004",
     "EVD-0005",
-    "EVD-0006"
+    "EVD-0006",
+    "EVD-0007"
   ],
   "external_effects": "Local non-overwriting filesystem relocation, repository-local edits, validation, a local candidate commit, review, and local integration only; no push or other remote effect.",
   "limitations": [
@@ -48,7 +49,8 @@
 - [x] Historical publication and provenance records remain byte-preserved.
 - [x] No remote, deployment, product, production, or paid effect occurs.
 - [x] A distinct T1 reviewer approved the exact corrected source candidate.
-- [ ] The corrected evidence-bearing head receives repeat independent T1 review.\n- [ ] The approved candidate is integrated serially into local `main`.
+- [ ] The corrected evidence-bearing head receives repeat independent T1 review.
+- [ ] The approved candidate is integrated serially into local `main`.
 
 ## Erratum and active review boundary
 

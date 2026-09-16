@@ -1,6 +1,8 @@
 # Plectarium
 
-> **Current routing.** Live operational status is owned only by\n> `.agent/state/current.json` and the active task named there. Older publication,\n> evidence, and push language below is historical context, not authority.
+> **Current routing.** Live operational status is owned only by
+> `.agent/state/current.json` and the active task named there. Older publication,
+> evidence, and push language below is historical context, not authority.
 
 Plectarium is a cohesive product experience and optional control plane for
 independently usable specialist capabilities. It is part of the Octon

@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0037","occurred_at":"2026-09-16T01:33:00Z","kind":"evidence_recorded","subject":"EVD-0007","actor_or_source":"/root/input_resolver","summary":"Recorded the accurate Plectarium finding map and literal-line-break correction.","evidence":["EVD-0007"],"redaction_applied":false}

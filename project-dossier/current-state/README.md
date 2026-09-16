@@ -1,6 +1,8 @@
 # Current-State Baseline
 
-> **Current routing.** This dated observation body is preserved. Live status and\n> next action are owned only by `.agent/state/current.json` and the active task\n> named there; historical push language is non-instructional.
+> **Current routing.** This dated observation body is preserved. Live status and
+> next action are owned only by `.agent/state/current.json` and the active task
+> named there; historical push language is non-instructional.
 
 > Dated observation only. Plans and canonical documents are not implementation
 > evidence.

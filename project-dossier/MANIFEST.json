@@ -234,6 +234,21 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0037-format-evidence-recorded.json",
+      "sha256": "7e0873f5356f7e850429057a34781ebe32a7af15b62eed4bc4d953a664b8d2c8"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0038-format-review-recorded.json",
+      "sha256": "a962033f5b63768ffc6f83be988380cce936775d5ce0da8b98e5d9883bb0db1d"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0039-format-task-review.json",
+      "sha256": "a6644bd915bd09c39614d5ad9a13750e127bd6de7301638db95bb8e4f2384259"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -266,6 +281,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0006-review-lifecycle-erratum.md",
       "sha256": "f5b63074d389bf748688292efba4c37ef698bf56cdc47bfca7261a4d9446416c"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0007-finding-format-erratum.md",
+      "sha256": "0a3a70e3ab3975e90c14d756e4b8f9bb48d8f0060b9e98497a130ea2023a706d"
     },
     {
       "layer": "agent_harness",
@@ -344,6 +364,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0006-finding-format-erratum.md",
+      "sha256": "4071697796c98ce5c68b405f34251550215f7f44200cc0058803bf90fbabd91e"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -390,7 +415,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "a16faf548e4a238982b2fa0f8baf74a35069bbfee09902cd579b95a9c50ec7e1"
+      "sha256": "20eae6790160f30c3d7d6be506af76c63ec6065fdcbefca9aaf913768e3de28f"
     },
     {
       "layer": "agent_harness",
@@ -410,7 +435,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
-      "sha256": "db1bbf1f21ebf87b6ce50572e37e469c4255c18bc6f6f59a210bdc5dfbb218f3"
+      "sha256": "416f3f46275562ba259ad9864916cf113b32a3fa6f0ffc9384d8ace93bed01a7"
     },
     {
       "layer": "agent_harness",
@@ -535,7 +560,7 @@
     {
       "layer": "project_source",
       "path": "README.md",
-      "sha256": "5a412062a1507902c4d45cc1eecd462d966d2ffc52259ff08e67eaeee1351af9"
+      "sha256": "423777a24ddece9ee2f9815db18cc96aa44d6aa4f3695390c4542ac851816cbf"
     },
     {
       "layer": "project_source",
@@ -1170,7 +1195,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/README.md",
-      "sha256": "c7fce84542b9b8c5da036ba1ad95551bc228f0879453e1911d1d00beb2ebd44d"
+      "sha256": "874d182fdaa60dde20b2a77814e62551403c23f43c0fd2e65c53fac888923d8a"
     },
     {
       "layer": "project_dossier",
@@ -1210,7 +1235,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/current-state/README.md",
-      "sha256": "f78e5104e94db7d7aaf61856d28b1a299e1cb59f34394ff3fb73e1e97795c79f"
+      "sha256": "ffbe8eefe5d85d9adb5806f38c8e4059a0d0bcb081d2e6cbff8471b07fd48e82"
     },
     {
       "layer": "project_dossier",
@@ -1313,10 +1338,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T01:22:48.358603+00:00",
-  "generation_id": "3a577c7c85a799902b674ed932d9d070",
+  "generated_on": "2026-09-16T01:36:00.971164+00:00",
+  "generation_id": "5bfe90876c0546d8eb86b8442afc6203",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "4e279abd4f08a4804bc7e1cfbd2d7196b36a842f30150f5c1b1eed9a8db8f557"
+  "source_fingerprint": "da00f40590192fce6c00d7bc737a2decdc6b0210ccdd07ac849136c0aeb4a0b0"
 }

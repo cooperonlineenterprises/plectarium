@@ -1,6 +1,8 @@
 # Plectarium Project Dossier
 
-> **Current routing.** Live operational status is owned only by\n> `.agent/state/current.json` and the active task named there. Older publication,\n> evidence, and push language below is historical context, not authority.
+> **Current routing.** Live operational status is owned only by
+> `.agent/state/current.json` and the active task named there. Older publication,
+> evidence, and push language below is historical context, not authority.
 
 > Documentation only. This dossier does not grant permission or override
 > current user, platform, repository, or live harness instructions.

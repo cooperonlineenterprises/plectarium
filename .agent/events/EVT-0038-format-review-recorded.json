@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0038","occurred_at":"2026-09-16T01:34:00Z","kind":"review_recorded","subject":"REV-0006","actor_or_source":"/root/input_resolver","summary":"Recorded the additive Plectarium review metadata/format erratum without altering prior review bytes.","evidence":["EVD-0007"],"redaction_applied":false}
