@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0041","occurred_at":"2026-09-16T02:03:00Z","kind":"review_recorded","subject":"REV-0007","actor_or_source":"/root/input_resolver","summary":"Recorded /root/candidate_review_a's final T1 approval of exact integrated Plectarium head 8bf3ca231f97c81151b677b322f1bffd96204723.","evidence":["EVD-0008"],"redaction_applied":false}

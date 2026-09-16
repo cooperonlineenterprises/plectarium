@@ -5,7 +5,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/START_HERE.md",
-      "sha256": "e29ced84c2a13f8e267b085fb092671911414243b63c883b525fe153b840eea1"
+      "sha256": "b875b224738dfa1d75e8627dbe342fed7b107c7638733d6a72015a9db2f05673"
     },
     {
       "layer": "agent_harness",
@@ -254,6 +254,21 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0041-final-review-recorded.json",
+      "sha256": "33c767fc2b694fd3f84959af248fb374114ecb3660016f13e75a3ace76e75639"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0042-final-evidence-recorded.json",
+      "sha256": "05da8985516dbcc1fc3456493c87d76be09367d44a6b855525365b0c8e089966"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0043-final-task-completed.json",
+      "sha256": "2bb20bc8aa3928fe8aeb4075c0b8c66d6f6cfc34c809021f8ee16ffb6b028a64"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -296,6 +311,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0008-local-main-integration.md",
       "sha256": "5a4efbf744e020a636551b8d096704b4ddf39e1c0d730f44b892dbafd668d789"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0009-approved-integrated-closure.md",
+      "sha256": "ff0b7026be23adb6392c6c71bc715d62bcc3a7d8eaa94f605fb34a760eee59af"
     },
     {
       "layer": "agent_harness",
@@ -379,6 +399,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0007-final-integrated-head-review.md",
+      "sha256": "47e5f755956ff24eb0f59077bd4ff2cada8384cf378a4c398ed4fa0c6a60b4f6"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -420,12 +445,12 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/RESUME.md",
-      "sha256": "6b744d49713153427c6be1dd6205c5c0cc5f4c5e1d47369171bae878f2cd9027"
+      "sha256": "5f9cb0a13e60e783059cbc0e498507ff362e93ef0e55fcc6c965a02cf4ec3981"
     },
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "23b26a02f17d8942262bbc4d802bbaf1b8b88f3c676d25e2923169fe03a4ba08"
+      "sha256": "679462bf69bc3699123f1a78fbcc2b17db67d74ceb16fa2741bfc3ac955ead0d"
     },
     {
       "layer": "agent_harness",
@@ -445,7 +470,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
-      "sha256": "63a50673dd26e1bfc03c5669dda3567ea8b88dcc652866b9ef1502ac1bdc0dc7"
+      "sha256": "f0ad2608c29c816a42c4b9e508a7860359a8460b80affb90f27fca1c89e40e65"
     },
     {
       "layer": "agent_harness",
@@ -565,7 +590,7 @@
     {
       "layer": "agent_harness",
       "path": "AGENTS.md",
-      "sha256": "bd4730b61afddd3826fe4868c7daa20e1f393af79b52382f4747b30973d33a14"
+      "sha256": "9fad863786d9bad66e713dc58679b95c59ed98b502dd3bb0693d695085d6385d"
     },
     {
       "layer": "project_source",
@@ -1260,7 +1285,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/handoff/START_HERE.md",
-      "sha256": "a1b4e560880e1e1d500bb29c98c401a6afc290e783b3623b3e946a35fa0b2c09"
+      "sha256": "ff22f5c2e2810051b4307cc6620b34339b4c62adf3da919dd5f9a9aec033dab0"
     },
     {
       "layer": "project_dossier",
@@ -1348,10 +1373,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T01:53:05.885878+00:00",
-  "generation_id": "d1d492dc624995877f8090c230f53174",
+  "generated_on": "2026-09-16T03:25:20.210698+00:00",
+  "generation_id": "983b2812d26652029fe7898ed7a15e6f",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "72ba765419eab865df61dae81d21a183be3a27204e293ebdb47aaa1e9f70b470"
+  "source_fingerprint": "2675282ed6cce080c0aca717d5507db3c803b3c3e1b3a588df107f08449702e0"
 }

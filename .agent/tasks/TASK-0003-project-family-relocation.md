@@ -2,8 +2,8 @@
 {
   "schema_version": "harness.task.v1",
   "id": "TASK-0003",
-  "status": "review",
-  "previous_status": "validating",
+  "status": "completed",
+  "previous_status": "review",
   "title": "Adopt the relocated Plectarium repository and immutable-pin validation",
   "authority_basis": "Current operator request dated 2026-09-15 for local Plectarium architectural remediation and workspace migration",
   "owner": "migration_implementation_agent",
@@ -16,15 +16,16 @@
     "EVD-0005",
     "EVD-0006",
     "EVD-0007",
-    "EVD-0008"
+    "EVD-0008",
+    "EVD-0009"
   ],
   "external_effects": "Local non-overwriting filesystem relocation, repository-local edits, validation, a local candidate commit, review, and local integration only; no push or other remote effect.",
   "limitations": [
     "All prior task, evidence, review, checkpoint, and event history remains preserved.",
-    "Local main contains approved migration head 2b301b437490ca49317cabbcccf80a929f633817; candidate branch remains preserved at that commit.",
-    "origin/main remains at the pre-migration commit because no push was authorized or performed.",
-    "The integrated evidence head requires final read-only T1 review before task completion.",
-    "Product implementation, publication, deployment, production access, and readiness remain outside scope."
+    "Independent T1 reviewer /root/candidate_review_a approved exact integrated head 8bf3ca231f97c81151b677b322f1bffd96204723 using gpt-6-astra at max reasoning.",
+    "The closure-only metadata commit requires a final read-only metadata audit.",
+    "Future implementation or external action requires separate current authority.",
+    "Product and production readiness remain unassessed."
   ]
 }
 ---
@@ -53,17 +54,16 @@
 - [x] A distinct T1 reviewer approved the exact corrected source candidate.
 - [x] The corrected evidence-bearing head received approval for serial local integration.
 - [x] The approved candidate is integrated serially into local `main`.
-- [ ] The integrated evidence-bearing head receives final read-only T1 review.
+- [x] The integrated evidence-bearing head received final read-only T1 approval.
 
-## Integrated state and final-review boundary
+## Completed integration and metadata-audit boundary
 
-Immediately before this integration-evidence successor, local `main` equaled
-approved head `2b301b437490ca49317cabbcccf80a929f633817` with tree `27f8d4fe25fa2e5538aafb60c9b9be44d2c782c4`; the preserved candidate branch
-pointed to the same commit. Evidence `EVD-0008` records clean status, one
-canonical worktree, unchanged origin, unchanged pre-migration `origin/main`,
-and passing family aggregate strict topology.
+Independent T1 review `REV-0007` approved exact integrated head
+`8bf3ca231f97c81151b677b322f1bffd96204723` with tree `1c76a7574151af15b66515028a7dc2376f770fa9`. Evidence `EVD-0009` records the main,
+parent, preserved candidate branch, origin tracking, worktree, cleanliness,
+validation, and no-effect observations.
 
-This task remains in `review`. Final read-only T1 review of the integrated
-evidence-bearing head is the sole remaining migration gate. Only after that
-review may the primary integrator append a task-completion successor. No push
-or other external effect is authorized.
+The migration task is complete. The commit containing this closure-only review
+and lifecycle metadata is newer than the reviewed head and remains subject to a
+final read-only metadata audit. No product or production readiness is claimed,
+and no push or other external effect is authorized.

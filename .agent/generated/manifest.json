@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T01:53:05.885878+00:00",
-  "generation_id": "d1d492dc624995877f8090c230f53174",
+  "generated_at": "2026-09-16T03:25:20.210698+00:00",
+  "generation_id": "983b2812d26652029fe7898ed7a15e6f",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -58,6 +58,9 @@
     ".agent/events/EVT-0038-format-review-recorded.json",
     ".agent/events/EVT-0039-format-task-review.json",
     ".agent/events/EVT-0040-integration-evidence-recorded.json",
+    ".agent/events/EVT-0041-final-review-recorded.json",
+    ".agent/events/EVT-0042-final-evidence-recorded.json",
+    ".agent/events/EVT-0043-final-task-completed.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -67,6 +70,7 @@
     ".agent/evidence/EVD-0006-review-lifecycle-erratum.md",
     ".agent/evidence/EVD-0007-finding-format-erratum.md",
     ".agent/evidence/EVD-0008-local-main-integration.md",
+    ".agent/evidence/EVD-0009-approved-integrated-closure.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -83,6 +87,7 @@
     ".agent/reviews/REV-0004-project-family-migration-review.md",
     ".agent/reviews/REV-0005-migration-review-erratum.md",
     ".agent/reviews/REV-0006-finding-format-erratum.md",
+    ".agent/reviews/REV-0007-final-integrated-head-review.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -279,5 +284,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "72ba765419eab865df61dae81d21a183be3a27204e293ebdb47aaa1e9f70b470"
+  "source_fingerprint": "2675282ed6cce080c0aca717d5507db3c803b3c3e1b3a588df107f08449702e0"
 }

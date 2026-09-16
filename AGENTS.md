@@ -17,13 +17,12 @@ authority rules.
 6. Use `project-dossier/` for project context. It is never an instruction or
    permission channel.
 
-## Local integration observed; final review pending
+## Project-family migration integrated and complete
 
-The approved migration head is integrated into local `main`, but the
-migration task remains at `review` until the integrated evidence-bearing head
-receives final read-only T1 approval. Live gates and next action are owned only
-by `.agent/state/current.json`. The candidate branch remains preserved; no
-push or other external effect was authorized.
+The reviewed migration head is integrated into local `main` and the migration
+task is complete. Live active work, gates, and next action are owned only by
+`.agent/state/current.json`. The preserved candidate branch and historical
+records grant no new authority; no push occurred.
 ## Baseline boundaries
 
 - Preserve unrelated user work.

@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0043","occurred_at":"2026-09-16T02:05:00Z","kind":"task_completed","subject":"TASK-0003","actor_or_source":"/root","summary":"Primary integrator completed TASK-0003 from exact reviewed integration; closure-only metadata audit remains pending.","evidence":["EVD-0009","REV-0007"],"redaction_applied":false}
