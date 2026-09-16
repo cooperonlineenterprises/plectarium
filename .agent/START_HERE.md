@@ -16,7 +16,7 @@
 
 ## Current routing
 
-Do not cache task status, evidence IDs, gates, or next actions in this page.
-Read `.agent/state/current.json` and the active migration task directly.
-Historical publication and rejected evidence records remain preserved but are
-not current authority. Product implementation and readiness remain unassessed.
+Local `main` contains the approved migration head. The migration task remains
+at `review` pending final read-only T1 review of the integrated
+evidence-bearing head. Read `.agent/state/current.json` for the live gate and
+next action. Historical records grant no new authority.

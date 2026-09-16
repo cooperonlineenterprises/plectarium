@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0040","occurred_at":"2026-09-16T01:47:00Z","kind":"evidence_recorded","subject":"EVD-0008","actor_or_source":"/root/input_resolver","summary":"Recorded observed Plectarium local-main integration and the remaining final-review gate.","evidence":["EVD-0008"],"redaction_applied":false}

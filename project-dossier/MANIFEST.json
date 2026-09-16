@@ -5,7 +5,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/START_HERE.md",
-      "sha256": "a6c191ef6513a9bc2f3af7800c50f17c1ec983a2db6b58ffbabb059638a64df6"
+      "sha256": "e29ced84c2a13f8e267b085fb092671911414243b63c883b525fe153b840eea1"
     },
     {
       "layer": "agent_harness",
@@ -249,6 +249,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0040-integration-evidence-recorded.json",
+      "sha256": "200aa10c376ef5901b1c425a12cdbbce59928adecf5dc08e58e6925ecaf6c186"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -286,6 +291,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0007-finding-format-erratum.md",
       "sha256": "0a3a70e3ab3975e90c14d756e4b8f9bb48d8f0060b9e98497a130ea2023a706d"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0008-local-main-integration.md",
+      "sha256": "5a4efbf744e020a636551b8d096704b4ddf39e1c0d730f44b892dbafd668d789"
     },
     {
       "layer": "agent_harness",
@@ -410,12 +420,12 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/RESUME.md",
-      "sha256": "f6146a2cbc264a7827d7962b487e752607b764f0137252bdd5935a2956d156e0"
+      "sha256": "6b744d49713153427c6be1dd6205c5c0cc5f4c5e1d47369171bae878f2cd9027"
     },
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "20eae6790160f30c3d7d6be506af76c63ec6065fdcbefca9aaf913768e3de28f"
+      "sha256": "23b26a02f17d8942262bbc4d802bbaf1b8b88f3c676d25e2923169fe03a4ba08"
     },
     {
       "layer": "agent_harness",
@@ -435,7 +445,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
-      "sha256": "416f3f46275562ba259ad9864916cf113b32a3fa6f0ffc9384d8ace93bed01a7"
+      "sha256": "63a50673dd26e1bfc03c5669dda3567ea8b88dcc652866b9ef1502ac1bdc0dc7"
     },
     {
       "layer": "agent_harness",
@@ -555,7 +565,7 @@
     {
       "layer": "agent_harness",
       "path": "AGENTS.md",
-      "sha256": "577fb0460b8f857a9f09e9d98b91d0a63e8c0018526a5ba831d5fda11ecb3475"
+      "sha256": "bd4730b61afddd3826fe4868c7daa20e1f393af79b52382f4747b30973d33a14"
     },
     {
       "layer": "project_source",
@@ -1250,7 +1260,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/handoff/START_HERE.md",
-      "sha256": "b35a65ffd5fb9fbde71b2f35aefed606eec51da15eb4dc7a57c67883bcb4ab04"
+      "sha256": "a1b4e560880e1e1d500bb29c98c401a6afc290e783b3623b3e946a35fa0b2c09"
     },
     {
       "layer": "project_dossier",
@@ -1338,10 +1348,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T01:36:00.971164+00:00",
-  "generation_id": "5bfe90876c0546d8eb86b8442afc6203",
+  "generated_on": "2026-09-16T01:53:05.885878+00:00",
+  "generation_id": "d1d492dc624995877f8090c230f53174",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "da00f40590192fce6c00d7bc737a2decdc6b0210ccdd07ac849136c0aeb4a0b0"
+  "source_fingerprint": "72ba765419eab865df61dae81d21a183be3a27204e293ebdb47aaa1e9f70b470"
 }

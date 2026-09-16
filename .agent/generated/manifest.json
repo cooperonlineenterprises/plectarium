@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T01:36:00.971164+00:00",
-  "generation_id": "5bfe90876c0546d8eb86b8442afc6203",
+  "generated_at": "2026-09-16T01:53:05.885878+00:00",
+  "generation_id": "d1d492dc624995877f8090c230f53174",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -57,6 +57,7 @@
     ".agent/events/EVT-0037-format-evidence-recorded.json",
     ".agent/events/EVT-0038-format-review-recorded.json",
     ".agent/events/EVT-0039-format-task-review.json",
+    ".agent/events/EVT-0040-integration-evidence-recorded.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -65,6 +66,7 @@
     ".agent/evidence/EVD-0005-review-remediation.md",
     ".agent/evidence/EVD-0006-review-lifecycle-erratum.md",
     ".agent/evidence/EVD-0007-finding-format-erratum.md",
+    ".agent/evidence/EVD-0008-local-main-integration.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -277,5 +279,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "da00f40590192fce6c00d7bc737a2decdc6b0210ccdd07ac849136c0aeb4a0b0"
+  "source_fingerprint": "72ba765419eab865df61dae81d21a183be3a27204e293ebdb47aaa1e9f70b470"
 }

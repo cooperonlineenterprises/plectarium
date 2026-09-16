@@ -15,13 +15,15 @@
     "EVD-0004",
     "EVD-0005",
     "EVD-0006",
-    "EVD-0007"
+    "EVD-0007",
+    "EVD-0008"
   ],
   "external_effects": "Local non-overwriting filesystem relocation, repository-local edits, validation, a local candidate commit, review, and local integration only; no push or other remote effect.",
   "limitations": [
-    "Rejected evidence-head commits, prior reviews, prior events, evidence, checkpoints, and provenance locks remain preserved as history.",
-    "Source commit bc9f2f29e277c08e6a38ede204cc56965dc316a2 retains its prior read-only review; corrected evidence and lifecycle attribution await repeat T1 review.",
-    "Serial fast-forward integration into local main remains explicitly pending.",
+    "All prior task, evidence, review, checkpoint, and event history remains preserved.",
+    "Local main contains approved migration head 2b301b437490ca49317cabbcccf80a929f633817; candidate branch remains preserved at that commit.",
+    "origin/main remains at the pre-migration commit because no push was authorized or performed.",
+    "The integrated evidence head requires final read-only T1 review before task completion.",
     "Product implementation, publication, deployment, production access, and readiness remain outside scope."
   ]
 }
@@ -49,17 +51,19 @@
 - [x] Historical publication and provenance records remain byte-preserved.
 - [x] No remote, deployment, product, production, or paid effect occurs.
 - [x] A distinct T1 reviewer approved the exact corrected source candidate.
-- [ ] The corrected evidence-bearing head receives repeat independent T1 review.
-- [ ] The approved candidate is integrated serially into local `main`.
+- [x] The corrected evidence-bearing head received approval for serial local integration.
+- [x] The approved candidate is integrated serially into local `main`.
+- [ ] The integrated evidence-bearing head receives final read-only T1 review.
 
-## Erratum and active review boundary
+## Integrated state and final-review boundary
 
-The implementation source commit `bc9f2f29e277c08e6a38ede204cc56965dc316a2` retains its prior read-only
-review. Erratum evidence `EVD-0006` and review successor `REV-0005`
-correct the finding labels, severities, authorship, and lifecycle attribution
-without rewriting `EVD-0005`, `REV-0004`, or prior events.
+Immediately before this integration-evidence successor, local `main` equaled
+approved head `2b301b437490ca49317cabbcccf80a929f633817` with tree `27f8d4fe25fa2e5538aafb60c9b9be44d2c782c4`; the preserved candidate branch
+pointed to the same commit. Evidence `EVD-0008` records clean status, one
+canonical worktree, unchanged origin, unchanged pre-migration `origin/main`,
+and passing family aggregate strict topology.
 
-The primary integrator reopened this task through `reopened`,
-`in_progress`, and `validating`, then returned it to `review`. Repeat T1
-review of the corrected evidence-bearing head is required before serial
-fast-forward integration into local `main`. No push is authorized.
+This task remains in `review`. Final read-only T1 review of the integrated
+evidence-bearing head is the sole remaining migration gate. Only after that
+review may the primary integrator append a task-completion successor. No push
+or other external effect is authorized.

@@ -12,14 +12,13 @@
     "DEC-0002"
   ],
   "fresh_evidence": [
-    "EVD-0007"
+    "EVD-0008"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "repeat_T1_review_of_the_corrected_evidence_bearing_head",
-    "serial_fast_forward_integration_after_approval"
+    "final_read_only_T1_review_of_the_integrated_evidence_head"
   ],
-  "next_action": "obtain repeat T1 review of the corrected TASK-0003 evidence head, then serially fast-forward local main; do not push",
+  "next_action": "obtain final read-only T1 review of the integrated TASK-0003 evidence head; keep the task at review and do not push",
   "external_effects_authorized": false,
   "external_effect_scope": "none",
   "external_effects_observed": "none",
@@ -29,7 +28,6 @@
     "no_services",
     "product_security_operational_and_release_readiness_not_assessed",
     "product_and_production_readiness_not_assessed",
-    "corrected_evidence_head_requires_repeat_T1_review_before_integration",
-    "local_main_integration_pending"
+    "integrated_evidence_head_requires_final_read_only_T1_review_before_task_completion"
   ]
 }
