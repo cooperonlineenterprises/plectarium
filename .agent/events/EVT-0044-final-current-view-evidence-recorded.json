@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0044","occurred_at":"2026-09-16T03:49:02.601832Z","kind":"evidence_recorded","subject":"EVD-0010","actor_or_source":"/root/input_resolver","summary":"Recorded /root/candidate_review_a's final approval of exact Plectarium current head and normalized only current next_action.","evidence":["EVD-0010"],"redaction_applied":false}

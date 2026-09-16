@@ -17,7 +17,7 @@
     "separate_current_authority_for_any_new_work",
     "final_read_only_metadata_audit_of_the_closure_head"
   ],
-  "next_action": "complete the final read-only metadata audit, then await separate current authority for any new work; do not push",
+  "next_action": "await separately authorized work; do not push",
   "external_effects_authorized": false,
   "external_effect_scope": "none",
   "external_effects_observed": "none",

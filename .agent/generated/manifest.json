@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T03:25:20.210698+00:00",
-  "generation_id": "983b2812d26652029fe7898ed7a15e6f",
+  "generated_at": "2026-09-16T03:51:00.393156+00:00",
+  "generation_id": "76b25ddd998744a599b178b30caa9ccc",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -61,6 +61,7 @@
     ".agent/events/EVT-0041-final-review-recorded.json",
     ".agent/events/EVT-0042-final-evidence-recorded.json",
     ".agent/events/EVT-0043-final-task-completed.json",
+    ".agent/events/EVT-0044-final-current-view-evidence-recorded.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -71,6 +72,7 @@
     ".agent/evidence/EVD-0007-finding-format-erratum.md",
     ".agent/evidence/EVD-0008-local-main-integration.md",
     ".agent/evidence/EVD-0009-approved-integrated-closure.md",
+    ".agent/evidence/EVD-0010-final-current-view-audit.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -284,5 +286,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "2675282ed6cce080c0aca717d5507db3c803b3c3e1b3a588df107f08449702e0"
+  "source_fingerprint": "b66e182d13f68ade6cf12b371f94a474034f18dcd2dbe7f34275b7da1fbad408"
 }
