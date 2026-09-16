@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0021","occurred_at":"2026-09-16T00:11:00Z","kind":"task_ready","subject":"TASK-0003","actor_or_source":"migration_implementation_agent","summary":"Confirmed Plectarium baseline identity, recovery bundle, exact local scope, and no-remote-effect boundary.","evidence":[],"redaction_applied":false}

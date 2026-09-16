@@ -12,16 +12,16 @@
   ],
   "environment": {
     "platform": "darwin",
-    "python": "3.13.9"
+    "python": "3.14.0"
   },
   "freshness_rule": "Invalid when any non-excluded repository source byte or path changes.",
-  "generated_at": "2026-09-01T02:37:17.603207+00:00",
-  "generation_id": "c61e8530618ac61d520d0b9c81035d93",
+  "generated_at": "2026-09-16T00:14:58.701055+00:00",
+  "generation_id": "20500a4196fe30102e02c6f528b41679",
   "git_scope": {
     "available": true,
     "ignored": 0,
-    "tracked_modified": 17,
-    "untracked": 12
+    "tracked_modified": 14,
+    "untracked": 8
   },
   "limitations": [
     "Structural pass does not prove implementation or project readiness.",
@@ -30,7 +30,7 @@
   ],
   "result": "PASS",
   "schema_version": "harness.validation-report.v1",
-  "source_fingerprint": "30ffe858352b5bf511b1f81ec46023681bb129ee8debd2c555d460460de68ee6",
+  "source_fingerprint": "219c6ee1800faa22920291a357ab1d600bcc776f587de61b1de4c2851f7b7466",
   "task_and_decision_links": [],
   "validator_version": "1.0.0"
 }

@@ -1,15 +1,35 @@
 {
   "schema_version": "harness.current-state.v1",
   "project_slug": "plectarium",
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-15",
   "authority": "Compact operational view derived from authoritative task, decision, and evidence records. This file does not grant permission.",
   "adoption_status": "adopted_local_foundation",
-  "active_tasks": [],
-  "accepted_decisions": ["DEC-0001", "DEC-0002"],
-  "fresh_evidence": ["EVD-0001", "EVD-0002", "EVD-0003"],
+  "active_tasks": [
+    "TASK-0003"
+  ],
+  "accepted_decisions": [
+    "DEC-0001",
+    "DEC-0002"
+  ],
+  "fresh_evidence": [
+    "EVD-0004"
+  ],
   "blocked_by": [],
-  "next_action": "use the final Plectarium commit as a sequencing and suite-boundary provenance pin for Titra under separate authority",
+  "pending_gates": [
+    "independent_T1_review_of_the_exact_committed_TASK-0003_candidate",
+    "serial_fast_forward_integration_after_approval"
+  ],
+  "next_action": "obtain independent T1 review of the exact committed TASK-0003 migration candidate; do not push",
   "external_effects_authorized": false,
-  "external_effects_observed": "exact private remote created; foundation push verified; closure push and final equality verified directly after the closure commit",
-  "limitations": ["no_product_implementation", "no_dependency_installation", "no_services", "closure_commit_cannot_attest_its_own_push", "product_security_operational_and_release_readiness_not_assessed"]
+  "external_effect_scope": "none",
+  "external_effects_observed": "none",
+  "limitations": [
+    "no_product_implementation",
+    "no_dependency_installation",
+    "no_services",
+    "product_security_operational_and_release_readiness_not_assessed",
+    "independent_T1_review_pending",
+    "candidate_not_integrated_to_local_main",
+    "product_and_production_readiness_not_assessed"
+  ]
 }

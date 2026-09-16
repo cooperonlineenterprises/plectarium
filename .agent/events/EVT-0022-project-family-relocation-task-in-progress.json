@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0022","occurred_at":"2026-09-16T00:12:00Z","kind":"task_in_progress","subject":"TASK-0003","actor_or_source":"migration_implementation_agent","summary":"Implemented the relocated command, immutable-pin validation, tests, and current-navigation candidate.","evidence":[],"redaction_applied":false}

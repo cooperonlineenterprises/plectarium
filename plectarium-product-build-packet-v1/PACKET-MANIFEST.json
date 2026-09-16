@@ -70,8 +70,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "940a85d8ed493c094fee0f3b7d7e97b04139cfd1f2b6b5c681463a577841376a",
-      "bytes": 2266,
+      "sha256": "77d2bf92eed9d0f3a0a35bda2f8785fa8ce9e0c9b1052030077a3118468629a0",
+      "bytes": 2225,
       "classification": "project-context"
     },
     {
@@ -550,8 +550,8 @@
     },
     {
       "path": "scripts/validate-packet.py",
-      "sha256": "39c060b9c47ffb609db00eb471d44d979eb9675489d87b1f91d978907e25fd51",
-      "bytes": 28746,
+      "sha256": "fc47b36d8f0302ac0021925a69a1616d78106432718f4f55fbf4d21398595258",
+      "bytes": 30578,
       "classification": "validation-tooling"
     },
     {

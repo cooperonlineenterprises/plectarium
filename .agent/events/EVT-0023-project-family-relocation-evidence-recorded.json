@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0023","occurred_at":"2026-09-16T00:13:00Z","kind":"evidence_recorded","subject":"EVD-0004","actor_or_source":"migration_implementation_agent","summary":"Recorded the Plectarium relocation baseline, recovery bundle, candidate validation, and limitations.","evidence":["EVD-0004"],"redaction_applied":false}

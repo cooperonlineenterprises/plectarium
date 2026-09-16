@@ -12,9 +12,9 @@
     "check": {"run": "python3 -B .agent/scripts/validate.py --check", "writes": []},
     "test": {"run": "python3 -B -m unittest discover -s .agent/tests -p 'test_*.py'", "writes": []},
     "refresh": {"run": "python3 -B .agent/scripts/refresh.py --refresh", "writes": [".agent/generated/manifest.json", ".agent/generated/validation-report.json", "project-dossier/MANIFEST.json", "project-dossier/CHECKSUMS.sha256"]},
-    "packet_check": {"run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family", "writes": []},
-    "packet_refresh": {"run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --refresh-derived", "writes": ["plectarium-product-build-packet-v1/INTEGRITY-REPORT.md", "plectarium-product-build-packet-v1/PACKET-MANIFEST.json", "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256"]},
-    "closure": {"run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family", "writes": []}
+    "packet_check": {"run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family", "writes": []},
+    "packet_refresh": {"run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --refresh-derived", "writes": ["plectarium-product-build-packet-v1/INTEGRITY-REPORT.md", "plectarium-product-build-packet-v1/PACKET-MANIFEST.json", "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256"]},
+    "closure": {"run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family", "writes": []}
   },
   "required_core_checks": [
     "python_runtime_floor",
@@ -33,6 +33,6 @@
     "structural_checks_do_not_prove_project_readiness",
     "repository_policy_is_not_runtime_sandbox_enforcement",
     "packet_validation_does_not_validate_product_implementation",
-    "packet_validation_uses_a_host_specific_preconfigured_python_runtime"
+    "packet_runtime_is_selected_by_PLECTARIUM_PACKET_PYTHON_or_python3"
   ]
 }

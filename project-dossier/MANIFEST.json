@@ -5,7 +5,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/START_HERE.md",
-      "sha256": "c89a0411a5ae2b8d69dbb40c5f10ae8f54d7bd26365501b0cee4c2df18a3c09b"
+      "sha256": "717ea9f3f53a1eb7587144a261d5d7f596df3cae5b329ef42fcbca836d50b4ef"
     },
     {
       "layer": "agent_harness",
@@ -149,6 +149,31 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0020-project-family-relocation-task-proposed.json",
+      "sha256": "cd8b5c5b644aaa074348a6255ca801971780c14f21be38b4939ae64823e70bfa"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0021-project-family-relocation-task-ready.json",
+      "sha256": "d207aa49cea411f397515486a82b91c8d9cec1ca5fc8e5f321daf0974d778115"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0022-project-family-relocation-task-in-progress.json",
+      "sha256": "3ace14fa379b3a079d7d6ffa2b6e2e78f585b9674350f5e0c30dbd7a64493525"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0023-project-family-relocation-evidence-recorded.json",
+      "sha256": "41f3b5e8ea60a12e25dd0fab772d238b0e7fdafc94df1976141bda912a597852"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0024-project-family-relocation-task-validating.json",
+      "sha256": "b6f5196de4948b29084b3110f065f1cc63029365bb31f9679f43302116b46f33"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -166,6 +191,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0003-initial-publication.md",
       "sha256": "91c271c249447209afbd3fa9730242a7e53f59f56b952401afabb91df90acd0b"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
+      "sha256": "5c75d33ae5a6d8e60ee7cf9cc620dd11e05bfc1e018aee08fcf20b399bb2f8b1"
     },
     {
       "layer": "agent_harness",
@@ -210,7 +240,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/project.json",
-      "sha256": "1263e7fe43f84eb2eee28b55001e11512cd716f596bd4a040944e15ffb63f5a4"
+      "sha256": "67b4e7ffffcc12dae96f799f039476d511019e49c76c5f8a7329008f61e1bb66"
     },
     {
       "layer": "agent_harness",
@@ -275,12 +305,12 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/RESUME.md",
-      "sha256": "fcf8b0374ada730b8101cdae8383f0b56d771c31b0e125f8b36521c71db45e92"
+      "sha256": "e83d92f1b4ef76a1c5a935209e783be610769e9ddc763fa71c89f18cdaf69404"
     },
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "12c9b98df415cb53acb60ad956a04a8d01df91edd9396041a0889d353f8cba77"
+      "sha256": "b7a9c25727e20a947c4d15827724b8e6ed8df5ebcff950422653c9d47cd90de1"
     },
     {
       "layer": "agent_harness",
@@ -296,6 +326,11 @@
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0002-foundation-publication.md",
       "sha256": "10b82244a1155b97d96b4af1f4abfa60615f509b0a3b9de49a992f9539c76496"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
+      "sha256": "8217224789d0384dae2a2832a76862b282d446ccc5ec707609e9934cbbc8a85a"
     },
     {
       "layer": "agent_harness",
@@ -349,6 +384,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/tests/test_packet_pins.py",
+      "sha256": "5323d7dec4db0542968715712614185cab3b627d0415d18f64581b6db78d9fa1"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/tests/test_validate.py",
       "sha256": "a857f56911e6961da80e970158f92fe4568ffaf31d128311e72b1d0dac00d8f4"
     },
@@ -360,7 +400,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/validators.json",
-      "sha256": "3e15db4c07038b51785682192f0a46cce3973237cb12a618529da102dadb3dc0"
+      "sha256": "e2cca4ce965e51f10856835e32e7941cc011fd214c3d412dc53d56eeb00d32be"
     },
     {
       "layer": "agent_harness",
@@ -410,7 +450,7 @@
     {
       "layer": "agent_harness",
       "path": "AGENTS.md",
-      "sha256": "9af45f9341d4f199d8f16c826f0f2a104a4fc595e6af7e6428f08a4cc2b3b2a0"
+      "sha256": "0cf795af9af760fe2dbc5313209c48546c3302a11d677413803344834a858453"
     },
     {
       "layer": "project_source",
@@ -450,17 +490,17 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256",
-      "sha256": "76362d8f259986eba1758c5a7aca069b83e33e7cb90cbb3da7a7619d50b88347"
+      "sha256": "b78022c598046a28ecd4a1c57b06f543df5ae38b34780d181bd03ae1d6a7876f"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-MANIFEST.json",
-      "sha256": "d77071033dad0c4a9160bba46d56304c542e021bf47d9202ee6e8fde96b1bf03"
+      "sha256": "d937f178bf424d3154fbeb2b1d8ea8df24bcea4671aa67ede64813d0aa9e2cc6"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/README.md",
-      "sha256": "940a85d8ed493c094fee0f3b7d7e97b04139cfd1f2b6b5c681463a577841376a"
+      "sha256": "77d2bf92eed9d0f3a0a35bda2f8785fa8ce9e0c9b1052030077a3118468629a0"
     },
     {
       "layer": "project_source",
@@ -860,7 +900,7 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/scripts/validate-packet.py",
-      "sha256": "39c060b9c47ffb609db00eb471d44d979eb9675489d87b1f91d978907e25fd51"
+      "sha256": "fc47b36d8f0302ac0021925a69a1616d78106432718f4f55fbf4d21398595258"
     },
     {
       "layer": "project_source",
@@ -1193,10 +1233,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-01T02:37:17.603207+00:00",
-  "generation_id": "c61e8530618ac61d520d0b9c81035d93",
+  "generated_on": "2026-09-16T00:14:58.701055+00:00",
+  "generation_id": "20500a4196fe30102e02c6f528b41679",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "30ffe858352b5bf511b1f81ec46023681bb129ee8debd2c555d460460de68ee6"
+  "source_fingerprint": "219c6ee1800faa22920291a357ab1d600bcc776f587de61b1de4c2851f7b7466"
 }

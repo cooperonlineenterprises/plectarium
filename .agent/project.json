@@ -16,10 +16,10 @@
     "fingerprint_exclusions": []
   },
   "commands": {
-    "project_test": {"status": "active_setup_only", "run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family", "runtime_limitation": "Uses the already-configured Python 3.14 runtime with PyYAML and jsonschema; installs nothing."},
+    "project_test": {"status": "active_setup_only", "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family", "runtime_limitation": "Uses PLECTARIUM_PACKET_PYTHON when set, otherwise python3; installs nothing."},
     "project_lint": {"status": "not_applicable_no_product_code", "run": null},
     "project_build": {"status": "not_applicable_no_product_code", "run": null},
-    "project_closure": {"status": "active_setup_only", "run": "/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family"}
+    "project_closure": {"status": "active_setup_only", "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family"}
   },
   "extensions": {
     "registry": ".agent/extensions/registry.json",

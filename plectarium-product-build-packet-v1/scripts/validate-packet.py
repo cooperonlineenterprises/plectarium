@@ -8,6 +8,7 @@ import json
 import os
 import re
 import stat
+import subprocess
 import sys
 import tempfile
 from dataclasses import dataclass
@@ -488,6 +489,58 @@ def check_integrity() -> list[Finding]:
     return findings
 
 
+def _git(root: Path, *args: str) -> subprocess.CompletedProcess[bytes]:
+    return subprocess.run(
+        ["git", "-C", str(root), *args],
+        capture_output=True,
+        check=False,
+    )
+
+
+def _safe_git_path(value: str) -> bool:
+    path = Path(value)
+    return bool(value) and not path.is_absolute() and ".." not in path.parts and "\x00" not in value and ":" not in value
+
+
+def check_git_pin(root: Path, commit: str, remote: str, label: str) -> list[str]:
+    errors: list[str] = []
+    if not root.is_dir() or root.is_symlink():
+        return [f"{label} root is missing or unsafe"]
+    if re.fullmatch(r"[0-9a-f]{40}", commit) is None:
+        return [f"{label} commit pin is not a full lowercase object ID"]
+    top = _git(root, "rev-parse", "--show-toplevel")
+    if top.returncode != 0:
+        return [f"{label} root is not a Git worktree"]
+    try:
+        top_level = Path(top.stdout.decode("utf-8").strip()).resolve()
+    except UnicodeDecodeError:
+        return [f"{label} Git root is not UTF-8"]
+    if top_level != root.resolve():
+        errors.append(f"{label} root is not the Git worktree root")
+    origin = _git(root, "remote", "get-url", "origin")
+    if origin.returncode != 0 or origin.stdout.decode("utf-8", errors="replace").strip() != remote:
+        errors.append(f"{label} origin URL does not match lock")
+    if _git(root, "cat-file", "-e", f"{commit}^{{commit}}").returncode != 0:
+        errors.append(f"{label} pinned commit object is missing")
+    return errors
+
+
+def git_blob(root: Path, commit: str, path: str) -> bytes | None:
+    if re.fullmatch(r"[0-9a-f]{40}", commit) is None or not _safe_git_path(path):
+        return None
+    result = _git(root, "cat-file", "blob", f"{commit}:{path}")
+    return result.stdout if result.returncode == 0 else None
+
+
+def check_pinned_blob(root: Path, commit: str, path: str, expected_sha256: str, label: str) -> list[str]:
+    blob = git_blob(root, commit, path)
+    if blob is None:
+        return [f"{label} pinned file is missing: {path}"]
+    if hashlib.sha256(blob).hexdigest() != expected_sha256:
+        return [f"{label} pinned file digest mismatch: {path}"]
+    return []
+
+
 def check_family_root(path: Path | None) -> list[Finding]:
     if path is None:
         return []
@@ -495,24 +548,18 @@ def check_family_root(path: Path | None) -> list[Finding]:
     lock = strict_json(ROOT / "reference/family-source-lock.json")
     if lock["publication_status"] != "resolved":
         return [Finding("family.pending", "cannot verify a family root while the lock is pending", "reference/family-source-lock.json")]
-    packet = path / lock["packet_path"]
-    if not (path / ".git").exists():
-        findings.append(Finding("family.git", "family root is not a Git repository", str(path)))
-    else:
-        import subprocess
-        result = subprocess.run(["git", "-C", str(path), "rev-parse", "HEAD"], text=True, capture_output=True, check=False)
-        if result.returncode != 0 or result.stdout.strip() != lock["git_commit"]:
-            findings.append(Finding("family.commit", "family HEAD does not match lock", str(path)))
-    manifest_path = packet / "PACKET-MANIFEST.json"
-    checksum_path = packet / "PACKET-CHECKSUMS.sha256"
-    if not manifest_path.is_file() or digest(manifest_path) != lock["packet_manifest_sha256"]:
-        findings.append(Finding("family.manifest", "family packet manifest digest mismatch", str(manifest_path)))
-    if not checksum_path.is_file() or digest(checksum_path) != lock["packet_checksums_sha256"]:
-        findings.append(Finding("family.checksums", "family packet checksums digest mismatch", str(checksum_path)))
+    commit = lock["git_commit"]
+    for error in check_git_pin(path, commit, lock["repository"], "family"):
+        findings.append(Finding("family.git-pin", error, str(path)))
+    packet_path = lock["packet_path"]
+    for error in check_pinned_blob(path, commit, f"{packet_path}/PACKET-MANIFEST.json", lock["packet_manifest_sha256"], "family"):
+        findings.append(Finding("family.manifest", error, f"{packet_path}/PACKET-MANIFEST.json"))
+    for error in check_pinned_blob(path, commit, f"{packet_path}/PACKET-CHECKSUMS.sha256", lock["packet_checksums_sha256"], "family"):
+        findings.append(Finding("family.checksums", error, f"{packet_path}/PACKET-CHECKSUMS.sha256"))
     for item in lock["contracts"]:
-        target = packet / item["path"]
-        if not target.is_file() or digest(target) != item["sha256"]:
-            findings.append(Finding("family.contract", "family contract digest mismatch", item["path"]))
+        target = f"{packet_path}/{item['path']}"
+        for error in check_pinned_blob(path, commit, target, item["sha256"], "family contract"):
+            findings.append(Finding("family.contract", error, item["path"]))
     return findings
 
 

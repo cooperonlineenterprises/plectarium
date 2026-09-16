@@ -1,10 +1,8 @@
 # Plectarium Agent Harness
 
-> Routing only; this page grants no permission. Generated from Project
-> Blueprint 1.0.0 using the `high-assurance` profile on
-> 2026-08-31. Project-specific local adoption completed under `TASK-0001`.
-> Bounded publication completed under `TASK-0002`; final closure equality is
-> direct post-commit evidence. This file grants no permission.
+> Routing only; this page grants no permission. The Project Blueprint 1.0.0
+> high-assurance foundation remains adopted. Historical publication records
+> are preserved but are not current authority.
 
 ## Reading order
 
@@ -20,15 +18,18 @@
 ## Current baseline
 
 - Project identity: `Plectarium`
-- Project slug: `plectarium`
 - Blueprint profile: `high-assurance`
-- Implementation state: product implementation absent; setup specification present
-- External or production authority: none created by this harness
-- Local foundation lifecycle: `TASK-0001`, completed
-- Publication lifecycle: `TASK-0002`, completed
+- Adoption state: local setup foundation complete
+- Active task: `TASK-0003` validating the repository migration candidate
+- Current migration evidence: `EVD-0004`
+- Product implementation: intentionally absent
+- Current external effects: unauthorized and none observed
 
-Current task status lives only in `.agent/tasks/`. Durable intent lives only in
-accepted `.agent/decisions/`. Generated files are point-in-time derived
-evidence. Inspect the repository and record the first evidence-backed baseline
-before using status or planning claims. The build packet's `PLEC-FND-001`
-readiness is planning metadata, not implementation authority.
+The historical publication task `TASK-0002` remains byte-preserved and is no
+longer current. It grants no push, publication, implementation, deployment, or
+production authority. The migration task remains in `validating` until a
+distinct T1 reviewer approves the exact committed candidate.
+
+Use `.agent/validators.json` for exact packet, harness, mutation, and
+integrity commands. Generated files remain point-in-time, non-authoritative
+evidence.

@@ -40,14 +40,14 @@ copy or redefine them.
 Read-only check:
 
 ```text
-/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B scripts/validate-packet.py --family-root ../../family
+${PLECTARIUM_PACKET_PYTHON:-python3} -B scripts/validate-packet.py --family-root ../../plectarium-family
 ```
 
 Designated derived writer:
 
 ```text
-/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B scripts/validate-packet.py --refresh-derived
-/Users/jamesryancooper/.pyenv/versions/3.14.0/bin/python3 -B scripts/validate-packet.py --family-root ../../family
+${PLECTARIUM_PACKET_PYTHON:-python3} -B scripts/validate-packet.py --refresh-derived
+${PLECTARIUM_PACKET_PYTHON:-python3} -B scripts/validate-packet.py --family-root ../../plectarium-family
 ```
 
 Validation proves packet integrity only. Product security, behavior,

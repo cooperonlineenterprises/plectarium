@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-01T02:37:17.603207+00:00",
-  "generation_id": "c61e8530618ac61d520d0b9c81035d93",
+  "generated_at": "2026-09-16T00:14:58.701055+00:00",
+  "generation_id": "20500a4196fe30102e02c6f528b41679",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -37,10 +37,16 @@
     ".agent/events/EVT-0017-publication-checkpoint.json",
     ".agent/events/EVT-0018-publication-task-review.json",
     ".agent/events/EVT-0019-publication-task-completed.json",
+    ".agent/events/EVT-0020-project-family-relocation-task-proposed.json",
+    ".agent/events/EVT-0021-project-family-relocation-task-ready.json",
+    ".agent/events/EVT-0022-project-family-relocation-task-in-progress.json",
+    ".agent/events/EVT-0023-project-family-relocation-evidence-recorded.json",
+    ".agent/events/EVT-0024-project-family-relocation-task-validating.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
     ".agent/evidence/EVD-0003-initial-publication.md",
+    ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -67,6 +73,7 @@
     ".agent/tasks/README.md",
     ".agent/tasks/TASK-0001-repository-foundation.md",
     ".agent/tasks/TASK-0002-foundation-publication.md",
+    ".agent/tasks/TASK-0003-project-family-relocation.md",
     ".agent/templates/artifact.json",
     ".agent/templates/checkpoint.md",
     ".agent/templates/decision.md",
@@ -77,6 +84,7 @@
     ".agent/tests/fixtures/invalid/duplicate-key.json",
     ".agent/tests/fixtures/invalid/nested-agent-weakening.md",
     ".agent/tests/fixtures/valid/kernel.json",
+    ".agent/tests/test_packet_pins.py",
     ".agent/tests/test_validate.py",
     ".agent/tools.json",
     ".agent/validators.json",
@@ -248,5 +256,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "30ffe858352b5bf511b1f81ec46023681bb129ee8debd2c555d460460de68ee6"
+  "source_fingerprint": "219c6ee1800faa22920291a357ab1d600bcc776f587de61b1de4c2851f7b7466"
 }
