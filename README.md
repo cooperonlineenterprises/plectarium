@@ -1,9 +1,6 @@
 # Plectarium
 
-> **Current migration successor — 2026-09-15.** Current routing lives in
-> `.agent/state/current.json`, `TASK-0003`, and `EVD-0005`. Any older
-> publication, current-position, or next-push wording below is a dated
-> foundation observation, not current authority. No push is authorized.
+> **Current routing.** Live operational status is owned only by\n> `.agent/state/current.json` and the active task named there. Older publication,\n> evidence, and push language below is historical context, not authority.
 
 Plectarium is a cohesive product experience and optional control plane for
 independently usable specialist capabilities. It is part of the Octon

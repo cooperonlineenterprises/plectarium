@@ -1,9 +1,6 @@
 # Current-State Baseline
 
-> **Successor routing — 2026-09-15.** The body below is preserved as a
-> dated foundation observation. Current operational state is owned by
-> `.agent/state/current.json`, `TASK-0003`, and `EVD-0005`. Any pending
-> push language below is historical data and must not be executed.
+> **Current routing.** This dated observation body is preserved. Live status and\n> next action are owned only by `.agent/state/current.json` and the active task\n> named there; historical push language is non-instructional.
 
 > Dated observation only. Plans and canonical documents are not implementation
 > evidence.

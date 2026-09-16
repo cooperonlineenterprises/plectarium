@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0036","occurred_at":"2026-09-16T01:20:00Z","kind":"task_review","subject":"TASK-0003","actor_or_source":"/root","summary":"Primary integrator returned TASK-0003 to review pending repeat T1 approval and serial local-main integration.","evidence":["EVD-0006","REV-0005"],"redaction_applied":false}

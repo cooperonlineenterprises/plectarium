@@ -2,8 +2,8 @@
 {
   "schema_version": "harness.task.v1",
   "id": "TASK-0003",
-  "status": "completed",
-  "previous_status": "review",
+  "status": "review",
+  "previous_status": "validating",
   "title": "Adopt the relocated Plectarium repository and immutable-pin validation",
   "authority_basis": "Current operator request dated 2026-09-15 for local Plectarium architectural remediation and workspace migration",
   "owner": "migration_implementation_agent",
@@ -13,13 +13,14 @@
   "supersedes": null,
   "closure_evidence": [
     "EVD-0004",
-    "EVD-0005"
+    "EVD-0005",
+    "EVD-0006"
   ],
   "external_effects": "Local non-overwriting filesystem relocation, repository-local edits, validation, a local candidate commit, review, and local integration only; no push or other remote effect.",
   "limitations": [
-    "Historical task, evidence, review, checkpoint, event, and provenance-lock bytes remain preserved except this authorized task lifecycle transition.",
-    "Independent T1 reviewer /root/candidate_review_a approved the exact source commit bc9f2f29e277c08e6a38ede204cc56965dc316a2 using gpt-6-astra at max reasoning.",
-    "The evidence-bearing closure head requires final read-only T1 review before any local integration.",
+    "Rejected evidence-head commits, prior reviews, prior events, evidence, checkpoints, and provenance locks remain preserved as history.",
+    "Source commit bc9f2f29e277c08e6a38ede204cc56965dc316a2 retains its prior read-only review; corrected evidence and lifecycle attribution await repeat T1 review.",
+    "Serial fast-forward integration into local main remains explicitly pending.",
     "Product implementation, publication, deployment, production access, and readiness remain outside scope."
   ]
 }
@@ -47,15 +48,16 @@
 - [x] Historical publication and provenance records remain byte-preserved.
 - [x] No remote, deployment, product, production, or paid effect occurs.
 - [x] A distinct T1 reviewer approved the exact corrected source candidate.
-- [x] The approved source candidate is handed off for evidence-only closure; any local integration remains gated by final review of the evidence-bearing head.
+- [ ] The corrected evidence-bearing head receives repeat independent T1 review.\n- [ ] The approved candidate is integrated serially into local `main`.
 
-## Closure and final-review boundary
+## Erratum and active review boundary
 
-Independent T1 review `REV-0004` approved exact source commit
-`bc9f2f29e277c08e6a38ede204cc56965dc316a2` (tree `686bab41981b5e1a5455f9ad28f2599837b9b5eb`). Correction evidence `EVD-0005`
-records the resolved findings and split validation.
+The implementation source commit `bc9f2f29e277c08e6a38ede204cc56965dc316a2` retains its prior read-only
+review. Erratum evidence `EVD-0006` and review successor `REV-0005`
+correct the finding labels, severities, authorship, and lifecycle attribution
+without rewriting `EVD-0005`, `REV-0004`, or prior events.
 
-This evidence-only successor closes `TASK-0003` without changing the reviewed
-source candidate. The commit containing this review/task closure was not part
-of that source review and therefore requires final read-only T1 review before
-any serial local integration. No push or other remote effect is authorized.
+The primary integrator reopened this task through `reopened`,
+`in_progress`, and `validating`, then returned it to `review`. Repeat T1
+review of the corrected evidence-bearing head is required before serial
+fast-forward integration into local `main`. No push is authorized.

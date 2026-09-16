@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T01:03:28.565192+00:00",
-  "generation_id": "eaaa9b2e1aae5624ed17e798312cbef7",
+  "generated_at": "2026-09-16T01:22:48.358603+00:00",
+  "generation_id": "3a577c7c85a799902b674ed932d9d070",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -48,12 +48,19 @@
     ".agent/events/EVT-0028-migration-closure-review-recorded.json",
     ".agent/events/EVT-0029-migration-closure-task-review.json",
     ".agent/events/EVT-0030-migration-closure-task-completed.json",
+    ".agent/events/EVT-0031-erratum-task-reopened.json",
+    ".agent/events/EVT-0032-erratum-task-in-progress.json",
+    ".agent/events/EVT-0033-erratum-evidence-recorded.json",
+    ".agent/events/EVT-0034-erratum-task-validating.json",
+    ".agent/events/EVT-0035-erratum-review-recorded.json",
+    ".agent/events/EVT-0036-erratum-task-review.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
     ".agent/evidence/EVD-0003-initial-publication.md",
     ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
     ".agent/evidence/EVD-0005-review-remediation.md",
+    ".agent/evidence/EVD-0006-review-lifecycle-erratum.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -68,6 +75,7 @@
     ".agent/reviews/REV-0002-independent-prepublication-review.md",
     ".agent/reviews/REV-0003-publication-closure-review.md",
     ".agent/reviews/REV-0004-project-family-migration-review.md",
+    ".agent/reviews/REV-0005-migration-review-erratum.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -264,5 +272,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "4c7ca2835646f7171c3d130993ec56b378bdc8790006541d118aec3e373625d9"
+  "source_fingerprint": "4e279abd4f08a4804bc7e1cfbd2d7196b36a842f30150f5c1b1eed9a8db8f557"
 }

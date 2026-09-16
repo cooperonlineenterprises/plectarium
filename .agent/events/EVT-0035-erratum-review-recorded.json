@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0035","occurred_at":"2026-09-16T01:19:00Z","kind":"review_recorded","subject":"REV-0005","actor_or_source":"/root/input_resolver","summary":"T2 recorder added the review erratum while preserving the read-only reviewer role and prior review bytes.","evidence":["EVD-0006"],"redaction_applied":false}

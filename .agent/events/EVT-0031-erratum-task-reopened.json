@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0031","occurred_at":"2026-09-16T01:15:00Z","kind":"task_reopened","subject":"TASK-0003","actor_or_source":"/root","summary":"Primary integrator reopened TASK-0003 to correct review labels, attribution, and the integration gate.","evidence":[],"redaction_applied":false}

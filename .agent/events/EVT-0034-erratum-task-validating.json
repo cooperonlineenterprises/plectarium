@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0034","occurred_at":"2026-09-16T01:18:00Z","kind":"task_validating","subject":"TASK-0003","actor_or_source":"/root","summary":"Primary integrator advanced the corrected evidence candidate to validating after registered checks.","evidence":["EVD-0006"],"redaction_applied":false}

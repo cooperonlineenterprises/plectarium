@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0033","occurred_at":"2026-09-16T01:17:00Z","kind":"evidence_recorded","subject":"EVD-0006","actor_or_source":"/root/input_resolver","summary":"T2 author recorded the accurate finding map, authorship attribution, and lifecycle correction evidence.","evidence":["EVD-0006"],"redaction_applied":false}

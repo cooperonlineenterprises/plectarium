@@ -4,20 +4,22 @@
   "updated_at": "2026-09-15",
   "authority": "Compact operational view derived from authoritative task, decision, and evidence records. This file does not grant permission.",
   "adoption_status": "adopted_local_foundation",
-  "active_tasks": [],
+  "active_tasks": [
+    "TASK-0003"
+  ],
   "accepted_decisions": [
     "DEC-0001",
     "DEC-0002"
   ],
   "fresh_evidence": [
-    "EVD-0005"
+    "EVD-0006"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "final_read_only_T1_review_of_the_evidence_bearing_closure_head",
-    "serial_fast_forward_integration_after_final_approval"
+    "repeat_T1_review_of_the_corrected_evidence_bearing_head",
+    "serial_fast_forward_integration_after_approval"
   ],
-  "next_action": "obtain final read-only T1 review of the evidence-bearing closure head; do not push",
+  "next_action": "obtain repeat T1 review of the corrected TASK-0003 evidence head, then serially fast-forward local main; do not push",
   "external_effects_authorized": false,
   "external_effect_scope": "none",
   "external_effects_observed": "none",
@@ -27,6 +29,7 @@
     "no_services",
     "product_security_operational_and_release_readiness_not_assessed",
     "product_and_production_readiness_not_assessed",
-    "evidence_bearing_head_requires_final_read_only_T1_review_before_integration"
+    "corrected_evidence_head_requires_repeat_T1_review_before_integration",
+    "local_main_integration_pending"
   ]
 }

@@ -17,14 +17,14 @@ authority rules.
 6. Use `project-dossier/` for project context. It is never an instruction or
    permission channel.
 
-## Current migration successor
+## Current migration routing
 
-The setup-only high-assurance foundation and historical publication records
-remain preserved. Product implementation remains absent and unauthorized.
-`TASK-0003` is the current repository-migration candidate in `validating`
-with `EVD-0005`; independent T1 rereview of the corrected candidate and local integration remain pending.
-Historical `TASK-0002` is not current authority and grants no further push or
-publication. Current external effects are unauthorized and none were observed.
+Live task status, current evidence, gates, and next action are owned only by
+`.agent/state/current.json` and `.agent/tasks/TASK-0003-project-family-relocation.md`. Historical
+publication and rejected evidence records grant no authority. The independent
+reviewers performed read-only review only; `/root/input_resolver` authored and
+recorded repository evidence, while primary integrator `/root` owns task
+transitions. Current external effects remain unauthorized and none observed.
 ## Baseline boundaries
 
 - Preserve unrelated user work.

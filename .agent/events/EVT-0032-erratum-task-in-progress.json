@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0032","occurred_at":"2026-09-16T01:16:00Z","kind":"task_in_progress","subject":"TASK-0003","actor_or_source":"/root","summary":"Primary integrator resumed the bounded evidence and lifecycle correction for Plectarium.","evidence":[],"redaction_applied":false}
