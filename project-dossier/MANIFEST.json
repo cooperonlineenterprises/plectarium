@@ -189,6 +189,21 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0028-migration-closure-review-recorded.json",
+      "sha256": "472d2cea0691266c8fad0f3bd4ac39e2745ec5b8e3e5d24e3573b37f595e6de3"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0029-migration-closure-task-review.json",
+      "sha256": "5024a69b8d1d529babe1bfcf118239cc904206f31d9dce7d595f38781d86cf50"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0030-migration-closure-task-completed.json",
+      "sha256": "f2fae797240a3240055e888fb41a26b7c23ee204dc20637c86a57fe21abc4f99"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -284,6 +299,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0004-project-family-migration-review.md",
+      "sha256": "2ab884ad1283e6086cfabe78ddcc7aa09b2908001a45723634106f2f163a3b75"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -330,7 +350,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "ee4a54eab7b72c70bd30845026674e87ab8ee468e0593800ac1f836fa12fd7b1"
+      "sha256": "7f0a4657c2f1b87d0ca65f297e1a07f61d9e0edfca0c6d271e5c505a29193205"
     },
     {
       "layer": "agent_harness",
@@ -350,7 +370,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
-      "sha256": "8217224789d0384dae2a2832a76862b282d446ccc5ec707609e9934cbbc8a85a"
+      "sha256": "9cef1b95891fc9b852253d60ffdc91d4c0eb6df9354b90b8945d1bb9a35bbb17"
     },
     {
       "layer": "agent_harness",
@@ -1253,10 +1273,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T00:46:46.983517+00:00",
-  "generation_id": "2b82c104da8364bb735c16a028035557",
+  "generated_on": "2026-09-16T01:03:28.565192+00:00",
+  "generation_id": "eaaa9b2e1aae5624ed17e798312cbef7",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "7d4712290512a41a134668da998d860ff3ca1e0b7d3ae2896dac95c107490279"
+  "source_fingerprint": "4c7ca2835646f7171c3d130993ec56b378bdc8790006541d118aec3e373625d9"
 }

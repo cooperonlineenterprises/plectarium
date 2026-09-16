@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0029","occurred_at":"2026-09-16T01:00:00Z","kind":"task_review","subject":"TASK-0003","actor_or_source":"/root/candidate_review_a","summary":"Moved TASK-0003 through review on REV-0004; the evidence-bearing head remains final-review gated.","evidence":["EVD-0005","REV-0004"],"redaction_applied":false}

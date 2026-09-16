@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T00:46:46.983517+00:00",
-  "generation_id": "2b82c104da8364bb735c16a028035557",
+  "generated_at": "2026-09-16T01:03:28.565192+00:00",
+  "generation_id": "eaaa9b2e1aae5624ed17e798312cbef7",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -45,6 +45,9 @@
     ".agent/events/EVT-0025-review-remediation-task-in-progress.json",
     ".agent/events/EVT-0026-review-remediation-evidence-recorded.json",
     ".agent/events/EVT-0027-review-remediation-task-validating.json",
+    ".agent/events/EVT-0028-migration-closure-review-recorded.json",
+    ".agent/events/EVT-0029-migration-closure-task-review.json",
+    ".agent/events/EVT-0030-migration-closure-task-completed.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -64,6 +67,7 @@
     ".agent/reviews/REV-0001-foundation-candidate.md",
     ".agent/reviews/REV-0002-independent-prepublication-review.md",
     ".agent/reviews/REV-0003-publication-closure-review.md",
+    ".agent/reviews/REV-0004-project-family-migration-review.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -260,5 +264,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "7d4712290512a41a134668da998d860ff3ca1e0b7d3ae2896dac95c107490279"
+  "source_fingerprint": "4c7ca2835646f7171c3d130993ec56b378bdc8790006541d118aec3e373625d9"
 }

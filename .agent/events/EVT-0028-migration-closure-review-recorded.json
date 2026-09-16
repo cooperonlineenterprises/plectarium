@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0028","occurred_at":"2026-09-16T00:59:00Z","kind":"review_recorded","subject":"REV-0004","actor_or_source":"/root/candidate_review_a","summary":"Recorded independent T1 approval of exact Plectarium source commit bc9f2f29e277c08e6a38ede204cc56965dc316a2.","evidence":["EVD-0005"],"redaction_applied":false}

@@ -15,12 +15,12 @@
     "python": "3.13.9"
   },
   "freshness_rule": "Invalid when any non-excluded repository source byte or path changes.",
-  "generated_at": "2026-09-16T00:46:46.983517+00:00",
-  "generation_id": "2b82c104da8364bb735c16a028035557",
+  "generated_at": "2026-09-16T01:03:28.565192+00:00",
+  "generation_id": "eaaa9b2e1aae5624ed17e798312cbef7",
   "git_scope": {
     "available": true,
     "ignored": 0,
-    "tracked_modified": 13,
+    "tracked_modified": 2,
     "untracked": 4
   },
   "limitations": [
@@ -30,7 +30,7 @@
   ],
   "result": "PASS",
   "schema_version": "harness.validation-report.v1",
-  "source_fingerprint": "7d4712290512a41a134668da998d860ff3ca1e0b7d3ae2896dac95c107490279",
+  "source_fingerprint": "4c7ca2835646f7171c3d130993ec56b378bdc8790006541d118aec3e373625d9",
   "task_and_decision_links": [],
   "validator_version": "1.0.0"
 }
