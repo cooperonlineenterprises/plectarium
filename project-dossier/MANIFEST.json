@@ -460,7 +460,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "30eaaf8d095a42da0eee697b00755d06949aab7d0e82848a95c9d7ebf73fa56a"
+      "sha256": "79789ac86ca2cbb0f767b0d30b63c766ee01398ba663f3e2a5dc6f519ac47525"
     },
     {
       "layer": "agent_harness",
@@ -1383,10 +1383,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T03:51:00.393156+00:00",
-  "generation_id": "76b25ddd998744a599b178b30caa9ccc",
+  "generated_on": "2026-09-16T03:59:35.917389+00:00",
+  "generation_id": "1f163ca51de87120c76125a6b6b3b684",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "b66e182d13f68ade6cf12b371f94a474034f18dcd2dbe7f34275b7da1fbad408"
+  "source_fingerprint": "ae082cfbfa1b67da0c90e041f5f4210bc45e4032b7c138cadb88402e2fc78c98"
 }

@@ -10,12 +10,11 @@
     "DEC-0002"
   ],
   "fresh_evidence": [
-    "EVD-0009"
+    "EVD-0010"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "separate_current_authority_for_any_new_work",
-    "final_read_only_metadata_audit_of_the_closure_head"
+    "separate_current_authority_for_any_new_work"
   ],
   "next_action": "await separately authorized work; do not push",
   "external_effects_authorized": false,
@@ -27,8 +26,6 @@
     "no_services",
     "product_security_operational_and_release_readiness_not_assessed",
     "product_and_production_readiness_not_assessed",
-    "closure_head_requires_final_read_only_metadata_audit",
-    "future_work_requires_separate_current_authority",
-    "product_and_production_readiness_not_assessed"
+    "future_work_requires_separate_current_authority"
   ]
 }
