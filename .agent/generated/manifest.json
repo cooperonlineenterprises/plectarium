@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T00:14:58.701055+00:00",
-  "generation_id": "20500a4196fe30102e02c6f528b41679",
+  "generated_at": "2026-09-16T00:46:46.983517+00:00",
+  "generation_id": "2b82c104da8364bb735c16a028035557",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -42,11 +42,15 @@
     ".agent/events/EVT-0022-project-family-relocation-task-in-progress.json",
     ".agent/events/EVT-0023-project-family-relocation-evidence-recorded.json",
     ".agent/events/EVT-0024-project-family-relocation-task-validating.json",
+    ".agent/events/EVT-0025-review-remediation-task-in-progress.json",
+    ".agent/events/EVT-0026-review-remediation-evidence-recorded.json",
+    ".agent/events/EVT-0027-review-remediation-task-validating.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
     ".agent/evidence/EVD-0003-initial-publication.md",
     ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
+    ".agent/evidence/EVD-0005-review-remediation.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -84,7 +88,7 @@
     ".agent/tests/fixtures/invalid/duplicate-key.json",
     ".agent/tests/fixtures/invalid/nested-agent-weakening.md",
     ".agent/tests/fixtures/valid/kernel.json",
-    ".agent/tests/test_packet_pins.py",
+    ".agent/tests/packet_pin_test.py",
     ".agent/tests/test_validate.py",
     ".agent/tools.json",
     ".agent/validators.json",
@@ -256,5 +260,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "219c6ee1800faa22920291a357ab1d600bcc776f587de61b1de4c2851f7b7466"
+  "source_fingerprint": "7d4712290512a41a134668da998d860ff3ca1e0b7d3ae2896dac95c107490279"
 }

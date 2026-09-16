@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0025","occurred_at":"2026-09-16T00:42:00Z","kind":"task_in_progress","subject":"TASK-0003","actor_or_source":"migration_implementation_agent","summary":"Resumed Plectarium migration work to correct CRA-01 through CRA-03 and B1 through B5.","evidence":[],"redaction_applied":false}

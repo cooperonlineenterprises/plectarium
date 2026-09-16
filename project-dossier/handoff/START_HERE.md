@@ -1,25 +1,29 @@
-# Handoff Start
+# Start Here
 
-> Navigation only. Reinspect the repository and current instructions before
-> resuming work.
+> Navigation only; this page grants no permission. Reinspect current
+> instructions, repository state, and direct evidence.
 
 ## Current position
 
-- Blueprint 1.0.0 high-assurance scaffold generated on 2026-08-31.
-- Product constitution/build packet is locally adopted and fully validated.
-- `TASK-0001` is completed with family-lock and live-integrity evidence.
-- `TASK-0002` is completed for exact bounded publication; final closure
-  equality is direct post-commit evidence.
-- Product implementation and readiness remain absent/unassessed.
+- Active work: corrected migration `TASK-0003` is validating.
+- Current correction evidence: `EVD-0005`.
+- The rejected source candidate `670d43e900293f70f118b0562af735795a06c242` remains preserved as the
+  parent of the correction candidate.
+- Historical publication records are noncurrent and grant no push or other
+  external authority.
+- Product implementation and readiness remain unassessed.
 
-## Resume in this order
+## Resume safely
 
-1. Read applicable instructions and `.agent/START_HERE.md`.
-2. Inspect repository and source-control state.
-3. Read completed `TASK-0002`, `DEC-0001`, `DEC-0002`, `EVD-0003`, and
-   `REV-0003`.
-4. Re-run packet/harness checks if any source changes.
-5. Verify direct local/tracking/remote equality and clean worktree before
-   relying on publication state.
-6. Use the final commit only as immutable downstream provenance; it grants no
-   implementation or later-push authority.
+1. Read root-to-leaf `AGENTS.md`, then `.agent/state/current.json`.
+2. Read `TASK-0003` and successor evidence `EVD-0005`.
+3. Inspect the exact branch, commit, tree, origin, and clean status.
+4. Run the plain-`python3` default harness suite from
+   `.agent/validators.json`.
+5. Run the separate dependency-bearing `packet_pin_test` command with the
+   configured packet interpreter.
+6. Run the full packet check with the canonical sibling repositories.
+7. Obtain independent T1 rereview before any serial local integration.
+
+Do not push, publish, deploy, provision, execute product code, access
+production, or infer readiness from these records.

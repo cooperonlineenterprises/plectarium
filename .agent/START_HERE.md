@@ -21,7 +21,7 @@
 - Blueprint profile: `high-assurance`
 - Adoption state: local setup foundation complete
 - Active task: `TASK-0003` validating the repository migration candidate
-- Current migration evidence: `EVD-0004`
+- Current migration evidence: `EVD-0005`
 - Product implementation: intentionally absent
 - Current external effects: unauthorized and none observed
 

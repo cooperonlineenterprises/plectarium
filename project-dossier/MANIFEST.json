@@ -5,7 +5,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/START_HERE.md",
-      "sha256": "717ea9f3f53a1eb7587144a261d5d7f596df3cae5b329ef42fcbca836d50b4ef"
+      "sha256": "c97a091852f8903eaa3fabde72d0f261d5a0a02109d235b325a986b64b6e1c92"
     },
     {
       "layer": "agent_harness",
@@ -174,6 +174,21 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0025-review-remediation-task-in-progress.json",
+      "sha256": "9fe0c390660537f01385ccf02b67203d8cc1364d8151525dea65434abaf2f8a3"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0026-review-remediation-evidence-recorded.json",
+      "sha256": "d9e02742569af9f3b6b1cb9409eeef6254dfa003d9ea4fe23d39314f0d700d81"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0027-review-remediation-task-validating.json",
+      "sha256": "eccd5dac8e17504897860cf47bc5587e686241b80aa2f8724164ff8317ee75d3"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -196,6 +211,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0004-project-family-relocation-candidate.md",
       "sha256": "5c75d33ae5a6d8e60ee7cf9cc620dd11e05bfc1e018aee08fcf20b399bb2f8b1"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0005-review-remediation.md",
+      "sha256": "94b985243d9a27167709fa7af17b733de44a9523b086d12f12e87fd2a6a93bad"
     },
     {
       "layer": "agent_harness",
@@ -305,12 +325,12 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/RESUME.md",
-      "sha256": "e83d92f1b4ef76a1c5a935209e783be610769e9ddc763fa71c89f18cdaf69404"
+      "sha256": "08147d2a97eb1f7a8c785d06f81ef78bd1e7b2b8ebc5e2e77fbad1244e9bf5c9"
     },
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "b7a9c25727e20a947c4d15827724b8e6ed8df5ebcff950422653c9d47cd90de1"
+      "sha256": "ee4a54eab7b72c70bd30845026674e87ab8ee468e0593800ac1f836fa12fd7b1"
     },
     {
       "layer": "agent_harness",
@@ -384,8 +404,8 @@
     },
     {
       "layer": "agent_harness",
-      "path": ".agent/tests/test_packet_pins.py",
-      "sha256": "5323d7dec4db0542968715712614185cab3b627d0415d18f64581b6db78d9fa1"
+      "path": ".agent/tests/packet_pin_test.py",
+      "sha256": "e13a63cf413d65170d1904485749b9d17939469aa646f10f61766ffd8e432d74"
     },
     {
       "layer": "agent_harness",
@@ -400,7 +420,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/validators.json",
-      "sha256": "e2cca4ce965e51f10856835e32e7941cc011fd214c3d412dc53d56eeb00d32be"
+      "sha256": "92248311aae8ef1b7b7e01d008c7cdcca33a571f1e3b2344079d2b613e07e8bb"
     },
     {
       "layer": "agent_harness",
@@ -450,12 +470,12 @@
     {
       "layer": "agent_harness",
       "path": "AGENTS.md",
-      "sha256": "0cf795af9af760fe2dbc5313209c48546c3302a11d677413803344834a858453"
+      "sha256": "e44f15321617fd61471cbb3521ddaa5db5986387a244e21dec133a494d0ee3fd"
     },
     {
       "layer": "project_source",
       "path": "README.md",
-      "sha256": "5796cb12baa8baa36dd0e5901ad09c74d9b94a1c6ab4635636d10e9bdfa95508"
+      "sha256": "a968ac3bae7da028390f8b6d24d139d4ac12044fac1262de5f3a9785e486550b"
     },
     {
       "layer": "project_source",
@@ -490,12 +510,12 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256",
-      "sha256": "b78022c598046a28ecd4a1c57b06f543df5ae38b34780d181bd03ae1d6a7876f"
+      "sha256": "5f6d7100e2bdebdcf405182cadb8a90d0e6a4d4efc184f0a9a19502bbb3daa21"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-MANIFEST.json",
-      "sha256": "d937f178bf424d3154fbeb2b1d8ea8df24bcea4671aa67ede64813d0aa9e2cc6"
+      "sha256": "5dd06acf0b9823b4d8830788c9ed10e1c690f748d35929a74efdaa1886b03694"
     },
     {
       "layer": "project_source",
@@ -900,7 +920,7 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/scripts/validate-packet.py",
-      "sha256": "fc47b36d8f0302ac0021925a69a1616d78106432718f4f55fbf4d21398595258"
+      "sha256": "28b8fe0e3f76f6123b9a50848a1b95e74ac7dfdbe9f9218f726bdbf6204e2a8e"
     },
     {
       "layer": "project_source",
@@ -1090,7 +1110,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/README.md",
-      "sha256": "7aa5877bd24e2be64d8461db73531368272d4c2c47359abeefb89e7598a46ba8"
+      "sha256": "9a132c63f9d601e36ef523f7726f99e626c0ddd399300fd07a3e113c5b6eaa7c"
     },
     {
       "layer": "project_dossier",
@@ -1130,7 +1150,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/current-state/README.md",
-      "sha256": "e48638099153993d2a6ae9183fbd22316d8f4ab5d02cd41cc78cc8740d4e3bd5"
+      "sha256": "2912ec9ab643b409ec7a9e67241c2c1044affb517d3224ca38186d8b3639a5cb"
     },
     {
       "layer": "project_dossier",
@@ -1145,7 +1165,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/handoff/START_HERE.md",
-      "sha256": "6906c86eeda61ca3fa8f70c9991ed2f9d30cbedec825d1b2920407bf0cf92ddf"
+      "sha256": "2ab6b13d173a487648c82907797bff131fa56e330ad45f81e2f27e7f9c313160"
     },
     {
       "layer": "project_dossier",
@@ -1233,10 +1253,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-16T00:14:58.701055+00:00",
-  "generation_id": "20500a4196fe30102e02c6f528b41679",
+  "generated_on": "2026-09-16T00:46:46.983517+00:00",
+  "generation_id": "2b82c104da8364bb735c16a028035557",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "219c6ee1800faa22920291a357ab1d600bcc776f587de61b1de4c2851f7b7466"
+  "source_fingerprint": "7d4712290512a41a134668da998d860ff3ca1e0b7d3ae2896dac95c107490279"
 }

@@ -550,8 +550,8 @@
     },
     {
       "path": "scripts/validate-packet.py",
-      "sha256": "fc47b36d8f0302ac0021925a69a1616d78106432718f4f55fbf4d21398595258",
-      "bytes": 30578,
+      "sha256": "28b8fe0e3f76f6123b9a50848a1b95e74ac7dfdbe9f9218f726bdbf6204e2a8e",
+      "bytes": 35906,
       "classification": "validation-tooling"
     },
     {

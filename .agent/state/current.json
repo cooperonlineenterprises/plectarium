@@ -12,14 +12,14 @@
     "DEC-0002"
   ],
   "fresh_evidence": [
-    "EVD-0004"
+    "EVD-0005"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "independent_T1_review_of_the_exact_committed_TASK-0003_candidate",
+    "independent_T1_rereview_of_the_exact_corrected_TASK-0003_candidate",
     "serial_fast_forward_integration_after_approval"
   ],
-  "next_action": "obtain independent T1 review of the exact committed TASK-0003 migration candidate; do not push",
+  "next_action": "obtain independent T1 rereview of the exact corrected TASK-0003 candidate; do not push",
   "external_effects_authorized": false,
   "external_effect_scope": "none",
   "external_effects_observed": "none",

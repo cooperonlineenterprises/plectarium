@@ -1,0 +1,1 @@
+{"schema_version":"harness.event.v1","id":"EVT-0026","occurred_at":"2026-09-16T00:43:00Z","kind":"evidence_recorded","subject":"EVD-0005","actor_or_source":"migration_implementation_agent","summary":"Recorded the Plectarium rejected-candidate corrections, split test results, preservation, and limitations.","evidence":["EVD-0005"],"redaction_applied":false}

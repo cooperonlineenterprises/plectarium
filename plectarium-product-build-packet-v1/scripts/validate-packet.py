@@ -489,57 +489,228 @@ def check_integrity() -> list[Finding]:
     return findings
 
 
+_SAFE_GIT_ENVIRONMENT = {
+    "PATH": "/usr/bin:/bin",
+    "LC_ALL": "C",
+    "LANG": "C",
+    "GIT_OPTIONAL_LOCKS": "0",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_CONFIG_GLOBAL": "/dev/null",
+    "GIT_NO_LAZY_FETCH": "1",
+    "GIT_NO_REPLACE_OBJECTS": "1",
+    "GIT_PROTOCOL_FROM_USER": "0",
+}
+_VALIDATED_GIT_ROOTS: set[Path] = set()
+
+
+def _git_environment() -> dict[str, str]:
+    environment = {
+        key: value for key, value in os.environ.items() if not key.startswith("GIT_")
+    }
+    environment.update(_SAFE_GIT_ENVIRONMENT)
+    return environment
+
+
 def _git(root: Path, *args: str) -> subprocess.CompletedProcess[bytes]:
     return subprocess.run(
-        ["git", "-C", str(root), *args],
+        [
+            "git",
+            "-c", "core.fsmonitor=false",
+            "-c", "core.untrackedCache=false",
+            "-c", "maintenance.auto=false",
+            "-c", "gc.auto=0",
+            "-c", "protocol.allow=never",
+            "-c", "credential.helper=",
+            "-C", str(root),
+            *args,
+        ],
+        stdin=subprocess.DEVNULL,
         capture_output=True,
         check=False,
+        env=_git_environment(),
     )
+
+
+def validate_supplied_root(raw_root: str | os.PathLike[str], label: str) -> tuple[Path | None, list[str]]:
+    import stat as stat_module
+
+    try:
+        raw_text = os.fspath(raw_root)
+    except TypeError:
+        return None, [f"{label} root is not path-like"]
+    if not isinstance(raw_text, str) or not raw_text or "\x00" in raw_text:
+        return None, [f"{label} root is empty or invalid"]
+    if os.path.normpath(raw_text) != raw_text:
+        return None, [f"{label} root is not lexically normalized"]
+
+    absolute = Path(os.path.abspath(raw_text))
+    current = Path(absolute.anchor)
+    components = [current]
+    for part in absolute.parts[1:]:
+        current = current / part
+        components.append(current)
+    for component in components:
+        try:
+            mode = os.lstat(component).st_mode
+        except OSError as error:
+            return None, [f"{label} root component is unavailable: {component}: {error.strerror}"]
+        if stat_module.S_ISLNK(mode):
+            return None, [f"{label} root contains a symlink component: {component}"]
+
+    try:
+        resolved = absolute.resolve(strict=True)
+    except OSError as error:
+        return None, [f"{label} root cannot be resolved: {error}"]
+    if not resolved.is_dir():
+        return None, [f"{label} root is not a directory"]
+    return resolved, []
+
+
+def validated_root_arg(value: str) -> Path:
+    root, errors = validate_supplied_root(value, "supplied")
+    if root is None:
+        raise argparse.ArgumentTypeError("; ".join(errors))
+    return root
+
+
+def _decoded_git_path(result: subprocess.CompletedProcess[bytes], label: str) -> tuple[Path | None, list[str]]:
+    if result.returncode != 0:
+        return None, [f"{label} is unavailable"]
+    try:
+        value = result.stdout.decode("utf-8").strip()
+    except UnicodeDecodeError:
+        return None, [f"{label} is not UTF-8"]
+    try:
+        return Path(value).resolve(strict=True), []
+    except OSError as error:
+        return None, [f"{label} cannot be resolved: {error}"]
+
+
+def _standalone_git_root(raw_root: str | os.PathLike[str], label: str) -> tuple[Path | None, list[str]]:
+    root, errors = validate_supplied_root(raw_root, label)
+    if root is None:
+        return None, errors
+
+    git_entry = root / ".git"
+    try:
+        import stat as stat_module
+        git_mode = os.lstat(git_entry).st_mode
+    except OSError as error:
+        return None, errors + [f"{label} .git entry is unavailable: {error.strerror}"]
+    if not stat_module.S_ISDIR(git_mode):
+        return None, errors + [f"{label} .git is not a standalone directory"]
+    expected_git = git_entry.resolve(strict=True)
+
+    top, top_errors = _decoded_git_path(
+        _git(root, "rev-parse", "--show-toplevel"), f"{label} top-level"
+    )
+    git_dir, git_dir_errors = _decoded_git_path(
+        _git(root, "rev-parse", "--absolute-git-dir"), f"{label} git-dir"
+    )
+    common_dir, common_errors = _decoded_git_path(
+        _git(root, "rev-parse", "--path-format=absolute", "--git-common-dir"),
+        f"{label} common-dir",
+    )
+    errors += top_errors + git_dir_errors + common_errors
+    if top is not None and top != root:
+        errors.append(f"{label} top-level escapes the supplied root")
+    if git_dir is not None and git_dir != expected_git:
+        errors.append(f"{label} git-dir is not confined to root/.git")
+    if common_dir is not None and common_dir != expected_git:
+        errors.append(f"{label} common-dir is not confined to root/.git")
+    return (root, errors) if not errors else (None, errors)
 
 
 def _safe_git_path(value: str) -> bool:
     path = Path(value)
-    return bool(value) and not path.is_absolute() and ".." not in path.parts and "\x00" not in value and ":" not in value
+    return (
+        bool(value)
+        and not path.is_absolute()
+        and "." not in path.parts
+        and ".." not in path.parts
+        and "\x00" not in value
+        and ":" not in value
+    )
 
 
-def check_git_pin(root: Path, commit: str, remote: str, label: str) -> list[str]:
-    errors: list[str] = []
-    if not root.is_dir() or root.is_symlink():
-        return [f"{label} root is missing or unsafe"]
+def check_git_pin(
+    raw_root: str | os.PathLike[str], commit: str, remote: str, label: str
+) -> list[str]:
+    root, errors = _standalone_git_root(raw_root, label)
+    if root is None:
+        return errors
     if re.fullmatch(r"[0-9a-f]{40}", commit) is None:
-        return [f"{label} commit pin is not a full lowercase object ID"]
-    top = _git(root, "rev-parse", "--show-toplevel")
-    if top.returncode != 0:
-        return [f"{label} root is not a Git worktree"]
-    try:
-        top_level = Path(top.stdout.decode("utf-8").strip()).resolve()
-    except UnicodeDecodeError:
-        return [f"{label} Git root is not UTF-8"]
-    if top_level != root.resolve():
-        errors.append(f"{label} root is not the Git worktree root")
-    origin = _git(root, "remote", "get-url", "origin")
-    if origin.returncode != 0 or origin.stdout.decode("utf-8", errors="replace").strip() != remote:
-        errors.append(f"{label} origin URL does not match lock")
+        return errors + [f"{label} commit pin is not a full lowercase object ID"]
+
+    origin = _git(
+        root, "config", "--local", "--no-includes", "--get", "remote.origin.url"
+    )
+    if (
+        origin.returncode != 0
+        or origin.stdout.decode("utf-8", errors="replace").strip() != remote
+    ):
+        errors.append(f"{label} raw local origin URL does not match lock")
     if _git(root, "cat-file", "-e", f"{commit}^{{commit}}").returncode != 0:
         errors.append(f"{label} pinned commit object is missing")
+    if not errors:
+        _VALIDATED_GIT_ROOTS.add(root)
     return errors
 
 
-def git_blob(root: Path, commit: str, path: str) -> bytes | None:
-    if re.fullmatch(r"[0-9a-f]{40}", commit) is None or not _safe_git_path(path):
+def _approved_git_root(raw_root: str | os.PathLike[str]) -> Path | None:
+    root, errors = validate_supplied_root(raw_root, "Git")
+    if root is None or errors or root not in _VALIDATED_GIT_ROOTS:
+        return None
+    return root
+
+
+def git_blob(raw_root: str | os.PathLike[str], commit: str, path: str) -> bytes | None:
+    root = _approved_git_root(raw_root)
+    if (
+        root is None
+        or re.fullmatch(r"[0-9a-f]{40}", commit) is None
+        or not _safe_git_path(path)
+    ):
         return None
     result = _git(root, "cat-file", "blob", f"{commit}:{path}")
     return result.stdout if result.returncode == 0 else None
 
 
-def check_pinned_blob(root: Path, commit: str, path: str, expected_sha256: str, label: str) -> list[str]:
+def git_tree_files(
+    raw_root: str | os.PathLike[str], commit: str, path: str
+) -> list[str] | None:
+    root = _approved_git_root(raw_root)
+    if (
+        root is None
+        or re.fullmatch(r"[0-9a-f]{40}", commit) is None
+        or not _safe_git_path(path)
+    ):
+        return None
+    result = _git(root, "ls-tree", "-z", "--name-only", f"{commit}:{path}")
+    if result.returncode != 0:
+        return None
+    try:
+        return sorted(
+            item.decode("utf-8") for item in result.stdout.split(b"\0") if item
+        )
+    except UnicodeDecodeError:
+        return None
+
+
+def check_pinned_blob(
+    root: str | os.PathLike[str],
+    commit: str,
+    path: str,
+    expected_sha256: str,
+    label: str,
+) -> list[str]:
     blob = git_blob(root, commit, path)
     if blob is None:
         return [f"{label} pinned file is missing: {path}"]
     if hashlib.sha256(blob).hexdigest() != expected_sha256:
         return [f"{label} pinned file digest mismatch: {path}"]
     return []
-
 
 def check_family_root(path: Path | None) -> list[Finding]:
     if path is None:
@@ -581,12 +752,12 @@ def run(family_root: Path | None = None) -> list[Finding]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate the Plectarium product build packet without implementing the product.")
     parser.add_argument("--refresh-derived", action="store_true", help="Explicitly refresh packet manifest, checksums, and integrity report before checking.")
-    parser.add_argument("--family-root", type=Path, help="Explicit resolved family repository root for immutable lock equality verification.")
+    parser.add_argument("--family-root", type=validated_root_arg, help="Explicit local family repository root for immutable pin verification.")
     parser.add_argument("--json", action="store_true", help="Emit structured result output.")
     args = parser.parse_args()
     if args.refresh_derived:
         refresh()
-    findings = run(args.family_root.resolve() if args.family_root else None)
+    findings = run(args.family_root if args.family_root else None)
     if args.json:
         print(json.dumps({"result": "PASS" if not findings else "FAIL", "packet": PACKET_NAME, "version": PACKET_VERSION, "findings": [item.as_dict() for item in findings], "limitations": ["Product implementation and readiness are not assessed."]}, indent=2))
     else:

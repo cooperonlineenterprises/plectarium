@@ -22,7 +22,7 @@ authority rules.
 The setup-only high-assurance foundation and historical publication records
 remain preserved. Product implementation remains absent and unauthorized.
 `TASK-0003` is the current repository-migration candidate in `validating`
-with `EVD-0004`; independent T1 review and local integration remain pending.
+with `EVD-0005`; independent T1 rereview of the corrected candidate and local integration remain pending.
 Historical `TASK-0002` is not current authority and grants no further push or
 publication. Current external effects are unauthorized and none were observed.
 ## Baseline boundaries
