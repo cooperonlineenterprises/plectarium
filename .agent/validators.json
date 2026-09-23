@@ -30,7 +30,7 @@
       ]
     },
     "packet_check": {
-      "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family",
+      "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../../plectarium-family/repo",
       "writes": []
     },
     "packet_refresh": {
@@ -42,7 +42,7 @@
       ]
     },
     "closure": {
-      "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../plectarium-family",
+      "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../../plectarium-family/repo",
       "writes": []
     },
     "packet_pin_test": {

@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-16T03:59:35.917389+00:00",
-  "generation_id": "1f163ca51de87120c76125a6b6b3b684",
+  "generated_at": "2026-09-23T18:41:54.521719+00:00",
+  "generation_id": "4692ae0028ed706a8ac82f519d16fd3d",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -286,5 +286,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "ae082cfbfa1b67da0c90e041f5f4210bc45e4032b7c138cadb88402e2fc78c98"
+  "source_fingerprint": "3f355d7decc128bae90f0f05402f3ce1939af14e8f64d4144626901d764e5902"
 }
