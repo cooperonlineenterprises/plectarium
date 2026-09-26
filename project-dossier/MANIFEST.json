@@ -49,6 +49,16 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/decisions/DEC-0003-internal-contract-foundation.md",
+      "sha256": "5cb0d6f0cf820af6823b894be6ae764b92c72dcd89dcaa67c407c77412610baf"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/decisions/DEC-0004-required-format-runtime.md",
+      "sha256": "c069c21691ccf94f565e63945b965c97a69b9d1736248806aeeaab772bfee937"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/decisions/README.md",
       "sha256": "321f2910e7e6256e00dad950baf69484dc8b777249d62e5f8f0aa84ac018e1c2"
     },
@@ -334,6 +344,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0012-contract-foundation.md",
+      "sha256": "e6ed03da2e17c93d64e343f0462971aa4030a3713ec0faf8818ee0e03b93afac"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/evidence/README.md",
       "sha256": "68138e16a1146373c40e760402e3da10f90969c38f2bd6371cf72bbeaa25439a"
     },
@@ -375,7 +390,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/project.json",
-      "sha256": "873465d71a7076a0fb1f75b1bcdabd4d219ff6fd83d3d4d352aeea7858315ce2"
+      "sha256": "1d3c01785593df93e26a307aa836a3f08a211d88d27468130243015f34ba214c"
     },
     {
       "layer": "agent_harness",
@@ -421,6 +436,26 @@
       "layer": "agent_harness",
       "path": ".agent/reviews/REV-0008-suite-authority-validation.md",
       "sha256": "f41f156049aa3e57a8f69055cbcdcb1390b342df65f636b53eae86df87adc5d2"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0009-contract-foundation-findings.md",
+      "sha256": "bf0d357a7628db32d72f48e6cd7ebfe5c4ff29776fe3f9bfa73b03ab17998583"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0010-contract-reference-targets.md",
+      "sha256": "9af262e4ca90c2a5b499e1102a9e8663605eeaf19b81a1434de1768af9c61576"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0011-contract-format-runtime.md",
+      "sha256": "5c73f43140bf61c588f93d80767145d01fbffd05e07571a582859c2e0db0c026"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0012-contract-foundation-final.md",
+      "sha256": "90e0c40366be2a7ddccb48774298d8fab1c3f75f9f1007bd97d5c5f5009c3d9f"
     },
     {
       "layer": "agent_harness",
@@ -470,7 +505,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "b00741d7d7892fc4f22937ac35afc91aa2972e85d391e111f45c11093b7916d5"
+      "sha256": "f112d1c357581aa02ca4a48136a10d07bccaa402261e7418317ffa16e37b304c"
     },
     {
       "layer": "agent_harness",
@@ -496,6 +531,11 @@
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0004-suite-authority-validation.md",
       "sha256": "2948354448722a4aaf1c2930e361f258f10698023a43df919ab0d995f127b300"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0005-contract-foundation.md",
+      "sha256": "9a1ac4c5287a474b25344e159b0a591e7c4cc742f1abeb70c6a6b38519b9330b"
     },
     {
       "layer": "agent_harness",
@@ -555,7 +595,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tests/test_validate.py",
-      "sha256": "a857f56911e6961da80e970158f92fe4568ffaf31d128311e72b1d0dac00d8f4"
+      "sha256": "3c5ee06770655d558a530fe0a4c78bf12f2c4c2d76fcd786ec62da3a7160983e"
     },
     {
       "layer": "agent_harness",
@@ -565,7 +605,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/validators.json",
-      "sha256": "96fd875e6780190296f16002a72dd22fbb95ec0d980f5f042ffb5f57d04408fc"
+      "sha256": "0b0369a0fe49920637f7e82d91505af3bbf6ffdc91fd03984b3b94e2ce92b295"
     },
     {
       "layer": "agent_harness",
@@ -615,12 +655,12 @@
     {
       "layer": "agent_harness",
       "path": "AGENTS.md",
-      "sha256": "9fad863786d9bad66e713dc58679b95c59ed98b502dd3bb0693d695085d6385d"
+      "sha256": "cf86db113622a0e389e982c4681995ad5e8b25a94c3d502ca6d67e9f6ece43ce"
     },
     {
       "layer": "project_source",
       "path": "README.md",
-      "sha256": "423777a24ddece9ee2f9815db18cc96aa44d6aa4f3695390c4542ac851816cbf"
+      "sha256": "a088b519ad1d62340773f33ebe441d443caf1580e8eb1e5be50138f6037a75a5"
     },
     {
       "layer": "project_source",
@@ -631,6 +671,11 @@
       "layer": "project_source",
       "path": "docs/authority-review.md",
       "sha256": "cec7c023b9a591eb538fd3255adf78256def91be4b4164a522d7b0856dc3e78e"
+    },
+    {
+      "layer": "project_source",
+      "path": "docs/contract-foundation.md",
+      "sha256": "f53dd5d77e1923da480253d70cbed88e2af571733cd8424abbd9f489a423f333"
     },
     {
       "layer": "project_source",
@@ -645,7 +690,7 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/DECISIONS.md",
-      "sha256": "24d863a58e0fe23c744c4031567b1009e68fb3aef523f519ea4f1db316785b8a"
+      "sha256": "b475aabbd129c1c76406a3795a18a9e0eb6cf8d84542b3c2df052c88fddd5a84"
     },
     {
       "layer": "project_source",
@@ -660,12 +705,12 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-CHECKSUMS.sha256",
-      "sha256": "5f6d7100e2bdebdcf405182cadb8a90d0e6a4d4efc184f0a9a19502bbb3daa21"
+      "sha256": "c16ce7794c1998899a0a39b97431962ca9cd656eb7909eaaac0b49f3a49d2c3d"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/PACKET-MANIFEST.json",
-      "sha256": "5dd06acf0b9823b4d8830788c9ed10e1c690f748d35929a74efdaa1886b03694"
+      "sha256": "b3775ca8db9e9d234dec89e5eaf3a8d3451df408aa66f9158836843851281cc5"
     },
     {
       "layer": "project_source",
@@ -869,18 +914,23 @@
     },
     {
       "layer": "project_source",
+      "path": "plectarium-product-build-packet-v1/design/adr/ADR-007.md",
+      "sha256": "7d230c35798b52a608937e50288bfbeca2f318da8af7553bcb53268e14de5a4b"
+    },
+    {
+      "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/design/data-ownership.md",
       "sha256": "8c4c63d04c4a8eec3f583b469cf3a149b0b68dac53402783d7a01c2936f9b2f3"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/design/decision-ledger.md",
-      "sha256": "a722db9e9054e39451a30fdb2308d43784a296cfd2020550def43729a84713db"
+      "sha256": "af49b8950e66e310e03c17b91aa2eadf011e0553c32ccecd378075f158fa0a5a"
     },
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/design/decisions.yaml",
-      "sha256": "3b42e380f0b3e3a2da30c30e6714b8c1506da38212893dbb100228be682f0ce5"
+      "sha256": "de63bf666c3ce3537e7371a0d2fcba8e0b8ec51442bb215d052b13328f4ba482"
     },
     {
       "layer": "project_source",
@@ -1070,7 +1120,7 @@
     {
       "layer": "project_source",
       "path": "plectarium-product-build-packet-v1/scripts/validate-packet.py",
-      "sha256": "28b8fe0e3f76f6123b9a50848a1b95e74ac7dfdbe9f9218f726bdbf6204e2a8e"
+      "sha256": "9fa284f4afc11bc4b471c0fdb3601d9220729b49da2fe14855b143210bfe3b6b"
     },
     {
       "layer": "project_source",
@@ -1300,7 +1350,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/current-state/README.md",
-      "sha256": "ffbe8eefe5d85d9adb5806f38c8e4059a0d0bcb081d2e6cbff8471b07fd48e82"
+      "sha256": "287bbbc9485380050613af347d306dbba403dd51fffdf08e643a7d93acc5f0f9"
     },
     {
       "layer": "project_dossier",
@@ -1370,7 +1420,7 @@
     {
       "layer": "project_dossier",
       "path": "project-dossier/plans/README.md",
-      "sha256": "ab054282f58df6e73595ec14edf53b0a23645529cafc3dbe0e1e8a5a12fc6684"
+      "sha256": "24308341ecb62bc3dabf4d9edbbe743c5b965a707f660462f994ef5db3d65d83"
     },
     {
       "layer": "project_dossier",
@@ -1401,12 +1451,42 @@
       "layer": "project_dossier",
       "path": "project-dossier/validation/README.md",
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
+    },
+    {
+      "layer": "project_source",
+      "path": "requirements-contracts.txt",
+      "sha256": "eb787995667e5832f105ba388b16693b276ecceba49427bee62f1aa0b1097ab0"
+    },
+    {
+      "layer": "project_source",
+      "path": "scripts/contract_demo.py",
+      "sha256": "36deb6de4713ba7e1c256e8e3a9748cacf04df86d35bd2570f26ce8f7138a7dd"
+    },
+    {
+      "layer": "project_source",
+      "path": "src/plectarium_contracts/__init__.py",
+      "sha256": "2fb79adaeed96918ff3ec88209f728ada5533c32b5ab8ab0259058362f7778bf"
+    },
+    {
+      "layer": "project_source",
+      "path": "src/plectarium_contracts/contracts.py",
+      "sha256": "15ed36f5d89ddc9aa7effc0334a47cdcd2c3dab3c44b514e61e10a1046fa0def"
+    },
+    {
+      "layer": "project_source",
+      "path": "tests/test_contracts.py",
+      "sha256": "d1b5e295c20a1dc92c90d43c3670d4a1e1a34548222f5383feb0d883e3b8c143"
+    },
+    {
+      "layer": "project_source",
+      "path": "tests/test_layout_guards.py",
+      "sha256": "f2a9bd9c3d0b46816e3e8789c4461f44068e73d7fbda52ffe089c21179173352"
     }
   ],
-  "generated_on": "2026-09-26T02:14:00.924414+00:00",
-  "generation_id": "9bc9d5835bd4008dffb223cbbe48a15c",
+  "generated_on": "2026-09-26T02:54:54.251976+00:00",
+  "generation_id": "2cb3741e9401f9401346dadcb352242d",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "b677572a8e3e6fbe6644ad7e4627eb47178b84fd8bddcb005ff59023cec05556"
+  "source_fingerprint": "e1f2586d5222e9693eaddaf030deb6b901c0214b032582416f7853a3dc576b1a"
 }

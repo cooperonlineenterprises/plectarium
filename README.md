@@ -1,3 +1,15 @@
+# Plectarium suite — internal contract foundation
+
+The suite now has a bounded internal Python contract/identity library. Its
+[operation and limits](docs/contract-foundation.md) describe strict offline
+parsing, schema pins, canonical receipts and explicit migration hooks. The
+[authority review](docs/authority-review.md) precedes this first code-bearing
+slice. See [.agent/state/current.json](.agent/state/current.json) for current
+validation and review state. Later S1 semantics and the control plane remain
+unimplemented.
+
+## Historical repository-foundation documentation
+
 # Plectarium
 
 > **Current routing.** Live operational status is owned only by

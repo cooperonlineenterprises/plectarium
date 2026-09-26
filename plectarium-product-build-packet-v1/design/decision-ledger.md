@@ -25,6 +25,7 @@ scope and consequences without duplicating normative specifications.
 | PLEC-018 | ESTABLISHED | Direct use | Suite hosting is optional. |
 | PLEC-019 | DEFERRED | Shared code | Family extraction threshold remains unmet. |
 | PLEC-020 | ESTABLISHED | AI/readiness | Neither AI nor structural setup is authority or product proof. |
+| PLEC-021 | ACCEPTED | Internal contracts | Exact offline registry and versioned bounded encoding; no runtime or wire interoperability claim. |
 
 Accepted decisions may change only through a successor ADR with migrations,
 security/compatibility impact, affected schemas/tasks/tests, and rollback.

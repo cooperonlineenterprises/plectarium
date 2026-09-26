@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-26T02:14:00.924414+00:00",
-  "generation_id": "9bc9d5835bd4008dffb223cbbe48a15c",
+  "generated_at": "2026-09-26T02:54:54.251976+00:00",
+  "generation_id": "2cb3741e9401f9401346dadcb352242d",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -17,6 +17,8 @@
     ".agent/context.json",
     ".agent/decisions/DEC-0001-foundation-authority-posture.md",
     ".agent/decisions/DEC-0002-suite-boundary-and-family-consumption.md",
+    ".agent/decisions/DEC-0003-internal-contract-foundation.md",
+    ".agent/decisions/DEC-0004-required-format-runtime.md",
     ".agent/decisions/README.md",
     ".agent/events/EVT-0001-task-proposed.json",
     ".agent/events/EVT-0002-task-ready.json",
@@ -74,6 +76,7 @@
     ".agent/evidence/EVD-0009-approved-integrated-closure.md",
     ".agent/evidence/EVD-0010-final-current-view-audit.md",
     ".agent/evidence/EVD-0011-suite-authority-validation.md",
+    ".agent/evidence/EVD-0012-contract-foundation.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -92,6 +95,10 @@
     ".agent/reviews/REV-0006-finding-format-erratum.md",
     ".agent/reviews/REV-0007-final-integrated-head-review.md",
     ".agent/reviews/REV-0008-suite-authority-validation.md",
+    ".agent/reviews/REV-0009-contract-foundation-findings.md",
+    ".agent/reviews/REV-0010-contract-reference-targets.md",
+    ".agent/reviews/REV-0011-contract-format-runtime.md",
+    ".agent/reviews/REV-0012-contract-foundation-final.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -107,6 +114,7 @@
     ".agent/tasks/TASK-0002-foundation-publication.md",
     ".agent/tasks/TASK-0003-project-family-relocation.md",
     ".agent/tasks/TASK-0004-suite-authority-validation.md",
+    ".agent/tasks/TASK-0005-contract-foundation.md",
     ".agent/templates/artifact.json",
     ".agent/templates/checkpoint.md",
     ".agent/templates/decision.md",
@@ -134,6 +142,7 @@
     "README.md",
     "SECURITY.md",
     "docs/authority-review.md",
+    "docs/contract-foundation.md",
     "plectarium-product-build-packet-v1/ARCHITECTURE.md",
     "plectarium-product-build-packet-v1/CHARTER.md",
     "plectarium-product-build-packet-v1/DECISIONS.md",
@@ -181,6 +190,7 @@
     "plectarium-product-build-packet-v1/design/adr/ADR-004.md",
     "plectarium-product-build-packet-v1/design/adr/ADR-005.md",
     "plectarium-product-build-packet-v1/design/adr/ADR-006.md",
+    "plectarium-product-build-packet-v1/design/adr/ADR-007.md",
     "plectarium-product-build-packet-v1/design/data-ownership.md",
     "plectarium-product-build-packet-v1/design/decision-ledger.md",
     "plectarium-product-build-packet-v1/design/decisions.yaml",
@@ -287,8 +297,14 @@
     "project-dossier/research/README.md",
     "project-dossier/transition/README.md",
     "project-dossier/validation/QUALITY_GATES.json",
-    "project-dossier/validation/README.md"
+    "project-dossier/validation/README.md",
+    "requirements-contracts.txt",
+    "scripts/contract_demo.py",
+    "src/plectarium_contracts/__init__.py",
+    "src/plectarium_contracts/contracts.py",
+    "tests/test_contracts.py",
+    "tests/test_layout_guards.py"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "b677572a8e3e6fbe6644ad7e4627eb47178b84fd8bddcb005ff59023cec05556"
+  "source_fingerprint": "e1f2586d5222e9693eaddaf030deb6b901c0214b032582416f7853a3dc576b1a"
 }

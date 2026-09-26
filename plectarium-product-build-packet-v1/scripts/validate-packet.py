@@ -70,7 +70,7 @@ FAMILY_SCHEMA_NAMES = {
 
 FORBIDDEN_REPO_DIRS = {
     "apps", "components", "interfaces", "execution-profiles", "compatibility",
-    "distributions", "deploy", "packages", "src", "crates", "containers",
+    "distributions", "deploy", "packages", "crates", "containers",
 }
 FORBIDDEN_REPO_FILES = {
     "package.json", "pnpm-lock.yaml", "yarn.lock", "Cargo.toml", "Cargo.lock",
@@ -289,6 +289,20 @@ def check_files() -> list[Finding]:
     for name in sorted(FORBIDDEN_REPO_FILES):
         if (REPO / name).exists():
             findings.append(Finding("dependency.present", "product dependency/build file prohibited during foundation", name))
+    # DEC-0003 / ADR-007 adopts only this bounded internal S1 library.
+    source = REPO / "src"
+    if source.exists() or source.is_symlink():
+        if source.is_symlink() or not source.is_dir():
+            findings.append(Finding("implementation.path", "source root is unsafe", "src"))
+        else:
+            for path in source.rglob("*"):
+                rel = path.relative_to(REPO).as_posix()
+                if path.is_symlink() or (not path.is_file() and not path.is_dir()):
+                    findings.append(Finding("implementation.path", "unsafe source path", rel))
+                if path.relative_to(source).parts[0] != "plectarium_contracts":
+                    findings.append(Finding("implementation.scope", "unadopted source package", rel))
+                if path.is_file() and path.suffix != ".py":
+                    findings.append(Finding("implementation.scope", "only internal Python source is adopted", rel))
     return findings
 
 

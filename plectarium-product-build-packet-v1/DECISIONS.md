@@ -13,3 +13,4 @@ architecture. Deferred and open items remain non-claims.
 | PLEC-005–010 | modular architecture, plans, authority, job semantics |
 | PLEC-011–016 | artifacts, compatibility, modes, credentials, tenancy |
 | PLEC-017–020 | direct use, AI limits, extraction, readiness truth |
+| PLEC-021 | internal schema registry and canonical encoding |

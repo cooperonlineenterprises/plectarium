@@ -7,25 +7,23 @@
   "active_tasks": [],
   "accepted_decisions": [
     "DEC-0001",
-    "DEC-0002"
+    "DEC-0002",
+    "DEC-0003",
+    "DEC-0004"
   ],
   "fresh_evidence": [
-    "EVD-0011"
+    "EVD-0011",
+    "EVD-0012"
   ],
   "blocked_by": [],
-  "pending_gates": [
-    "S1_layout_and_canonical_encoding_decision"
-  ],
-  "next_action": "PLEC-FND-001 closed with independent review. Begin PLEC-FND-002 under current continuation after adopting its bounded internal contract implementation.",
+  "pending_gates": [],
+  "next_action": "PLEC-FND-001 and PLEC-FND-002 are complete. Continue with PLEC-SEC-001 and PLEC-CAT-001, retaining the remaining S1 dependency graph and separate runtime/release gates.",
   "external_effects_authorized": false,
   "external_effect_scope": "none",
-  "external_effects_observed": "none",
+  "external_effects_observed": "Pinned public development dependencies downloaded into project-local isolated runtime; no global/sibling environment, remote repository or production change.",
   "limitations": [
-    "no_product_implementation",
-    "no_dependency_installation",
-    "no_services",
-    "product_security_operational_and_release_readiness_not_assessed",
-    "product_and_production_readiness_not_assessed",
-    "future_work_requires_separate_current_authority"
+    "Internal structural contract and canonical identity layer only.",
+    "No runtime authorization, tenant isolation, job/runner execution, service or release.",
+    "Later S1 semantic tasks remain unimplemented."
   ]
 }

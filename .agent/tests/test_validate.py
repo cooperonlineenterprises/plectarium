@@ -73,7 +73,7 @@ class HarnessValidatorTests(unittest.TestCase):
         temporary, test_root = clone()
         try:
             nested = test_root / "src" / "AGENTS.md"
-            nested.parent.mkdir()
+            nested.parent.mkdir(exist_ok=True)
             nested.write_text(
                 '# Invalid\n\n"permission_grant": true\n',
                 encoding="utf-8",
@@ -142,7 +142,7 @@ class HarnessValidatorTests(unittest.TestCase):
         synthetic_value = "synthetic_test_value_123456789"
         try:
             path = test_root / "src" / "synthetic-secret.txt"
-            path.parent.mkdir()
+            path.parent.mkdir(exist_ok=True)
             path.write_text(f"api_key: {synthetic_value}\n", encoding="utf-8")
             findings = VALIDATOR.check_files_and_json(test_root)
             matching = [item for item in findings if "secret assignment" in item]
@@ -155,7 +155,7 @@ class HarnessValidatorTests(unittest.TestCase):
         temporary, test_root = clone()
         try:
             source = test_root / "src" / "new-domain-file.txt"
-            source.parent.mkdir()
+            source.parent.mkdir(exist_ok=True)
             source.write_text("changed\n", encoding="utf-8")
             findings = VALIDATOR.check_integrity(test_root)
             self.assertTrue(any("stale source fingerprint" in item for item in findings))

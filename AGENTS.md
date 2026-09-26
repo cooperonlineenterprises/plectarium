@@ -23,6 +23,15 @@ The reviewed migration head is integrated into local `main` and the migration
 task is complete. Live active work, gates, and next action are owned only by
 `.agent/state/current.json`. The preserved candidate branch and historical
 records grant no new authority; no push occurred.
+## Current implementation boundary
+
+PLEC-FND-001 closed under TASK-0004 and independent REV-0008. DEC-0003 and
+packet ADR-007 adopt `src/plectarium_contracts` for PLEC-FND-002. The library is
+an internal offline contract/identity layer. No capability engine, runtime
+approval, service, execution profile or public interface is implemented here.
+Use current.json for its live task and validators.json for the separate product
+checks. Preserve the immutable family pin and all earlier historical records.
+
 ## Baseline boundaries
 
 - Preserve unrelated user work.
