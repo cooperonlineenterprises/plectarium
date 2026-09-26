@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-23T18:41:54.521719+00:00",
-  "generation_id": "4692ae0028ed706a8ac82f519d16fd3d",
+  "generated_at": "2026-09-26T02:14:00.924414+00:00",
+  "generation_id": "9bc9d5835bd4008dffb223cbbe48a15c",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -73,6 +73,7 @@
     ".agent/evidence/EVD-0008-local-main-integration.md",
     ".agent/evidence/EVD-0009-approved-integrated-closure.md",
     ".agent/evidence/EVD-0010-final-current-view-audit.md",
+    ".agent/evidence/EVD-0011-suite-authority-validation.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -90,6 +91,7 @@
     ".agent/reviews/REV-0005-migration-review-erratum.md",
     ".agent/reviews/REV-0006-finding-format-erratum.md",
     ".agent/reviews/REV-0007-final-integrated-head-review.md",
+    ".agent/reviews/REV-0008-suite-authority-validation.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -104,6 +106,7 @@
     ".agent/tasks/TASK-0001-repository-foundation.md",
     ".agent/tasks/TASK-0002-foundation-publication.md",
     ".agent/tasks/TASK-0003-project-family-relocation.md",
+    ".agent/tasks/TASK-0004-suite-authority-validation.md",
     ".agent/templates/artifact.json",
     ".agent/templates/checkpoint.md",
     ".agent/templates/decision.md",
@@ -130,6 +133,7 @@
     "AGENTS.md",
     "README.md",
     "SECURITY.md",
+    "docs/authority-review.md",
     "plectarium-product-build-packet-v1/ARCHITECTURE.md",
     "plectarium-product-build-packet-v1/CHARTER.md",
     "plectarium-product-build-packet-v1/DECISIONS.md",
@@ -286,5 +290,5 @@
     "project-dossier/validation/README.md"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "3f355d7decc128bae90f0f05402f3ce1939af14e8f64d4144626901d764e5902"
+  "source_fingerprint": "b677572a8e3e6fbe6644ad7e4627eb47178b84fd8bddcb005ff59023cec05556"
 }

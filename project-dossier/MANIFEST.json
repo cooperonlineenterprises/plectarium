@@ -329,6 +329,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0011-suite-authority-validation.md",
+      "sha256": "c49431da367ec1866c47f4fb633bf93c9f11c915419080b0a2987a36f16d5b02"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/evidence/README.md",
       "sha256": "68138e16a1146373c40e760402e3da10f90969c38f2bd6371cf72bbeaa25439a"
     },
@@ -414,6 +419,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0008-suite-authority-validation.md",
+      "sha256": "f41f156049aa3e57a8f69055cbcdcb1390b342df65f636b53eae86df87adc5d2"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -460,7 +470,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "79789ac86ca2cbb0f767b0d30b63c766ee01398ba663f3e2a5dc6f519ac47525"
+      "sha256": "b00741d7d7892fc4f22937ac35afc91aa2972e85d391e111f45c11093b7916d5"
     },
     {
       "layer": "agent_harness",
@@ -481,6 +491,11 @@
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0003-project-family-relocation.md",
       "sha256": "f0ad2608c29c816a42c4b9e508a7860359a8460b80affb90f27fca1c89e40e65"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0004-suite-authority-validation.md",
+      "sha256": "2948354448722a4aaf1c2930e361f258f10698023a43df919ab0d995f127b300"
     },
     {
       "layer": "agent_harness",
@@ -611,6 +626,11 @@
       "layer": "project_source",
       "path": "SECURITY.md",
       "sha256": "ba383196c3acc7d3d2c9132cfc24c5d73894f82195d55001b182ee263a430fad"
+    },
+    {
+      "layer": "project_source",
+      "path": "docs/authority-review.md",
+      "sha256": "cec7c023b9a591eb538fd3255adf78256def91be4b4164a522d7b0856dc3e78e"
     },
     {
       "layer": "project_source",
@@ -1383,10 +1403,10 @@
       "sha256": "8f49d1739a360a1cde1be58c826a13e6601d059118aea83074aebdc96ff3185c"
     }
   ],
-  "generated_on": "2026-09-23T18:41:54.521719+00:00",
-  "generation_id": "4692ae0028ed706a8ac82f519d16fd3d",
+  "generated_on": "2026-09-26T02:14:00.924414+00:00",
+  "generation_id": "9bc9d5835bd4008dffb223cbbe48a15c",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "3f355d7decc128bae90f0f05402f3ce1939af14e8f64d4144626901d764e5902"
+  "source_fingerprint": "b677572a8e3e6fbe6644ad7e4627eb47178b84fd8bddcb005ff59023cec05556"
 }
