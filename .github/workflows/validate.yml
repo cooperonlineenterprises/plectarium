@@ -1,0 +1,130 @@
+name: validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  GIT_OPTIONAL_LOCKS: "0"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  repository_checks:
+    name: repository checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: suite
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          path: suite
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.14.0"
+      - name: Install the exact isolated contract runtime
+        run: |
+          python -m venv "$RUNNER_TEMP/plectarium-contracts"
+          "$RUNNER_TEMP/plectarium-contracts/bin/python" -m pip install --no-deps -r requirements-contracts.txt
+          "$RUNNER_TEMP/plectarium-contracts/bin/python" -m pip check
+          echo "$RUNNER_TEMP/plectarium-contracts/bin" >> "$GITHUB_PATH"
+      - name: Check harness and dossier integrity without refreshing
+        run: python -B .agent/scripts/validate.py --check
+      - name: Exercise harness mutation tests
+        run: python -B -m unittest discover -s .agent/tests -p 'test_*.py'
+      - name: Check packet structure and integrity
+        run: python -B plectarium-product-build-packet-v1/scripts/validate-packet.py
+      - name: Exercise hostile immutable-pin cases
+        run: python -B -m unittest discover -s .agent/tests -p 'packet_pin_test.py'
+      - name: Exercise offline contracts and layout guards
+        run: python -I -B -m unittest discover -s tests -p 'test_*.py'
+      - name: Run the checkout-only contract demonstration
+        run: python -I -B scripts/contract_demo.py
+
+  family_pin:
+    name: immutable family pin
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: suite
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          path: suite
+          persist-credentials: false
+      - name: Require the dedicated family read credential
+        env:
+          FAMILY_READ_KEY: ${{ secrets.PLECTARIUM_FAMILY_READ_KEY }}
+        run: |
+          if [ -z "$FAMILY_READ_KEY" ]; then
+            echo "::error::PLECTARIUM_FAMILY_READ_KEY is missing. Configure a read-only deploy key for plectarium-family; never substitute a broad personal credential."
+            exit 1
+          fi
+      - name: Resolve the immutable family lock
+        id: family_lock
+        run: |
+          python -I -B - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          lock = json.loads(Path("plectarium-product-build-packet-v1/reference/family-source-lock.json").read_text())
+          if lock.get("publication_status") != "resolved":
+              raise SystemExit("The family lock is not resolved")
+          if lock.get("repository") != "https://github.com/cooperonlineenterprises/plectarium-family.git":
+              raise SystemExit("The family credential is scoped to plectarium-family only")
+          commit = lock.get("git_commit", "")
+          if not re.fullmatch(r"[0-9a-f]{40}", commit):
+              raise SystemExit("The family lock requires an exact commit")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"commit={commit}\n")
+          PY
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          repository: cooperonlineenterprises/plectarium-family
+          ref: ${{ steps.family_lock.outputs.commit }}
+          ssh-key: ${{ secrets.PLECTARIUM_FAMILY_READ_KEY }}
+          persist-credentials: false
+          fetch-depth: 1
+          path: family
+      - name: Normalize the source locator after authenticated SSH checkout
+        run: git -C ../family remote set-url origin https://github.com/cooperonlineenterprises/plectarium-family.git
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.14.0"
+      - name: Install the exact isolated contract runtime
+        run: |
+          python -m venv "$RUNNER_TEMP/plectarium-contracts"
+          "$RUNNER_TEMP/plectarium-contracts/bin/python" -m pip install --no-deps -r requirements-contracts.txt
+          "$RUNNER_TEMP/plectarium-contracts/bin/python" -m pip check
+          echo "$RUNNER_TEMP/plectarium-contracts/bin" >> "$GITHUB_PATH"
+      - name: Verify the family commit, manifests, and consumed contract digests
+        run: python -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../family
+
+  required:
+    name: required
+    if: ${{ always() }}
+    needs: [repository_checks, family_pin]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - name: Require every mandatory job to succeed
+        env:
+          REPOSITORY_RESULT: ${{ needs.repository_checks.result }}
+          FAMILY_RESULT: ${{ needs.family_pin.result }}
+        run: |
+          test "$REPOSITORY_RESULT" = success
+          test "$FAMILY_RESULT" = success

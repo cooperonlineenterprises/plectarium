@@ -1,10 +1,12 @@
 {
   "schema_version": "harness.current-state.v1",
   "project_slug": "plectarium",
-  "updated_at": "2026-09-25",
+  "updated_at": "2026-09-27",
   "authority": "Compact operational view derived from authoritative task, decision, and evidence records. This file does not grant permission.",
   "adoption_status": "adopted_local_foundation",
-  "active_tasks": [],
+  "active_tasks": [
+    "TASK-0008"
+  ],
   "accepted_decisions": [
     "DEC-0001",
     "DEC-0002",
@@ -12,18 +14,20 @@
     "DEC-0004"
   ],
   "fresh_evidence": [
-    "EVD-0011",
-    "EVD-0012"
+    "EVD-0015"
   ],
   "blocked_by": [],
-  "pending_gates": [],
-  "next_action": "PLEC-FND-001 and PLEC-FND-002 are complete. Continue with PLEC-SEC-001 and PLEC-CAT-001, retaining the remaining S1 dependency graph and separate runtime/release gates.",
-  "external_effects_authorized": false,
-  "external_effect_scope": "none",
-  "external_effects_observed": "Pinned public development dependencies downloaded into project-local isolated runtime; no global/sibling environment, remote repository or production change.",
+  "pending_gates": [
+    "dedicated_family_read_access_not_configured",
+    "hosted_required_check_not_yet_verified",
+    "required_status_ruleset_amendment_pending"
+  ],
+  "next_action": "Qualify TASK-0008 CI locally, publish its focused PR, resolve the exact family-read credential, then require the successful GitHub Actions gate. Preserve unrelated original-checkout work.",
+  "external_effects_authorized": true,
+  "external_effect_scope": "Current TASK-0008 invocation only: candidate branch/PR publication, CI, and the specified required-check ruleset amendment; no merge or autonomous integration. New family-read access requires separate explicit authorization.",
+  "external_effects_observed": "Read-only hosted metadata/source inspection, isolated local tests, and candidate record/integrity writes. Hosted CI and required-check amendment remain pending.",
   "limitations": [
-    "Internal structural contract and canonical identity layer only.",
-    "No runtime authorization, tenant isolation, job/runner execution, service or release.",
-    "Later S1 semantic tasks remain unimplemented."
+    "CI is scoped repository validation, not product readiness or autonomous integration.",
+    "The original checkout retains unrelated uncommitted architecture work."
   ]
 }

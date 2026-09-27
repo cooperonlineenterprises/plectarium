@@ -284,6 +284,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0045-ci-task-in-progress.json",
+      "sha256": "46e3c09814fa89cb114eadf3c9ee80e10ea0646b7c31209ffbfe3e2ca44685d5"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -346,6 +351,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0012-contract-foundation.md",
       "sha256": "e6ed03da2e17c93d64e343f0462971aa4030a3713ec0faf8818ee0e03b93afac"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0015-required-ci-local.md",
+      "sha256": "036b77619a8e062e83af7978b67beef2934ecfe18cb8631b720fc9631006a723"
     },
     {
       "layer": "agent_harness",
@@ -459,6 +469,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0015-required-ci-self-review.md",
+      "sha256": "d61521bf4b6f84602181c173c57fe663125afa4d8f99a117550f8a44414f0aca"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -505,7 +520,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "f112d1c357581aa02ca4a48136a10d07bccaa402261e7418317ffa16e37b304c"
+      "sha256": "4c72b4945959c07f23d49620ae165b3be727f6cf45d63ab266071800b2a6eefd"
     },
     {
       "layer": "agent_harness",
@@ -536,6 +551,11 @@
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0005-contract-foundation.md",
       "sha256": "9a1ac4c5287a474b25344e159b0a591e7c4cc742f1abeb70c6a6b38519b9330b"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/tasks/TASK-0008-required-ci.md",
+      "sha256": "b9fe1d7fc9b8b79f4e4adb2b066d899675bbfd7825ab6706131f9ff8e84910c9"
     },
     {
       "layer": "agent_harness",
@@ -644,6 +664,11 @@
     },
     {
       "layer": "project_source",
+      "path": ".github/workflows/validate.yml",
+      "sha256": "e87216bf61246506c15db141fc7e2270b28f24e85a8ca2db7e0bb7b07a7a870d"
+    },
+    {
+      "layer": "project_source",
       "path": ".gitignore",
       "sha256": "c4662344248206d110d11a583d216c17fa364f6d493ef1b1b2a1c7105215d290"
     },
@@ -671,6 +696,11 @@
       "layer": "project_source",
       "path": "docs/authority-review.md",
       "sha256": "cec7c023b9a591eb538fd3255adf78256def91be4b4164a522d7b0856dc3e78e"
+    },
+    {
+      "layer": "project_source",
+      "path": "docs/continuous-integration.md",
+      "sha256": "56df57df317bb38def28eaf72cb271f1cc098fc2b0104954124b3ad3ab0bcf33"
     },
     {
       "layer": "project_source",
@@ -1483,10 +1513,10 @@
       "sha256": "f2a9bd9c3d0b46816e3e8789c4461f44068e73d7fbda52ffe089c21179173352"
     }
   ],
-  "generated_on": "2026-09-26T02:54:54.251976+00:00",
-  "generation_id": "2cb3741e9401f9401346dadcb352242d",
+  "generated_on": "2026-09-27T18:58:39.172461+00:00",
+  "generation_id": "8f3fdc45f12d530cfd1b4585de6a41d3",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "e1f2586d5222e9693eaddaf030deb6b901c0214b032582416f7853a3dc576b1a"
+  "source_fingerprint": "45c129980962f6c24b28e57847dcd25b8d346a90c5aa08f13c1ac56f9eecb38c"
 }

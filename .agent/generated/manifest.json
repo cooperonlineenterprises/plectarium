@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-26T02:54:54.251976+00:00",
-  "generation_id": "2cb3741e9401f9401346dadcb352242d",
+  "generated_at": "2026-09-27T18:58:39.172461+00:00",
+  "generation_id": "8f3fdc45f12d530cfd1b4585de6a41d3",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -64,6 +64,7 @@
     ".agent/events/EVT-0042-final-evidence-recorded.json",
     ".agent/events/EVT-0043-final-task-completed.json",
     ".agent/events/EVT-0044-final-current-view-evidence-recorded.json",
+    ".agent/events/EVT-0045-ci-task-in-progress.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -77,6 +78,7 @@
     ".agent/evidence/EVD-0010-final-current-view-audit.md",
     ".agent/evidence/EVD-0011-suite-authority-validation.md",
     ".agent/evidence/EVD-0012-contract-foundation.md",
+    ".agent/evidence/EVD-0015-required-ci-local.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -99,6 +101,7 @@
     ".agent/reviews/REV-0010-contract-reference-targets.md",
     ".agent/reviews/REV-0011-contract-format-runtime.md",
     ".agent/reviews/REV-0012-contract-foundation-final.md",
+    ".agent/reviews/REV-0015-required-ci-self-review.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -115,6 +118,7 @@
     ".agent/tasks/TASK-0003-project-family-relocation.md",
     ".agent/tasks/TASK-0004-suite-authority-validation.md",
     ".agent/tasks/TASK-0005-contract-foundation.md",
+    ".agent/tasks/TASK-0008-required-ci.md",
     ".agent/templates/artifact.json",
     ".agent/templates/checkpoint.md",
     ".agent/templates/decision.md",
@@ -136,12 +140,14 @@
     ".agents/workflows/safe-change.json",
     ".editorconfig",
     ".gitattributes",
+    ".github/workflows/validate.yml",
     ".gitignore",
     ".project-blueprint-origin.json",
     "AGENTS.md",
     "README.md",
     "SECURITY.md",
     "docs/authority-review.md",
+    "docs/continuous-integration.md",
     "docs/contract-foundation.md",
     "plectarium-product-build-packet-v1/ARCHITECTURE.md",
     "plectarium-product-build-packet-v1/CHARTER.md",
@@ -306,5 +312,5 @@
     "tests/test_layout_guards.py"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "e1f2586d5222e9693eaddaf030deb6b901c0214b032582416f7853a3dc576b1a"
+  "source_fingerprint": "45c129980962f6c24b28e57847dcd25b8d346a90c5aa08f13c1ac56f9eecb38c"
 }
