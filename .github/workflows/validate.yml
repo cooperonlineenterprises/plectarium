@@ -83,13 +83,21 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
               output.write(f"commit={commit}\n")
           PY
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
-        with:
-          repository: cooperonlineenterprises/plectarium-family
-          ref: ${{ steps.family_lock.outputs.commit }}
-          persist-credentials: false
-          fetch-depth: 1
-          path: family
+      - name: Fetch the exact public family commit over HTTPS
+        env:
+          FAMILY_COMMIT: ${{ steps.family_lock.outputs.commit }}
+          GIT_CONFIG_NOSYSTEM: "1"
+          GIT_CONFIG_GLOBAL: /dev/null
+          GIT_TERMINAL_PROMPT: "0"
+          GIT_ASKPASS: /usr/bin/false
+        run: |
+          test ! -e ../family
+          test ! -L ../family
+          git -c core.hooksPath=/dev/null init --quiet ../family
+          git -C ../family remote add origin https://github.com/cooperonlineenterprises/plectarium-family.git
+          git -c credential.helper= -c http.extraHeader= -C ../family fetch --no-tags --depth=1 origin "$FAMILY_COMMIT"
+          git -c core.hooksPath=/dev/null -C ../family checkout --detach "$FAMILY_COMMIT"
+          test "$(git -C ../family rev-parse HEAD)" = "$FAMILY_COMMIT"
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.14.0"

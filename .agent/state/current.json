@@ -14,7 +14,8 @@
     "DEC-0004"
   ],
   "fresh_evidence": [
-    "EVD-0017"
+    "EVD-0017",
+    "EVD-0018"
   ],
   "blocked_by": [],
   "pending_gates": [
@@ -26,7 +27,7 @@
   "next_action": "Resume TASK-0008 with public HTTPS family verification, then qualify the updated candidate, strengthen protect-main and merge PR #1 under the current explicit instruction. Close only after remote-main and post-merge CI evidence.",
   "external_effects_authorized": true,
   "external_effect_scope": "Current TASK-0008 resume only: public-HTTPS CI updates, scoped push/validation, the required-check ruleset amendment and protected merge commit of PR #1. No general autonomous merging, deployments, releases, billing or added spending.",
-  "external_effects_observed": "Rechecked public identities and PR head/base; anonymous HTTPS fetch and local validation passed. Earlier billing failures are retained as history; hosted execution is still pending. No credential created.",
+  "external_effects_observed": "Updated public candidate ran on GitHub: repository checks passed, family verification refused the checkout Action origin spelling. Corrected exact-URL public fetch passed locally; fresh hosted qualification remains pending. No credential, billing, ruleset or merge effect.",
   "limitations": [
     "CI is scoped repository validation, not product readiness or autonomous integration.",
     "The original checkout retains unrelated uncommitted architecture work."

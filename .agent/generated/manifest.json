@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-27T20:19:54.668973+00:00",
-  "generation_id": "78f7cdb290aa0699c07274e40bfa049e",
+  "generated_at": "2026-09-27T20:23:41.800358+00:00",
+  "generation_id": "f4732961bdb5f1080a9d537513348f67",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -68,6 +68,7 @@
     ".agent/events/EVT-0046-ci-task-blocked.json",
     ".agent/events/EVT-0047-ci-public-resume.json",
     ".agent/events/EVT-0048-ci-public-validating.json",
+    ".agent/events/EVT-0049-ci-public-origin-evidence.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -84,6 +85,7 @@
     ".agent/evidence/EVD-0015-required-ci-local.md",
     ".agent/evidence/EVD-0016-ci-hosted-block.md",
     ".agent/evidence/EVD-0017-ci-public-local.md",
+    ".agent/evidence/EVD-0018-ci-public-origin.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -318,5 +320,5 @@
     "tests/test_layout_guards.py"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "d172a50939d8a7373322ce3c8ef8535d8fe1032c0916e13da109f07eff0a10f2"
+  "source_fingerprint": "c032f7b68fa3cec0ac471f061bd2a1b3e7b82e632f68fcbe0b95f381bfb62ed3"
 }

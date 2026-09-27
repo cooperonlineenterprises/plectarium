@@ -35,10 +35,14 @@ The latter still requires the separately qualified governance and host controls.
 
 ## Public family access
 
-The family repository is public. The pinned checkout Action uses HTTPS and the
-ordinary read-only workflow token; it needs no family secret, deploy key, SSH
-input, or origin rewrite. It accepts only the exact commit in the resolved
-source lock and the fixed `cooperonlineenterprises/plectarium-family` repository.
+The family repository is public. Its standalone Git checkout uses HTTPS without
+credentials; it needs no family secret, deploy key, SSH input, or origin rewrite.
+The suite checkout still uses the ordinary read-only workflow token. Family
+checkout initializes the remote with the lock's exact canonical URL (including
+`.git`), then fetches and checks out only the resolved commit. This avoids the
+shorter URL spelling used by the checkout Action without relaxing the verifier's
+exact-origin contract. It accepts only the fixed
+`cooperonlineenterprises/plectarium-family` repository and resolved source lock.
 The packet validator verifies the pinned Git objects, packet manifest/checksum,
 and every consumed contract digest. No family code is executed.
 
