@@ -66,14 +66,6 @@ jobs:
         with:
           path: suite
           persist-credentials: false
-      - name: Require the dedicated family read credential
-        env:
-          FAMILY_READ_KEY: ${{ secrets.PLECTARIUM_FAMILY_READ_KEY }}
-        run: |
-          if [ -z "$FAMILY_READ_KEY" ]; then
-            echo "::error::PLECTARIUM_FAMILY_READ_KEY is missing. Configure a read-only deploy key for plectarium-family; never substitute a broad personal credential."
-            exit 1
-          fi
       - name: Resolve the immutable family lock
         id: family_lock
         run: |
@@ -84,7 +76,7 @@ jobs:
           if lock.get("publication_status") != "resolved":
               raise SystemExit("The family lock is not resolved")
           if lock.get("repository") != "https://github.com/cooperonlineenterprises/plectarium-family.git":
-              raise SystemExit("The family credential is scoped to plectarium-family only")
+              raise SystemExit("The family source must be the declared public HTTPS repository")
           commit = lock.get("git_commit", "")
           if not re.fullmatch(r"[0-9a-f]{40}", commit):
               raise SystemExit("The family lock requires an exact commit")
@@ -95,12 +87,9 @@ jobs:
         with:
           repository: cooperonlineenterprises/plectarium-family
           ref: ${{ steps.family_lock.outputs.commit }}
-          ssh-key: ${{ secrets.PLECTARIUM_FAMILY_READ_KEY }}
           persist-credentials: false
           fetch-depth: 1
           path: family
-      - name: Normalize the source locator after authenticated SSH checkout
-        run: git -C ../family remote set-url origin https://github.com/cooperonlineenterprises/plectarium-family.git
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.14.0"

@@ -2,63 +2,74 @@
 {
   "schema_version": "harness.task.v1",
   "id": "TASK-0008",
-  "title": "Prepare and qualify Plectarium's required repository CI gate",
-  "status": "blocked",
-  "previous_status": "validating",
-  "authority_basis": "Current operator instruction on 2026-09-27 to proceed with the proposed focused CI PR and add the passing check to the main ruleset. This does not authorize autonomous integration or create standing delegation.",
+  "title": "Qualify and integrate Plectarium's required repository CI gate",
+  "status": "validating",
+  "previous_status": "in_progress",
+  "authority_basis": "Current operator resume instruction on 2026-09-27 explicitly authorizes PR #1 public-HTTPS CI updates, validation, its required-check ruleset amendment, protected merge-commit integration, and post-merge verification. This authority is limited to this PR; no general autonomous merging, release, deployment, or additional spending.",
   "owner": "Plectarium repository maintainer via current Codex task",
   "created_at": "2026-09-27",
   "updated_at": "2026-09-27",
-  "dependencies": ["TASK-0005"],
+  "dependencies": [
+    "TASK-0005"
+  ],
   "supersedes": null,
   "closure_evidence": [],
-  "external_effects": "Candidate publication, PR creation, hosted validation, and the specified required-check ruleset amendment are in scope; no merge, release, deployment, or unrelated hosted change. A new family-read credential requires its own explicit access authorization.",
-  "limitations": ["Existing uncommitted architecture work is excluded and preserved", "CI is not product readiness or qualified autonomous integration"]
+  "external_effects": "Scoped candidate push, hosted validation, exact required-check ruleset amendment, PR ready transition and protected merge commit for PR #1 are authorized. Use existing GitHub authentication and read-only workflow token. Public family access requires no new credential.",
+  "limitations": [
+    "Existing uncommitted architecture work is excluded and preserved",
+    "CI is not product readiness or qualified autonomous integration"
+  ]
 }
 ---
 
 ## Scope
 
-Build from reviewed commit `47181c370ebfd4fcd47177f169d192910c49fd32`, retaining
-the two prerequisite contract-foundation commits not yet on hosted main. Add only
-CI, its operating documentation, and scoped governance/evidence records. Work in
-an isolated clone; preserve the original checkout and all uncommitted changes.
-TASK-0006/0007 and EVD-0013/0014 already exist in that original working tree;
-their identities are reserved even though their unrelated changes are excluded.
+Build from reviewed contract foundation `47181c370ebfd4fcd47177f169d192910c49fd32`,
+retaining its two prerequisite commits in PR #1. Reuse the isolated ci/required-check
+checkout. Preserve every unrelated change in the original checkout, including
+TASK-0006/0007 and EVD-0013/0014; their identities are not reused.
 
-No product schema, family lock, accepted decision, or existing verification
-threshold changes. The existing protected main and zero-approval PR path remain.
+Current work removes the mandatory family secret/SSH path in favor of the public
+HTTPS source, updates CI documentation and dated evidence, runs all checks,
+qualifies the existing ruleset, and integrates this exact PR through its protected
+merge-commit path. Product schemas, family source lock and digests, tests, runtime
+pins, accepted decisions, and unrelated controls remain unchanged.
 
 ## Acceptance criteria
 
-- [x] All existing harness, packet, hostile-pin and contract checks pass on the CI candidate.
-- [x] The workflow pins its Actions/runtime/dependencies and verifies exact external family Git bytes.
-- [ ] `required` passes only when every mandatory job passes, including real family verification.
-- [ ] A focused PR exists with current hosted checks and declared prerequisite commits.
-- [ ] Read-back of `protect-main` binds `required` to GitHub Actions with strict up-to-date checks and preserves all other controls.
-- [ ] Original tracked/nonignored files, HEAD, and dirty status are unchanged.
+- [x] Applicable local harness, packet, hostile-pin, contract and workflow checks pass on the updated candidate.
+- [x] Public HTTPS supplies the exact family commit and lock-bound manifest/checksum/contract bytes without a new credential.
+- [ ] Fresh hosted repository checks, immutable family pin and aggregate required checks all succeed.
+- [ ] protect-main requires required from the observed GitHub Actions app with strict up-to-date checks; all other protections are preserved.
+- [ ] PR #1 is marked ready and merged with a merge commit after exact head/base revalidation, without bypass or force-push.
+- [ ] Actual remote-main commit/tree/parents and passing post-merge CI are recorded before closure.
+- [ ] Original tracked/nonignored files, HEAD and dirty status remain unchanged.
 
-This task ends at a qualified CI PR and configured required-check gate. Integrating
-the PR is a separate source operation; neither task closure nor CI success claims
-that the workflow is already present on main.
+The task remains open through integration and post-merge verification. Candidate
+success, a ruleset change or a merge request alone cannot satisfy closure.
 
 ## Validation and recovery
 
-Run the declared harness check/tests, packet check with exact family-root input,
-hostile pin tests, product tests, and contract demonstration. Inspect the YAML
-and exercise success/failure/skipped/cancelled aggregate inputs. Refresh only
-through the designated harness integrity writer after changing candidate records.
-Never refresh during hosted CI.
+Run the declared harness check/tests, packet check with an explicit standalone
+public family checkout, hostile pin tests, product tests and contract demo.
+Exercise the aggregate's success/failure/skipped/cancelled combinations. Refresh
+only with the designated harness writer, never within hosted CI.
 
-Missing family-read access blocks hosted qualification and ruleset completion;
-finish the code and local evidence before requesting that concrete access.
-Keep failed attempts and do not waive the family check. Preserve the prior
-ruleset JSON for exact recovery of a narrowly failed amendment. Do not bypass,
-force-push, alter main directly, or merge this PR as part of the task.
+Inspect current PR head/base and remote policy before effects. Changed inputs
+require renewed validation. After the merge request, read back actual state;
+reconcile an unknown result before retrying. Public integration preserves history.
+If GitHub refuses execution, retain the exact error and stop the dependent
+ruleset/merge steps; never change billing, spending or waive a mandatory check.
 
-## Hosted qualification block
+## Historical scope and attempts — September 27, 2026
 
-EVD-0016 records the draft PR and GitHub refusal before any CI steps. Both
-Actions billing admission and explicit private-family read access must be
-resolved before qualification and the ruleset amendment. No task closure or
-source integration is claimed.
+The initial instruction authorized a CI PR and required-check configuration but
+excluded merging and required separate approval for new private-family access.
+EVD-0015 preserves local qualification; EVD-0016 preserves the private-access gap
+and GitHub billing/spending refusal before execution. The original PR remained
+draft and no ruleset or credential change occurred. Those observations are dated
+history, not current access requirements or proof of resolved billing.
+
+The current explicit resume instruction extends only this task to public-HTTPS
+verification and PR #1 integration. Repository visibility was changed by the
+owner, then rechecked before updating the workflow. No deploy key is needed.

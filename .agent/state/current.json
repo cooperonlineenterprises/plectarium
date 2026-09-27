@@ -14,23 +14,19 @@
     "DEC-0004"
   ],
   "fresh_evidence": [
-    "EVD-0015",
-    "EVD-0016"
+    "EVD-0017"
   ],
-  "blocked_by": [
-    "GitHub Actions billing or spending admission restriction",
-    "Dedicated private-family read access requires explicit approval"
-  ],
+  "blocked_by": [],
   "pending_gates": [
-    "actions_billing_admission",
-    "dedicated_family_read_access",
-    "hosted_required_check_success",
-    "required_status_ruleset_amendment"
+    "fresh_hosted_validation",
+    "required_status_ruleset_amendment",
+    "protected_pr1_integration",
+    "remote_main_post_merge_validation"
   ],
-  "next_action": "Resume TASK-0008 after the operator resolves Actions billing and approves scoped family-read access; rerun the exact candidate and only then add the verified required-check gate. PR #1 remains draft and unmerged.",
+  "next_action": "Resume TASK-0008 with public HTTPS family verification, then qualify the updated candidate, strengthen protect-main and merge PR #1 under the current explicit instruction. Close only after remote-main and post-merge CI evidence.",
   "external_effects_authorized": true,
-  "external_effect_scope": "Current TASK-0008 invocation only: candidate branch/PR publication, CI, and the specified required-check ruleset amendment; no merge or autonomous integration. New family-read access requires separate explicit authorization.",
-  "external_effects_observed": "Published ci/required-check and draft PR #1. Hosted run 36342719832 was refused before all steps. No credential, billing, ruleset, merge, release or deployment mutation.",
+  "external_effect_scope": "Current TASK-0008 resume only: public-HTTPS CI updates, scoped push/validation, the required-check ruleset amendment and protected merge commit of PR #1. No general autonomous merging, deployments, releases, billing or added spending.",
+  "external_effects_observed": "Rechecked public identities and PR head/base; anonymous HTTPS fetch and local validation passed. Earlier billing failures are retained as history; hosted execution is still pending. No credential created.",
   "limitations": [
     "CI is scoped repository validation, not product readiness or autonomous integration.",
     "The original checkout retains unrelated uncommitted architecture work."

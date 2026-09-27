@@ -12,7 +12,7 @@ real Git objects at the consumed family commit, including the packet manifests
 and every consumed contract digest. Packet structure alone does not satisfy it.
 
 The stable `required` check depends on both jobs and succeeds only when both
-report `success`. Failure, cancellation, missing credentials, or a skipped job
+report `success`. Failure, cancellation, unavailable source bytes, or a skipped job
 cannot produce a passing gate. No path filter suppresses a required run.
 
 ## Runtime and authority
@@ -33,25 +33,28 @@ CI receipts establish bounded validation, not product readiness, grant coverage,
 independent review, or a protected verifier baseline for autonomous integration.
 The latter still requires the separately qualified governance and host controls.
 
-## Private family access
+## Public family access
 
-The ordinary workflow token cannot read the separate private family repository.
-Configure a dedicated **read-only** deploy key on
-`cooperonlineenterprises/plectarium-family`, with its private half stored as the
-Plectarium Actions secret `PLECTARIUM_FAMILY_READ_KEY`. Do not enable write access
-or reuse a developer credential. Provisioning this key is a separate explicit
-access decision; this document and workflow create no access themselves.
+The family repository is public. The pinned checkout Action uses HTTPS and the
+ordinary read-only workflow token; it needs no family secret, deploy key, SSH
+input, or origin rewrite. It accepts only the exact commit in the resolved
+source lock and the fixed `cooperonlineenterprises/plectarium-family` repository.
+The packet validator verifies the pinned Git objects, packet manifest/checksum,
+and every consumed contract digest. No family code is executed.
 
-The family checkout accepts only the exact commit in the resolved source lock
-and the fixed family repository. After authenticated SSH checkout, its local
-origin is normalized to the lock's canonical HTTPS spelling; the packet validator
-then verifies the pinned Git objects and digests. No family code is executed.
+Unavailable public Git objects or mismatched source identities/digests fail the
+mandatory family job. Public visibility does not waive verification and is not
+proof that GitHub admitted or successfully executed a workflow.
 
-Deploy keys do not expire automatically. The repository owner retains revocation
-and rotation responsibility. Revoke by removing the family deploy key and the
-suite secret; subsequent family verification must fail. A future GitHub App
-credential may replace this route through a scoped reviewed change. Fork PRs
-without the secret fail the family gate; they never receive a fabricated pass.
+### Earlier qualification attempt — September 27, 2026
+
+EVD-0015 and EVD-0016 retain the earlier private-repository observation and
+unconfigured-credential requirement. Runs 36342719832 and 36343043493 were refused
+before any job steps because GitHub reported an account payment or spending-limit
+restriction. No family key was created. The owner subsequently made the suite
+and family repositories public and authorized this PR's scoped integration.
+New hosted results, rather than the visibility change, determine whether that
+execution restriction remains. Billing and spending settings are unchanged.
 
 ## Ruleset admission
 

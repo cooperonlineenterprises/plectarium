@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-27T19:05:00.689469+00:00",
-  "generation_id": "f3979245e43130d5f5ed049c2c1c6309",
+  "generated_at": "2026-09-27T20:19:54.668973+00:00",
+  "generation_id": "78f7cdb290aa0699c07274e40bfa049e",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -66,6 +66,8 @@
     ".agent/events/EVT-0044-final-current-view-evidence-recorded.json",
     ".agent/events/EVT-0045-ci-task-in-progress.json",
     ".agent/events/EVT-0046-ci-task-blocked.json",
+    ".agent/events/EVT-0047-ci-public-resume.json",
+    ".agent/events/EVT-0048-ci-public-validating.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -81,6 +83,7 @@
     ".agent/evidence/EVD-0012-contract-foundation.md",
     ".agent/evidence/EVD-0015-required-ci-local.md",
     ".agent/evidence/EVD-0016-ci-hosted-block.md",
+    ".agent/evidence/EVD-0017-ci-public-local.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -104,6 +107,7 @@
     ".agent/reviews/REV-0011-contract-format-runtime.md",
     ".agent/reviews/REV-0012-contract-foundation-final.md",
     ".agent/reviews/REV-0015-required-ci-self-review.md",
+    ".agent/reviews/REV-0016-ci-public-self-review.md",
     ".agent/schema.json",
     ".agent/schemas/artifact-catalog.schema.json",
     ".agent/schemas/dossier-records.schema.json",
@@ -314,5 +318,5 @@
     "tests/test_layout_guards.py"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "7299ba473ccad022da8578721591a99ba23d53342f01a0d9be3691151232ef88"
+  "source_fingerprint": "d172a50939d8a7373322ce3c8ef8535d8fe1032c0916e13da109f07eff0a10f2"
 }

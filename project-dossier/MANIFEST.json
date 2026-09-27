@@ -294,6 +294,16 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0047-ci-public-resume.json",
+      "sha256": "58127778a2d690de06fd77b4be585a0336655c629241dbded3697c6cea463372"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/events/EVT-0048-ci-public-validating.json",
+      "sha256": "1ee0821fc8901c79252fd604ed22bfdbdafe005c88892994ace97c22c9a09a15"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -366,6 +376,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0016-ci-hosted-block.md",
       "sha256": "59f2729c662021633545aead2c8fcd815fdde1b792cd83fc8cf2c377ed817d76"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0017-ci-public-local.md",
+      "sha256": "0444c80c0a5758200a4d94163ecb38468c04287eb10367ec06b4f861af95ec36"
     },
     {
       "layer": "agent_harness",
@@ -484,6 +499,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/reviews/REV-0016-ci-public-self-review.md",
+      "sha256": "a128d2fafb79cc92a1318f719efb47fbf909d3b190cadf1641993b1a0c4cb438"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/schema.json",
       "sha256": "941af3249b23df0409e064a89fa1e540efe7c8323ed9500da86bbc3dc03e4ed8"
     },
@@ -530,7 +550,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "c83fbce2a6684e439cbc0d0af2ab2d4fe5d0c2434e1b8508877b950b915651b7"
+      "sha256": "7c6990bc1d2782f0b12ef80bea0639494ec2de48ebbba2fd3f0bf3459470bd38"
     },
     {
       "layer": "agent_harness",
@@ -565,7 +585,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0008-required-ci.md",
-      "sha256": "b8f3512ec95608088ef405faf8f9c74df79e02675e9d31882c0efc5de2c94dac"
+      "sha256": "3431d11defc9b7895924274779c003955660d06d61f0d04d24aaa302edecf91c"
     },
     {
       "layer": "agent_harness",
@@ -675,7 +695,7 @@
     {
       "layer": "project_source",
       "path": ".github/workflows/validate.yml",
-      "sha256": "e87216bf61246506c15db141fc7e2270b28f24e85a8ca2db7e0bb7b07a7a870d"
+      "sha256": "d75396009a8008732c122a4b7eca6ca8feb3ad71d157dcf5a895b78ad0a2124d"
     },
     {
       "layer": "project_source",
@@ -710,7 +730,7 @@
     {
       "layer": "project_source",
       "path": "docs/continuous-integration.md",
-      "sha256": "56df57df317bb38def28eaf72cb271f1cc098fc2b0104954124b3ad3ab0bcf33"
+      "sha256": "4ba5cfcc0a3c86d60b4e6063578279ec0b5a0980eeac07f4a8d9035e87f1bfc0"
     },
     {
       "layer": "project_source",
@@ -1523,10 +1543,10 @@
       "sha256": "f2a9bd9c3d0b46816e3e8789c4461f44068e73d7fbda52ffe089c21179173352"
     }
   ],
-  "generated_on": "2026-09-27T19:05:00.689469+00:00",
-  "generation_id": "f3979245e43130d5f5ed049c2c1c6309",
+  "generated_on": "2026-09-27T20:19:54.668973+00:00",
+  "generation_id": "78f7cdb290aa0699c07274e40bfa049e",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "7299ba473ccad022da8578721591a99ba23d53342f01a0d9be3691151232ef88"
+  "source_fingerprint": "d172a50939d8a7373322ce3c8ef8535d8fe1032c0916e13da109f07eff0a10f2"
 }

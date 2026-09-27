@@ -1,0 +1,13 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0047",
+  "occurred_at": "2026-09-27T20:16:20.423637+00:00",
+  "kind": "task_in_progress",
+  "subject": "TASK-0008",
+  "actor_or_source": "current_operator_explicit_pr1_resume",
+  "summary": "Resumed the existing task after public-visibility readback and explicit scoped PR integration authority. Earlier billing/credential evidence remains historical; fresh checks still gate effects.",
+  "evidence": [
+    "EVD-0016"
+  ],
+  "redaction_applied": false
+}
