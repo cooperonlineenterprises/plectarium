@@ -48,6 +48,18 @@
     "packet_pin_test": {
       "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B -m unittest discover -s .agent/tests -p 'packet_pin_test.py'",
       "writes": []
+    },
+    "product_test": {
+      "run": "\"${PLECTARIUM_PACKET_PYTHON:-python3}\" -I -B -m unittest discover -s tests -p 'test_*.py'",
+      "writes": [
+        "temporary_directories_only"
+      ]
+    },
+    "contract_demo": {
+      "run": "\"${PLECTARIUM_PACKET_PYTHON:-python3}\" -I -B scripts/contract_demo.py",
+      "writes": [
+        "stdout_only"
+      ]
     }
   },
   "required_core_checks": [

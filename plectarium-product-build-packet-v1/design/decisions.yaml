@@ -100,3 +100,8 @@ decisions:
     title: AI and structural evidence limits
     decision: AI is optional and non-authorizing; packet integrity or architecture completion cannot establish product readiness.
     adr: ADR-006
+  - id: PLEC-021
+    status: ACCEPTED
+    title: Bounded internal contract foundation
+    decision: Exact offline schema pins and an explicitly versioned internal canonical encoding precede control-plane implementation; structural receipts grant no authority.
+    adr: ADR-007

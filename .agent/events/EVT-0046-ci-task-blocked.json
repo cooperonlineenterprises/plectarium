@@ -1,0 +1,13 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0046",
+  "occurred_at": "2026-09-27T19:05:00.538655+00:00",
+  "kind": "task_blocked",
+  "subject": "TASK-0008",
+  "actor_or_source": "github_actions_readback_and_current_codex_task",
+  "summary": "Hosted CI was refused before execution by account billing/spending admission; family-read credential also awaits explicit authorization. Retained PR #1 and local proof without weakening the gate.",
+  "evidence": [
+    "EVD-0016"
+  ],
+  "redaction_applied": false
+}

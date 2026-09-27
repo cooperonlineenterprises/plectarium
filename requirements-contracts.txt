@@ -1,0 +1,10 @@
+# Exact internal contract runtime, including required date-time format support.
+PyYAML==6.0.3
+jsonschema==4.25.1
+referencing==0.37.0
+attrs==25.4.0
+jsonschema-specifications==2025.9.1
+rpds-py==0.29.0
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+six==1.17.0

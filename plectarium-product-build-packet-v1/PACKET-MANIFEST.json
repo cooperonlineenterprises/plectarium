@@ -24,9 +24,9 @@
     "packet_manifest_sha256": "54116db0e4f518ffe793df3d3ebd2b87064f00aab10b373bf1909f9126b24867"
   },
   "counts": {
-    "content_files": 120,
+    "content_files": 121,
     "json_schemas": 17,
-    "decisions": 20,
+    "decisions": 21,
     "tasks": 20,
     "release_gates": 16,
     "ready_implementation_tasks": 1
@@ -52,8 +52,8 @@
     },
     {
       "path": "DECISIONS.md",
-      "sha256": "24d863a58e0fe23c744c4031567b1009e68fb3aef523f519ea4f1db316785b8a",
-      "bytes": 690,
+      "sha256": "b475aabbd129c1c76406a3795a18a9e0eb6cf8d84542b3c2df052c88fddd5a84",
+      "bytes": 753,
       "classification": "governance"
     },
     {
@@ -309,6 +309,12 @@
       "classification": "governance"
     },
     {
+      "path": "design/adr/ADR-007.md",
+      "sha256": "7d230c35798b52a608937e50288bfbeca2f318da8af7553bcb53268e14de5a4b",
+      "bytes": 1814,
+      "classification": "governance"
+    },
+    {
       "path": "design/data-ownership.md",
       "sha256": "8c4c63d04c4a8eec3f583b469cf3a149b0b68dac53402783d7a01c2936f9b2f3",
       "bytes": 1048,
@@ -316,14 +322,14 @@
     },
     {
       "path": "design/decision-ledger.md",
-      "sha256": "a722db9e9054e39451a30fdb2308d43784a296cfd2020550def43729a84713db",
-      "bytes": 2267,
+      "sha256": "af49b8950e66e310e03c17b91aa2eadf011e0553c32ccecd378075f158fa0a5a",
+      "bytes": 2412,
       "classification": "governance"
     },
     {
       "path": "design/decisions.yaml",
-      "sha256": "3b42e380f0b3e3a2da30c30e6714b8c1506da38212893dbb100228be682f0ce5",
-      "bytes": 4724,
+      "sha256": "de63bf666c3ce3537e7371a0d2fcba8e0b8ec51442bb215d052b13328f4ba482",
+      "bytes": 5001,
       "classification": "machine-readable-normative"
     },
     {
@@ -550,8 +556,8 @@
     },
     {
       "path": "scripts/validate-packet.py",
-      "sha256": "28b8fe0e3f76f6123b9a50848a1b95e74ac7dfdbe9f9218f726bdbf6204e2a8e",
-      "bytes": 35906,
+      "sha256": "9fa284f4afc11bc4b471c0fdb3601d9220729b49da2fe14855b143210bfe3b6b",
+      "bytes": 36840,
       "classification": "validation-tooling"
     },
     {

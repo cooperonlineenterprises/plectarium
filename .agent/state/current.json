@@ -1,31 +1,35 @@
 {
   "schema_version": "harness.current-state.v1",
   "project_slug": "plectarium",
-  "updated_at": "2026-09-15",
+  "updated_at": "2026-09-27",
   "authority": "Compact operational view derived from authoritative task, decision, and evidence records. This file does not grant permission.",
   "adoption_status": "adopted_local_foundation",
-  "active_tasks": [],
+  "active_tasks": [
+    "TASK-0008"
+  ],
   "accepted_decisions": [
     "DEC-0001",
-    "DEC-0002"
+    "DEC-0002",
+    "DEC-0003",
+    "DEC-0004"
   ],
   "fresh_evidence": [
-    "EVD-0010"
+    "EVD-0017",
+    "EVD-0018",
+    "EVD-0019"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "separate_current_authority_for_any_new_work"
+    "final_candidate_required_check",
+    "protected_pr1_integration",
+    "remote_main_post_merge_validation"
   ],
-  "next_action": "await separately authorized work; do not push",
-  "external_effects_authorized": false,
-  "external_effect_scope": "none",
-  "external_effects_observed": "none",
+  "next_action": "Revalidate the final metadata checkpoint, mark PR #1 ready and merge its exact head through protect-main, then retain remote-main and post-merge CI receipts before closing TASK-0008.",
+  "external_effects_authorized": true,
+  "external_effect_scope": "Current TASK-0008 resume only: public-HTTPS CI updates, scoped push/validation, the required-check ruleset amendment and protected merge commit of PR #1. No general autonomous merging, deployments, releases, billing or added spending.",
+  "external_effects_observed": "Candidate 227b737 passed all hosted jobs. protect-main now requires GitHub Actions app 15368 context required with strict up-to-date checks; all other controls were read back unchanged. No merge or task closure yet.",
   "limitations": [
-    "no_product_implementation",
-    "no_dependency_installation",
-    "no_services",
-    "product_security_operational_and_release_readiness_not_assessed",
-    "product_and_production_readiness_not_assessed",
-    "future_work_requires_separate_current_authority"
+    "CI is scoped repository validation, not product readiness or autonomous integration.",
+    "The original checkout retains unrelated uncommitted architecture work."
   ]
 }

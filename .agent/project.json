@@ -9,17 +9,40 @@
     "adoption_status": "adopted_local_foundation"
   },
   "paths": {
-    "source": [],
-    "tests": [".agent/tests", "plectarium-product-build-packet-v1/fixtures"],
-    "generated": [".agent/generated"],
-    "instruction_roots": ["AGENTS.md"],
+    "source": [
+      "src/plectarium_contracts"
+    ],
+    "tests": [
+      ".agent/tests",
+      "plectarium-product-build-packet-v1/fixtures",
+      "tests"
+    ],
+    "generated": [
+      ".agent/generated"
+    ],
+    "instruction_roots": [
+      "AGENTS.md"
+    ],
     "fingerprint_exclusions": []
   },
   "commands": {
-    "project_test": {"status": "active_setup_only", "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../../plectarium-family/repo", "runtime_limitation": "Uses PLECTARIUM_PACKET_PYTHON when set, otherwise python3; installs nothing."},
-    "project_lint": {"status": "not_applicable_no_product_code", "run": null},
-    "project_build": {"status": "not_applicable_no_product_code", "run": null},
-    "project_closure": {"status": "active_setup_only", "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../../plectarium-family/repo"}
+    "project_test": {
+      "status": "active_internal_contracts",
+      "run": "\"${PLECTARIUM_PACKET_PYTHON:-python3}\" -I -B -m unittest discover -s tests -p 'test_*.py'",
+      "runtime_limitation": "Requires the explicitly selected interpreter with requirements-contracts.txt; installs nothing."
+    },
+    "project_lint": {
+      "status": "not_configured",
+      "run": null
+    },
+    "project_build": {
+      "status": "deferred_no_distribution",
+      "run": null
+    },
+    "project_closure": {
+      "status": "active_setup_only",
+      "run": "${PLECTARIUM_PACKET_PYTHON:-python3} -B plectarium-product-build-packet-v1/scripts/validate-packet.py --family-root ../../plectarium-family/repo"
+    }
   },
   "extensions": {
     "registry": ".agent/extensions/registry.json",

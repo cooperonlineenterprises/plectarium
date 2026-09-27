@@ -1,0 +1,13 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0049",
+  "occurred_at": "2026-09-27T20:23:41.637440+00:00",
+  "kind": "evidence_recorded",
+  "subject": "EVD-0018",
+  "actor_or_source": "github_actions_readback_and_exact_workflow_probe",
+  "summary": "Public CI executed and caught an exact-origin mismatch. Preserved the failure and qualified a direct public fetch that retains the verifier contract.",
+  "evidence": [
+    "EVD-0018"
+  ],
+  "redaction_applied": false
+}
