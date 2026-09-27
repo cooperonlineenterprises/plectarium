@@ -1,7 +1,7 @@
 {
   "authority": "generated_non_authoritative_point_in_time",
-  "generated_at": "2026-09-27T18:58:39.172461+00:00",
-  "generation_id": "8f3fdc45f12d530cfd1b4585de6a41d3",
+  "generated_at": "2026-09-27T19:05:00.689469+00:00",
+  "generation_id": "f3979245e43130d5f5ed049c2c1c6309",
   "generator_version": "1.0.0",
   "limitations": [
     "Fingerprint proves declared byte identity, not correctness or authority.",
@@ -65,6 +65,7 @@
     ".agent/events/EVT-0043-final-task-completed.json",
     ".agent/events/EVT-0044-final-current-view-evidence-recorded.json",
     ".agent/events/EVT-0045-ci-task-in-progress.json",
+    ".agent/events/EVT-0046-ci-task-blocked.json",
     ".agent/events/README.md",
     ".agent/evidence/EVD-0001-local-foundation-validation.md",
     ".agent/evidence/EVD-0002-family-lock-and-live-foundation-validation.md",
@@ -79,6 +80,7 @@
     ".agent/evidence/EVD-0011-suite-authority-validation.md",
     ".agent/evidence/EVD-0012-contract-foundation.md",
     ".agent/evidence/EVD-0015-required-ci-local.md",
+    ".agent/evidence/EVD-0016-ci-hosted-block.md",
     ".agent/evidence/README.md",
     ".agent/extensions/README.md",
     ".agent/extensions/registry.json",
@@ -312,5 +314,5 @@
     "tests/test_layout_guards.py"
   ],
   "schema_version": "harness.generated-manifest.v1",
-  "source_fingerprint": "45c129980962f6c24b28e57847dcd25b8d346a90c5aa08f13c1ac56f9eecb38c"
+  "source_fingerprint": "7299ba473ccad022da8578721591a99ba23d53342f01a0d9be3691151232ef88"
 }

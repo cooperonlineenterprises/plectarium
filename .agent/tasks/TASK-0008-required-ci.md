@@ -3,8 +3,8 @@
   "schema_version": "harness.task.v1",
   "id": "TASK-0008",
   "title": "Prepare and qualify Plectarium's required repository CI gate",
-  "status": "validating",
-  "previous_status": "in_progress",
+  "status": "blocked",
+  "previous_status": "validating",
   "authority_basis": "Current operator instruction on 2026-09-27 to proceed with the proposed focused CI PR and add the passing check to the main ruleset. This does not authorize autonomous integration or create standing delegation.",
   "owner": "Plectarium repository maintainer via current Codex task",
   "created_at": "2026-09-27",
@@ -55,3 +55,10 @@ finish the code and local evidence before requesting that concrete access.
 Keep failed attempts and do not waive the family check. Preserve the prior
 ruleset JSON for exact recovery of a narrowly failed amendment. Do not bypass,
 force-push, alter main directly, or merge this PR as part of the task.
+
+## Hosted qualification block
+
+EVD-0016 records the draft PR and GitHub refusal before any CI steps. Both
+Actions billing admission and explicit private-family read access must be
+resolved before qualification and the ruleset amendment. No task closure or
+source integration is claimed.
