@@ -1,0 +1,13 @@
+{
+  "schema_version": "harness.event.v1",
+  "id": "EVT-0050",
+  "occurred_at": "2026-09-27T20:27:44.716746+00:00",
+  "kind": "task_review",
+  "subject": "TASK-0008",
+  "actor_or_source": "github_actions_and_ruleset_readbacks",
+  "summary": "Observed successful hosted prerequisites and aggregate, then applied and verified the exact required-check rule. Integration and post-merge evidence remain pending.",
+  "evidence": [
+    "EVD-0019"
+  ],
+  "redaction_applied": false
+}

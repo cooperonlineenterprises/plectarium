@@ -15,19 +15,19 @@
   ],
   "fresh_evidence": [
     "EVD-0017",
-    "EVD-0018"
+    "EVD-0018",
+    "EVD-0019"
   ],
   "blocked_by": [],
   "pending_gates": [
-    "fresh_hosted_validation",
-    "required_status_ruleset_amendment",
+    "final_candidate_required_check",
     "protected_pr1_integration",
     "remote_main_post_merge_validation"
   ],
-  "next_action": "Resume TASK-0008 with public HTTPS family verification, then qualify the updated candidate, strengthen protect-main and merge PR #1 under the current explicit instruction. Close only after remote-main and post-merge CI evidence.",
+  "next_action": "Revalidate the final metadata checkpoint, mark PR #1 ready and merge its exact head through protect-main, then retain remote-main and post-merge CI receipts before closing TASK-0008.",
   "external_effects_authorized": true,
   "external_effect_scope": "Current TASK-0008 resume only: public-HTTPS CI updates, scoped push/validation, the required-check ruleset amendment and protected merge commit of PR #1. No general autonomous merging, deployments, releases, billing or added spending.",
-  "external_effects_observed": "Updated public candidate ran on GitHub: repository checks passed, family verification refused the checkout Action origin spelling. Corrected exact-URL public fetch passed locally; fresh hosted qualification remains pending. No credential, billing, ruleset or merge effect.",
+  "external_effects_observed": "Candidate 227b737 passed all hosted jobs. protect-main now requires GitHub Actions app 15368 context required with strict up-to-date checks; all other controls were read back unchanged. No merge or task closure yet.",
   "limitations": [
     "CI is scoped repository validation, not product readiness or autonomous integration.",
     "The original checkout retains unrelated uncommitted architecture work."

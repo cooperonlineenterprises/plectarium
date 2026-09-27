@@ -309,6 +309,11 @@
     },
     {
       "layer": "agent_harness",
+      "path": ".agent/events/EVT-0050-ci-review-ready.json",
+      "sha256": "1fbbfd90d717957d99a0703922ab35c0f173a0a6058c6a64bfb5ae9b6c9d3eac"
+    },
+    {
+      "layer": "agent_harness",
       "path": ".agent/events/README.md",
       "sha256": "26c1470d5873f4db6fc8dbb1daf378c1405f8ab0235053a3b5acbcdb67f36ab9"
     },
@@ -391,6 +396,11 @@
       "layer": "agent_harness",
       "path": ".agent/evidence/EVD-0018-ci-public-origin.md",
       "sha256": "e3f1b86add0657be98a46f79729417915745748b03a36d6dd91d839f8bcc2481"
+    },
+    {
+      "layer": "agent_harness",
+      "path": ".agent/evidence/EVD-0019-ci-hosted-and-ruleset.md",
+      "sha256": "29099b87a2e4d031361e1ce6d0b996bcf95fd33a36aed3468d8496a105546347"
     },
     {
       "layer": "agent_harness",
@@ -560,7 +570,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/state/current.json",
-      "sha256": "0276a8e7fc215bab3d43b6ae5b69f09bc4b300657bc1a2c79780a9c769219fdc"
+      "sha256": "6118f7214157a23bf61ba17573a27dfb442d45e94a1fa4f5b239e460efc07d5c"
     },
     {
       "layer": "agent_harness",
@@ -595,7 +605,7 @@
     {
       "layer": "agent_harness",
       "path": ".agent/tasks/TASK-0008-required-ci.md",
-      "sha256": "3431d11defc9b7895924274779c003955660d06d61f0d04d24aaa302edecf91c"
+      "sha256": "06913e2f69813dab8a99d994b8894a6ee14a8f1e52a59006e123b9f08b917c5e"
     },
     {
       "layer": "agent_harness",
@@ -1553,10 +1563,10 @@
       "sha256": "f2a9bd9c3d0b46816e3e8789c4461f44068e73d7fbda52ffe089c21179173352"
     }
   ],
-  "generated_on": "2026-09-27T20:23:41.800358+00:00",
-  "generation_id": "f4732961bdb5f1080a9d537513348f67",
+  "generated_on": "2026-09-27T20:27:44.895764+00:00",
+  "generation_id": "b741202f7783d020328ba17f3a3eb1c6",
   "harness_kernel_version": "1.0.0",
   "profile": "high-assurance",
   "schema_version": "project-dossier.manifest.v1",
-  "source_fingerprint": "c032f7b68fa3cec0ac471f061bd2a1b3e7b82e632f68fcbe0b95f381bfb62ed3"
+  "source_fingerprint": "0719586b81d474dafcd1941a4b4708319510420a06a0021674aa0424879c4766"
 }

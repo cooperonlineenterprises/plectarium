@@ -3,8 +3,8 @@
   "schema_version": "harness.task.v1",
   "id": "TASK-0008",
   "title": "Qualify and integrate Plectarium's required repository CI gate",
-  "status": "validating",
-  "previous_status": "in_progress",
+  "status": "review",
+  "previous_status": "validating",
   "authority_basis": "Current operator resume instruction on 2026-09-27 explicitly authorizes PR #1 public-HTTPS CI updates, validation, its required-check ruleset amendment, protected merge-commit integration, and post-merge verification. This authority is limited to this PR; no general autonomous merging, release, deployment, or additional spending.",
   "owner": "Plectarium repository maintainer via current Codex task",
   "created_at": "2026-09-27",
@@ -40,7 +40,7 @@ pins, accepted decisions, and unrelated controls remain unchanged.
 - [x] Applicable local harness, packet, hostile-pin, contract and workflow checks pass on the updated candidate.
 - [x] Public HTTPS supplies the exact family commit and lock-bound manifest/checksum/contract bytes without a new credential.
 - [ ] Fresh hosted repository checks, immutable family pin and aggregate required checks all succeed.
-- [ ] protect-main requires required from the observed GitHub Actions app with strict up-to-date checks; all other protections are preserved.
+- [x] protect-main requires required from the observed GitHub Actions app with strict up-to-date checks; all other protections are preserved.
 - [ ] PR #1 is marked ready and merged with a merge commit after exact head/base revalidation, without bypass or force-push.
 - [ ] Actual remote-main commit/tree/parents and passing post-merge CI are recorded before closure.
 - [ ] Original tracked/nonignored files, HEAD and dirty status remain unchanged.
@@ -73,3 +73,9 @@ history, not current access requirements or proof of resolved billing.
 The current explicit resume instruction extends only this task to public-HTTPS
 verification and PR #1 integration. Repository visibility was changed by the
 owner, then rechecked before updating the workflow. No deploy key is needed.
+
+## Pre-integration checkpoint
+
+EVD-0019 records real hosted success and the verified ruleset amendment. The
+final metadata checkpoint still requires its own fresh hosted success, protected
+integration and observed post-merge validation before closure.
